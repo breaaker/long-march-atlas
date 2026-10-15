@@ -1,0 +1,380 @@
+{
+  "version": 1,
+  "defaultVoice": "yunxi",
+  "voices": [
+    {
+      "id": "yunxi",
+      "label": "云希 · 生动男声",
+      "engine": "neural"
+    }
+  ],
+  "events": {
+    "central-bangluo": {
+      "yunxi": "./audio/central-bangluo.mp3"
+    },
+    "central-baxi-north": {
+      "yunxi": "./audio/central-baxi-north.mp3"
+    },
+    "central-chishui-1": {
+      "yunxi": "./audio/central-chishui-1.mp3"
+    },
+    "central-chishui-2": {
+      "yunxi": "./audio/central-chishui-2.mp3"
+    },
+    "central-chishui-3": {
+      "yunxi": "./audio/central-chishui-3.mp3"
+    },
+    "central-chishui-4": {
+      "yunxi": "./audio/central-chishui-4.mp3"
+    },
+    "central-dadu": {
+      "yunxi": "./audio/central-dadu.mp3"
+    },
+    "central-dawei": {
+      "yunxi": "./audio/central-dawei.mp3"
+    },
+    "central-ejie": {
+      "yunxi": "./audio/central-ejie.mp3"
+    },
+    "central-gouba": {
+      "yunxi": "./audio/central-gouba.mp3"
+    },
+    "central-grassland": {
+      "yunxi": "./audio/central-grassland.mp3"
+    },
+    "central-guiyang-feint": {
+      "yunxi": "./audio/central-guiyang-feint.mp3"
+    },
+    "central-hadapu": {
+      "yunxi": "./audio/central-hadapu.mp3"
+    },
+    "central-houchang": {
+      "yunxi": "./audio/central-houchang.mp3"
+    },
+    "central-huili": {
+      "yunxi": "./audio/central-huili.mp3"
+    },
+    "central-huining": {
+      "yunxi": "./audio/central-huining.mp3"
+    },
+    "central-jiajin": {
+      "yunxi": "./audio/central-jiajin.mp3"
+    },
+    "central-jiangtaibao": {
+      "yunxi": "./audio/central-jiangtaibao.mp3"
+    },
+    "central-jinsha": {
+      "yunxi": "./audio/central-jinsha.mp3"
+    },
+    "central-lazikou": {
+      "yunxi": "./audio/central-lazikou.mp3"
+    },
+    "central-lianghekou": {
+      "yunxi": "./audio/central-lianghekou.mp3"
+    },
+    "central-liping": {
+      "yunxi": "./audio/central-liping.mp3"
+    },
+    "central-liupan": {
+      "yunxi": "./audio/central-liupan.mp3"
+    },
+    "central-loushan": {
+      "yunxi": "./audio/central-loushan.mp3"
+    },
+    "central-luding": {
+      "yunxi": "./audio/central-luding.mp3"
+    },
+    "central-maoergai": {
+      "yunxi": "./audio/central-maoergai.mp3"
+    },
+    "central-maogong": {
+      "yunxi": "./audio/central-maogong.mp3"
+    },
+    "central-ruijin": {
+      "yunxi": "./audio/central-ruijin.mp3"
+    },
+    "central-tongdao": {
+      "yunxi": "./audio/central-tongdao.mp3"
+    },
+    "central-tucheng": {
+      "yunxi": "./audio/central-tucheng.mp3"
+    },
+    "central-wujiang-north": {
+      "yunxi": "./audio/central-wujiang-north.mp3"
+    },
+    "central-wujiang-south": {
+      "yunxi": "./audio/central-wujiang-south.mp3"
+    },
+    "central-wuqi": {
+      "yunxi": "./audio/central-wuqi.mp3"
+    },
+    "central-xiangjiang": {
+      "yunxi": "./audio/central-xiangjiang.mp3"
+    },
+    "central-xundian": {
+      "yunxi": "./audio/central-xundian.mp3"
+    },
+    "central-yihai": {
+      "yunxi": "./audio/central-yihai.mp3"
+    },
+    "central-yudu": {
+      "yunxi": "./audio/central-yudu.mp3"
+    },
+    "central-zaxi": {
+      "yunxi": "./audio/central-zaxi.mp3"
+    },
+    "central-zunyi-enter": {
+      "yunxi": "./audio/central-zunyi-enter.mp3"
+    },
+    "central-zunyi-meeting": {
+      "yunxi": "./audio/central-zunyi-meeting.mp3"
+    },
+    "central-zunyi-second": {
+      "yunxi": "./audio/central-zunyi-second.mp3"
+    },
+    "fourth-aba-193509": {
+      "yunxi": "./audio/fourth-aba-193509.mp3"
+    },
+    "fourth-baizhang-19351119": {
+      "yunxi": "./audio/fourth-baizhang-19351119.mp3"
+    },
+    "fourth-baozuo-19350829": {
+      "yunxi": "./audio/fourth-baozuo-19350829.mp3"
+    },
+    "fourth-baozuo-193607": {
+      "yunxi": "./audio/fourth-baozuo-193607.mp3"
+    },
+    "fourth-dangling-19360228": {
+      "yunxi": "./audio/fourth-dangling-19360228.mp3"
+    },
+    "fourth-daofu-19360301": {
+      "yunxi": "./audio/fourth-daofu-19360301.mp3"
+    },
+    "fourth-dawei-19350612": {
+      "yunxi": "./audio/fourth-dawei-19350612.mp3"
+    },
+    "fourth-ganzi-193604": {
+      "yunxi": "./audio/fourth-ganzi-193604.mp3"
+    },
+    "fourth-ganzi-meeting-19360702": {
+      "yunxi": "./audio/fourth-ganzi-meeting-19360702.mp3"
+    },
+    "fourth-hadapu-19360809": {
+      "yunxi": "./audio/fourth-hadapu-19360809.mp3"
+    },
+    "fourth-huining-19361009": {
+      "yunxi": "./audio/fourth-huining-19361009.mp3"
+    },
+    "fourth-huining-celebration-19361010": {
+      "yunxi": "./audio/fourth-huining-celebration-19361010.mp3"
+    },
+    "fourth-jialing-19350328": {
+      "yunxi": "./audio/fourth-jialing-19350328.mp3"
+    },
+    "fourth-jianmen-19350402": {
+      "yunxi": "./audio/fourth-jianmen-19350402.mp3"
+    },
+    "fourth-jinchuan-19351008": {
+      "yunxi": "./audio/fourth-jinchuan-19351008.mp3"
+    },
+    "fourth-kangbei-193602": {
+      "yunxi": "./audio/fourth-kangbei-193602.mp3"
+    },
+    "fourth-lazikou-19360809": {
+      "yunxi": "./audio/fourth-lazikou-19360809.mp3"
+    },
+    "fourth-lianghekou-19350626": {
+      "yunxi": "./audio/fourth-lianghekou-19350626.mp3"
+    },
+    "fourth-luhuo-19360325": {
+      "yunxi": "./audio/fourth-luhuo-19360325.mp3"
+    },
+    "fourth-maoergai-19350820": {
+      "yunxi": "./audio/fourth-maoergai-19350820.mp3"
+    },
+    "fourth-maoxian-19350515": {
+      "yunxi": "./audio/fourth-maoxian-19350515.mp3"
+    },
+    "fourth-mintaoxi-193608": {
+      "yunxi": "./audio/fourth-mintaoxi-193608.mp3"
+    },
+    "fourth-north-193607": {
+      "yunxi": "./audio/fourth-north-193607.mp3"
+    },
+    "fourth-tumen-19350514": {
+      "yunxi": "./audio/fourth-tumen-19350514.mp3"
+    },
+    "fourth-zhuomudiao-193510": {
+      "yunxi": "./audio/fourth-zhuomudiao-193510.mp3"
+    },
+    "prologue-baggage-193410": {
+      "yunxi": "./audio/prologue-baggage-193410.mp3"
+    },
+    "prologue-fifth-campaign": {
+      "yunxi": "./audio/prologue-fifth-campaign.mp3"
+    },
+    "prologue-line1-19341021": {
+      "yunxi": "./audio/prologue-line1-19341021.mp3"
+    },
+    "prologue-line2-193411": {
+      "yunxi": "./audio/prologue-line2-193411.mp3"
+    },
+    "prologue-line3-19341113": {
+      "yunxi": "./audio/prologue-line3-19341113.mp3"
+    },
+    "prologue-seventh-193407": {
+      "yunxi": "./audio/prologue-seventh-193407.mp3"
+    },
+    "prologue-sixth-19340807": {
+      "yunxi": "./audio/prologue-sixth-19340807.mp3"
+    },
+    "regiment-daoxian": {
+      "yunxi": "./audio/regiment-daoxian.mp3"
+    },
+    "regiment-dawei": {
+      "yunxi": "./audio/regiment-dawei.mp3"
+    },
+    "regiment-feiyueling": {
+      "yunxi": "./audio/regiment-feiyueling.mp3"
+    },
+    "regiment-jiajin": {
+      "yunxi": "./audio/regiment-jiajin.mp3"
+    },
+    "regiment-lazikou": {
+      "yunxi": "./audio/regiment-lazikou.mp3"
+    },
+    "regiment-luding": {
+      "yunxi": "./audio/regiment-luding.mp3"
+    },
+    "regiment-wujiang": {
+      "yunxi": "./audio/regiment-wujiang.mp3"
+    },
+    "regiment-xiangjiang": {
+      "yunxi": "./audio/regiment-xiangjiang.mp3"
+    },
+    "second-01": {
+      "yunxi": "./audio/second-01.mp3"
+    },
+    "second-02": {
+      "yunxi": "./audio/second-02.mp3"
+    },
+    "second-03": {
+      "yunxi": "./audio/second-03.mp3"
+    },
+    "second-04": {
+      "yunxi": "./audio/second-04.mp3"
+    },
+    "second-05": {
+      "yunxi": "./audio/second-05.mp3"
+    },
+    "second-06": {
+      "yunxi": "./audio/second-06.mp3"
+    },
+    "second-07": {
+      "yunxi": "./audio/second-07.mp3"
+    },
+    "second-08": {
+      "yunxi": "./audio/second-08.mp3"
+    },
+    "second-09": {
+      "yunxi": "./audio/second-09.mp3"
+    },
+    "second-10": {
+      "yunxi": "./audio/second-10.mp3"
+    },
+    "second-11": {
+      "yunxi": "./audio/second-11.mp3"
+    },
+    "second-12": {
+      "yunxi": "./audio/second-12.mp3"
+    },
+    "second-13": {
+      "yunxi": "./audio/second-13.mp3"
+    },
+    "second-14": {
+      "yunxi": "./audio/second-14.mp3"
+    },
+    "second-15": {
+      "yunxi": "./audio/second-15.mp3"
+    },
+    "second-16": {
+      "yunxi": "./audio/second-16.mp3"
+    },
+    "second-17": {
+      "yunxi": "./audio/second-17.mp3"
+    },
+    "second-18": {
+      "yunxi": "./audio/second-18.mp3"
+    },
+    "second-19": {
+      "yunxi": "./audio/second-19.mp3"
+    },
+    "tf-01": {
+      "yunxi": "./audio/tf-01.mp3"
+    },
+    "tf-02": {
+      "yunxi": "./audio/tf-02.mp3"
+    },
+    "tf-03": {
+      "yunxi": "./audio/tf-03.mp3"
+    },
+    "tf-04": {
+      "yunxi": "./audio/tf-04.mp3"
+    },
+    "tf-05": {
+      "yunxi": "./audio/tf-05.mp3"
+    },
+    "tf-06": {
+      "yunxi": "./audio/tf-06.mp3"
+    },
+    "tf-07": {
+      "yunxi": "./audio/tf-07.mp3"
+    },
+    "tf-08": {
+      "yunxi": "./audio/tf-08.mp3"
+    },
+    "tf-09": {
+      "yunxi": "./audio/tf-09.mp3"
+    },
+    "tf-10": {
+      "yunxi": "./audio/tf-10.mp3"
+    },
+    "tf-11": {
+      "yunxi": "./audio/tf-11.mp3"
+    },
+    "tf-12": {
+      "yunxi": "./audio/tf-12.mp3"
+    },
+    "tf-13": {
+      "yunxi": "./audio/tf-13.mp3"
+    },
+    "tf-14": {
+      "yunxi": "./audio/tf-14.mp3"
+    },
+    "tf-15": {
+      "yunxi": "./audio/tf-15.mp3"
+    },
+    "tf-16": {
+      "yunxi": "./audio/tf-16.mp3"
+    },
+    "tf-17": {
+      "yunxi": "./audio/tf-17.mp3"
+    },
+    "tf-18": {
+      "yunxi": "./audio/tf-18.mp3"
+    },
+    "tf-19": {
+      "yunxi": "./audio/tf-19.mp3"
+    },
+    "tf-20": {
+      "yunxi": "./audio/tf-20.mp3"
+    },
+    "tf-21": {
+      "yunxi": "./audio/tf-21.mp3"
+    },
+    "tf-22": {
+      "yunxi": "./audio/tf-22.mp3"
+    }
+  },
+  "notice": "AI合成中文旁白，预先生成并随网页分发；不是历史录音或真人录音。"
+}

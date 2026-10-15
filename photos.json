@@ -1,0 +1,256 @@
+{
+  "images": [
+    {
+      "id": "photo-zunyi-site",
+      "file": "assets/photos/central-zunyi-site.jpg",
+      "title": "遵义会议会址",
+      "caption": "旧址现代实景：2018年拍摄的遵义会议会址建筑；不是1935年会议现场影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Site_of_Zunyi_Conference_(20180220101816).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Site_of_Zunyi_Conference_%2820180220101816%29.jpg/1280px-Site_of_Zunyi_Conference_%2820180220101816%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "eventIds": [
+        "central-zunyi-enter",
+        "central-zunyi-meeting",
+        "central-zunyi-second"
+      ],
+      "photoDate": "2018-02-20",
+      "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
+      "downloadBytes": 311499,
+      "width": 1280,
+      "height": 863
+    },
+    {
+      "id": "photo-luding-bridge",
+      "file": "assets/photos/central-luding-bridge.jpg",
+      "title": "泸定桥：西向东望",
+      "caption": "旧址现代实景：2026年从西向东拍摄的泸定桥，可观察铁索桥结构及大渡河谷；不是1935年战斗影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luding_Bridge_from_the_west_(20260205115349).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Luding_Bridge_from_the_west_%2820260205115349%29.jpg/1280px-Luding_Bridge_from_the_west_%2820260205115349%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "eventIds": [
+        "central-luding",
+        "regiment-luding"
+      ],
+      "photoDate": "2026-02-05",
+      "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
+      "downloadBytes": 584893,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "photo-jiajin-south",
+      "file": "assets/photos/central-jiajin-south.jpg",
+      "title": "夹金山南坡",
+      "caption": "地貌现代实景：夹金山南坡照片，展示高山环境；不代表1935年行军当天的积雪、天气或具体路线。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%B9%E9%87%91%E5%B1%B1%E5%8D%97%E5%9D%A1-%E6%B5%81%E6%B5%AA%E7%9A%84%E7%8B%97%E7%8B%97_-_panoramio.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/%E5%A4%B9%E9%87%91%E5%B1%B1%E5%8D%97%E5%9D%A1-%E6%B5%81%E6%B5%AA%E7%9A%84%E7%8B%97%E7%8B%97_-_panoramio.jpg",
+      "author": "aisccd（Panoramio）",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "eventIds": [
+        "central-jiajin",
+        "regiment-jiajin"
+      ],
+      "modifications": "下载Commons图片；未作内容修改。",
+      "downloadBytes": 129668,
+      "width": 827,
+      "height": 466
+    },
+    {
+      "id": "photo-yudu-ferry",
+      "file": "assets/photos/central-yudu-ferry.jpg",
+      "title": "于都长征出发地纪念园",
+      "caption": "现代纪念地实景：2014年拍摄的于都东门外渡口所在长征出发地纪念园雕塑；不是1934年夜渡现场影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yudu_Zhongyang_Hongjun_Changzheng_Diyi_Dukou_2014.05.30_11-05-37.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Yudu_Zhongyang_Hongjun_Changzheng_Diyi_Dukou_2014.05.30_11-05-37.jpg/1280px-Yudu_Zhongyang_Hongjun_Changzheng_Diyi_Dukou_2014.05.30_11-05-37.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "eventIds": [
+        "central-yudu"
+      ],
+      "photoDate": "2014-05-30",
+      "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
+      "downloadBytes": 205606,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "photo-xiangjiang-memorial",
+      "file": "assets/photos/central-xiangjiang-memorial.jpg",
+      "title": "湘江战役纪念馆",
+      "caption": "现代纪念地实景：2025年拍摄的广西全州县才湾镇红军长征湘江战役纪念馆；不是1934年战役现场影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xiangjiang_Campaign_Memorial_Hall,_Quanzhou_(20250122171627).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Xiangjiang_Campaign_Memorial_Hall%2C_Quanzhou_%2820250122171627%29.jpg/1280px-Xiangjiang_Campaign_Memorial_Hall%2C_Quanzhou_%2820250122171627%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "eventIds": [
+        "central-xiangjiang",
+        "regiment-xiangjiang"
+      ],
+      "photoDate": "2025-01-22",
+      "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
+      "width": 1280,
+      "height": 853,
+      "downloadBytes": 286580
+    },
+    {
+      "id": "photo-other-huining-huishimen",
+      "file": "assets/photos/other-huining-huishimen-2012.jpg",
+      "title": "会宁会师门：当代纪念地实景",
+      "caption": "2012年7月26日拍摄的会宁红军会师旧址会师门。画面为修缮后的纪念地当代实景，并非1936年会师现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BC%9A%E5%B8%88%E9%97%A8.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/%E4%BC%9A%E5%B8%88%E9%97%A8.jpg/1280px-%E4%BC%9A%E5%B8%88%E9%97%A8.jpg",
+      "author": "DarthVachel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "eventIds": [
+        "fourth-huining-19361009",
+        "fourth-huining-celebration-19361010",
+        "central-huining"
+      ],
+      "photographed": "2012-07-26",
+      "width": 1280,
+      "height": 1707,
+      "changes": "使用Wikimedia Commons官方1280px等比缩略图；未自行裁剪、改色或进行AI编辑。",
+      "bytes": 393035,
+      "sha256": "1d6cf826690edc82e1a94d23a7184a175d00084a319cf363fcd99db3919c660a",
+      "verified": "2026-10-15",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/%E4%BC%9A%E5%B8%88%E9%97%A8.jpg"
+    },
+    {
+      "id": "photo-other-ganzi-town",
+      "file": "assets/photos/other-ganzi-town-2014.jpg",
+      "title": "甘孜县城：现代地理实景",
+      "caption": "NoGhost于2014年6月14日从北侧拍摄的甘孜县城。用于理解甘孜会师地区的现代山城环境；不是1936年的城貌，也不是会师大会现场照片。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garze_Town.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Garze_Town.jpg/1280px-Garze_Town.jpg",
+      "author": "NoGhost",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "eventIds": [
+        "second-14",
+        "fourth-ganzi-193604",
+        "fourth-ganzi-meeting-19360702"
+      ],
+      "photographed": "2014-06-14",
+      "width": 1280,
+      "height": 960,
+      "changes": "使用Wikimedia Commons官方1280px等比缩略图；未自行裁剪、改色或进行AI编辑。",
+      "bytes": 370716,
+      "sha256": "4d1a89c83e9303dc14e86ca07cdc68851c93821cb7cb546e938f48a9a11d3190",
+      "verified": "2026-10-15",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Garze_Town.jpg"
+    },
+    {
+      "id": "photo-other-zoige-rerdaba-grassland",
+      "file": "assets/photos/other-zoige-rerdaba-grassland-2011.jpg",
+      "title": "若尔盖热尔大坝草原：现代地理实景",
+      "caption": "landagent于2011年8月13日拍摄的若尔盖热尔大坝草原。现代高原草地环境参照；不据此认定红军经过画面中的具体拍摄点，也不将2011年的地表状态当作1935—1936年的复原。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%83%AD%E5%B0%94%E5%A4%A7%E5%9D%9D%E8%8D%89%E5%8E%9FRerdaba_grassland_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%E7%83%AD%E5%B0%94%E5%A4%A7%E5%9D%9D%E8%8D%89%E5%8E%9FRerdaba_grassland_-_panoramio.jpg/1280px-%E7%83%AD%E5%B0%94%E5%A4%A7%E5%9D%9D%E8%8D%89%E5%8E%9FRerdaba_grassland_-_panoramio.jpg",
+      "author": "landagent",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "eventIds": [
+        "central-grassland",
+        "second-16",
+        "fourth-baozuo-193607"
+      ],
+      "photographed": "2011-08-13",
+      "width": 1280,
+      "height": 720,
+      "changes": "使用Wikimedia Commons官方1280px等比缩略图；未自行裁剪、改色或进行AI编辑。",
+      "bytes": 300218,
+      "sha256": "ad616061e491f06559ba48404e8e1c682ddf2aabe55e632a0f30b5340e51351b",
+      "verified": "2026-10-15",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E7%83%AD%E5%B0%94%E5%A4%A7%E5%9D%9D%E8%8D%89%E5%8E%9FRerdaba_grassland_-_panoramio.jpg"
+    },
+    {
+      "id": "photo-other-jiangtaibao-monument",
+      "file": "assets/photos/other-jiangtaibao-monument-2026.jpg",
+      "title": "将台堡会师纪念碑：当代纪念地实景",
+      "caption": "N509FZ于2026年2月1日拍摄的宁夏西吉将台堡会师纪念碑。画面是为纪念1936年红一、红二方面军会师而建的纪念设施，不是1936年会师现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monument_to_the_Joining_of_Red_Army_Forces_at_Jiangtaibu_(20260201175443).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Monument_to_the_Joining_of_Red_Army_Forces_at_Jiangtaibu_%2820260201175443%29.jpg/1280px-Monument_to_the_Joining_of_Red_Army_Forces_at_Jiangtaibu_%2820260201175443%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "eventIds": [
+        "second-19",
+        "central-jiangtaibao"
+      ],
+      "photographed": "2026-02-01",
+      "width": 1280,
+      "height": 853,
+      "changes": "使用Wikimedia Commons官方1280px等比缩略图；未自行裁剪、改色或进行AI编辑。",
+      "bytes": 267362,
+      "sha256": "b643679bb137bafe3ed0009c00f4022e2917facd9e8d42d9e730c64cebace672",
+      "verified": "2026-10-15",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Monument_to_the_Joining_of_Red_Army_Forces_at_Jiangtaibu_%2820260201175443%29.jpg"
+    },
+    {
+      "id": "photo-other-zoige-flower-lake",
+      "file": "assets/photos/other-zoige-flower-lake-2023.jpg",
+      "title": "若尔盖花湖：现代湿地实景",
+      "caption": "Yumeto于2023年4月30日拍摄的四川若尔盖花湖湿地。仅作高原湿地环境的现代参照，不表示红军在花湖此拍摄点行军，也不复原长征时季节、水位或地表状态。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230430_Hua_Hu,_Zoig%C3%AA.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/20230430_Hua_Hu%2C_Zoig%C3%AA.jpg/1280px-20230430_Hua_Hu%2C_Zoig%C3%AA.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "eventIds": [
+        "central-grassland",
+        "second-16",
+        "fourth-baozuo-193607"
+      ],
+      "photographed": "2023-04-30",
+      "width": 1280,
+      "height": 960,
+      "changes": "使用Wikimedia Commons官方1280px等比缩略图；未自行裁剪、改色或进行AI编辑。",
+      "bytes": 154722,
+      "sha256": "78338ff77d0b67f3570dae0e184d8d8193a3ad6c26912bf166598a55da385458",
+      "verified": "2026-10-15",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/20230430_Hua_Hu%2C_Zoig%C3%AA.jpg"
+    },
+    {
+      "id": "photo-chishui-maotai-bank",
+      "file": "assets/photos/central-chishui-maotai-bank-2016.jpg",
+      "title": "赤水河茅台段：当代沿岸实景",
+      "caption": "Wahsaw于2016年8月5日在贵州仁怀茅台镇拍摄的赤水河沿岸。当代河景用于理解四渡赤水的地理环境；不是1935年原照，也不代表土城、猿猴场、太平渡、二郎滩或九溪口渡口的现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chishui_River_Bank_in_Maotai(Moutai)_Town,_Renhuai_City,_Zunyi,_Guizhou.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Chishui_River_Bank_in_Maotai%28Moutai%29_Town%2C_Renhuai_City%2C_Zunyi%2C_Guizhou.jpg/1280px-Chishui_River_Bank_in_Maotai%28Moutai%29_Town%2C_Renhuai_City%2C_Zunyi%2C_Guizhou.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Chishui_River_Bank_in_Maotai%28Moutai%29_Town%2C_Renhuai_City%2C_Zunyi%2C_Guizhou.jpg",
+      "author": "Wahsaw",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "eventIds": [
+        "central-chishui-1",
+        "central-chishui-2",
+        "central-chishui-3",
+        "central-chishui-4"
+      ],
+      "photoDate": "2016-08-05",
+      "photographed": "2016-08-05",
+      "modifications": "使用Wikimedia Commons官方1280像素等比缩略图；未自行裁剪、改色或进行AI编辑。",
+      "width": 1280,
+      "height": 720,
+      "verified": "2026-10-15",
+      "licenseEvidence": "Commons文件说明页Licensing列为CC0 1.0 Universal Public Domain Dedication；作者Wahsaw，Own work；文件拍摄日期2016-08-05。",
+      "cameraLocation": {
+        "lat": 27.857477,
+        "lon": 106.369492,
+        "scope": "Commons文件页记录的当代拍摄位置，非历史渡口精确测绘"
+      },
+      "downloadBytes": 297277,
+      "bytes": 297277,
+      "sha256": "6875ca96f96e187c87e71cf6a1ce815971e111136d55a71ee5b6180c15cdf4be",
+      "visualQA": "已查看下载图片：现代红色拱桥、河岸城镇及赤水河水面；适合作当代茅台段环境参照，不标作1935年现场或其他渡口。"
+    }
+  ]
+}

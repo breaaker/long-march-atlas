@@ -1,0 +1,1086 @@
+{
+  "sources": [
+    {
+      "id": "geo-chishui",
+      "title": "四渡赤水出奇兵",
+      "url": "https://www.cac.gov.cn/2016-08/22/c_1119430867.htm",
+      "publisher": "中央网信办／人民网"
+    },
+    {
+      "id": "geo-jiuxikou",
+      "title": "九溪口渡口",
+      "url": "https://www.sdcs1935.com/html/yanjiu/sdcsyz/202101/32fdc7ee66c9ef9c.shtml",
+      "publisher": "四渡赤水纪念馆"
+    },
+    {
+      "id": "geo-erlang",
+      "title": "二渡赤水渡口——二郎滩",
+      "url": "https://www.sdcs1935.com/html/yanjiu/sdcsyz/202011/f0f5234ecd0b2429.shtml",
+      "publisher": "四渡赤水纪念馆"
+    },
+    {
+      "id": "geo-maotai",
+      "title": "茅台渡口",
+      "url": "https://www.sdcs1935.com/html/yanjiu/sdcsyz/202101/f056532e17154593.shtml",
+      "publisher": "四渡赤水纪念馆"
+    },
+    {
+      "id": "geo-yuanhou",
+      "title": "中央红军一渡元厚后行军线路考",
+      "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1591616754155552",
+      "publisher": "贵州政协报"
+    },
+    {
+      "id": "geo-erlang-modern",
+      "title": "二郎基地技改项目环境影响报告书（公示本）",
+      "url": "https://sthjt.sc.gov.cn/sthjt/c103939/2020/2/10/ebf6595552ce41989e01cc11c5702e2e/files/57e2187e6878419c8bc75ac38f1bd586.pdf",
+      "publisher": "四川省生态环境厅"
+    },
+    {
+      "id": "geo-xiangjiang",
+      "title": "英勇的湘江之战",
+      "url": "https://www.dswxyjy.org.cn/n1/2016/0825/c244523-28665323.html",
+      "publisher": "中共中央党史和文献研究院／学习时报"
+    },
+    {
+      "id": "geo-wujiang",
+      "title": "记者再走长征路丨乌江：红军在这里开始反攻",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4845553.html",
+      "publisher": "国防部／新华社"
+    },
+    {
+      "id": "geo-jialing",
+      "title": "嘉陵江战役：大规模强渡江河的模范战例",
+      "url": "https://www.81.cn/js_208592/jdt_208593/16209692.html",
+      "publisher": "中国军网／中国国防报"
+    },
+    {
+      "id": "geo-dadu",
+      "title": "大渡河战役：攸关中央红军生死之战",
+      "url": "https://www.81.mil.cn/js_208592/jdt_208593/16226949.html",
+      "publisher": "中国军网"
+    },
+    {
+      "id": "geo-jinsha",
+      "title": "七天七夜，惊心动魄——皎平渡口永不消失的红色记忆",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4846350.html",
+      "publisher": "国防部／新华社"
+    },
+    {
+      "id": "geo-shigu",
+      "title": "红二、六军团过云南：全面抢渡金沙江 走过艰难长征路",
+      "url": "https://www.ynrd.gov.cn/html/2021/bainiandangshi_0629/13010.html",
+      "publisher": "云南人大网／云南发布"
+    },
+    {
+      "id": "geo-jiajin",
+      "title": "翻越夹金山",
+      "url": "https://www.cac.gov.cn/2016-08/22/c_1119431608.htm",
+      "publisher": "中央网信办／中国共产党历史网"
+    },
+    {
+      "id": "geo-lazikou",
+      "title": "夺取天险腊子口！红军曾在这里浴血奋战",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4887931.html",
+      "publisher": "国防部"
+    },
+    {
+      "id": "geo-liupan",
+      "title": "走进教育基地丨宁夏六盘山红军纪念馆：长征精神永放光芒",
+      "url": "https://www.neac.gov.cn/seac/c103547/202111/1155252.shtml",
+      "publisher": "国家民族事务委员会"
+    },
+    {
+      "id": "geo-grassland",
+      "title": "长征革命遗址、遗迹",
+      "url": "https://www.ruoergai.gov.cn/regxrmzf/c105376/202303/f66ee6ab86f044019bfbc9170a6fe707.shtml",
+      "publisher": "若尔盖县人民政府"
+    },
+    {
+      "id": "geo-conferences",
+      "title": "遵义会议不是一次独立的会议",
+      "url": "https://www.dswxyjy.org.cn/n1/2018/0615/c219002-30062449.html",
+      "publisher": "中共中央党史和文献研究院"
+    },
+    {
+      "id": "geo-rendezvous",
+      "title": "红军长征中的会师",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/16418522.html",
+      "publisher": "国防部"
+    },
+    {
+      "id": "geo-main",
+      "title": "1935：生死攸关大转折——中国共产党领导红军主力胜利完成长征",
+      "url": "https://www.mem.gov.cn/xw/ztzl/2021/dsxxjy/xxfd/202103/t20210329_382216.shtml",
+      "publisher": "应急管理部／中国共产党历史和文献网"
+    },
+    {
+      "id": "geo-yudu",
+      "title": "中央红军长征第一渡：于都东门渡口",
+      "url": "https://www.cac.gov.cn/2016-08/19/c_1119421942.htm",
+      "publisher": "中央网信办"
+    },
+    {
+      "id": "geo-sangzhi",
+      "title": "桑植：将帅故里写新篇",
+      "url": "https://ztzy.hncourt.gov.cn/public/detail.php?id=1948",
+      "publisher": "郑州铁路运输中级法院／人民法院报"
+    },
+    {
+      "id": "geo-hejiachong",
+      "title": "一棵古银杏，见证何家冲的红色接力",
+      "url": "https://jcgov.gov.cn/dtxx/gnyw/202610/t20261012_2400488.shtml",
+      "publisher": "晋城市人民政府／新华社"
+    },
+    {
+      "id": "geo-hadapu",
+      "title": "三军过后尽开颜——哈达铺在红军长征中的历史地位和作用",
+      "url": "https://zwfw.gansu.gov.cn/tanchang/tsfw/szsc/ywjj/art/2024/art_aa6399bf9ee745e3b3186596b4d711eb.html",
+      "publisher": "甘肃政务服务网"
+    },
+    {
+      "id": "geo-history-tf-dushu",
+      "title": "方城县各级文物保护单位目录：红二十五军独树镇战斗遗址相关说明",
+      "url": "https://www.fangcheng.gov.cn/2025/09-04/1210984.html",
+      "publisher": "方城县人民政府"
+    },
+    {
+      "id": "geo-history-tf-guide",
+      "title": "中央红军之向导——回望红二十五军的长征",
+      "url": "https://www.hljzx.gov.cn/contents/68/14160.html",
+      "publisher": "黑龙江省政协网站；来源人民政协报"
+    },
+    {
+      "id": "geo-history-tf-chronology",
+      "title": "红二十五军长征大事记",
+      "url": "https://dzb.henandaily.cn/html5/2026-09/17/content_13_1811747.htm",
+      "publisher": "河南日报；文字来源河南博物院"
+    },
+    {
+      "id": "geo-history-fourth-battles",
+      "title": "红军长征中有哪些重要战役战斗？",
+      "url": "https://www.81.mil.cn/yw_208727/16343466.html",
+      "publisher": "中国军网"
+    },
+    {
+      "id": "geo-history-second-bijie",
+      "title": "红军长征在贵州时 中共贵州省工委作出的贡献",
+      "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1487434529374240",
+      "publisher": "贵州省政协网站"
+    },
+    {
+      "id": "geo-history-second-panxian",
+      "title": "会议审时势，决策明方向",
+      "url": "https://zhuanti.mct.gov.cn/history_detail/773.html",
+      "publisher": "文化和旅游部专题网站"
+    },
+    {
+      "id": "geo-history-c14",
+      "title": "红军为何能顺利通过彝族区？这面旗帜告诉你",
+      "url": "https://photo.81.cn/zhuanti/2016-09/28/content_7279560_4.htm",
+      "publisher": "中国军网"
+    },
+    {
+      "id": "geo-history-c10",
+      "title": "党史上的今天（1935年3月10日）",
+      "url": "https://www.forestry.gov.cn/c/www/dszl/549651.jhtml",
+      "publisher": "国家林业和草原局／党史学习教育官网"
+    },
+    {
+      "id": "geo-history-c23",
+      "title": "苟坝会议让毛泽东难以忘怀",
+      "url": "https://dangshi.people.com.cn/n1/2016/0719/c85037-28564682.html",
+      "publisher": "中国共产党新闻网／福建党史月刊"
+    },
+    {
+      "id": "geo-history-c20",
+      "title": "长征时期党中央在甘肃召开的重要会议",
+      "url": "https://www.dswxyjy.org.cn/BIG5/n1/2021/1126/c244516-32292961.html",
+      "publisher": "中共中央党史和文献研究院"
+    },
+    {
+      "id": "geo-history-c26",
+      "title": "红色通渭：闪耀长征精神的革命遗迹",
+      "url": "https://www.twdjw.gov.cn/htm/20187/33_7284.htm",
+      "publisher": "中共通渭县委组织部"
+    },
+    {
+      "id": "geo-history-fourth-aba",
+      "title": "红军长征在阿坝重要战役和战斗",
+      "url": "https://www.czgbxy.org.cn/abzwdx/c104419/201604/12a990b3ba3c46f49bf02502d832ff63.shtml",
+      "publisher": "四川长征干部学院阿坝雪山草地分院"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "crossing-tucheng",
+      "name": "土城",
+      "lon": 106,
+      "lat": 28.27,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-chishui",
+        "geo-yuanhou"
+      ],
+      "notes": "一渡渡口群之一；与猿猴场并列。地区示意点，非所有军团共同在此精确过河。",
+      "eventIds": [
+        "central-tucheng",
+        "central-chishui-1"
+      ],
+      "displayName": "一渡 · 土城"
+    },
+    {
+      "id": "crossing-yuanhou",
+      "name": "猿猴场（今元厚）",
+      "lon": 105.98,
+      "lat": 28.34,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-yuanhou"
+      ],
+      "notes": "新增一渡关键地点。坐标是元厚地区示意，非沙沱及川祖庙两座浮桥精确测绘点；不应与土城合为一点。",
+      "eventIds": [
+        "central-chishui-1"
+      ]
+    },
+    {
+      "id": "crossing-taiping",
+      "name": "太平渡",
+      "lon": 106.04,
+      "lat": 28.14,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-chishui",
+        "geo-jiuxikou"
+      ],
+      "notes": "二渡、四渡渡口群的共同组成。现有二渡与四渡代表点可继续使用，但需标明其他渡口。",
+      "eventIds": [
+        "central-chishui-2",
+        "central-chishui-4"
+      ],
+      "displayName": "二 / 四渡 · 太平渡"
+    },
+    {
+      "id": "crossing-erlang",
+      "name": "二郎滩",
+      "lon": 106.17,
+      "lat": 28.15,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-erlang",
+        "geo-erlang-modern"
+      ],
+      "notes": "新增二渡、四渡渡口群。东岸今习水习酒镇、西岸今古蔺二郎镇；坐标取河段示意。生态环境厅环评中的二郎滩水生生境坐标只支持现代河段，不能充作1935年浮桥的精确坐标。",
+      "eventIds": [
+        "central-chishui-2",
+        "central-chishui-4"
+      ]
+    },
+    {
+      "id": "crossing-maotai",
+      "name": "茅台",
+      "lon": 106.37,
+      "lat": 27.85,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-maotai"
+      ],
+      "notes": "三渡渡口地区；原 central-chishui-3 坐标可保留作示意。纪念馆明确三渡为3月16—17日从茅台地区向川南。",
+      "eventIds": [
+        "central-chishui-3"
+      ],
+      "displayName": "三渡 · 茅台"
+    },
+    {
+      "id": "crossing-jiuxikou",
+      "name": "九溪口",
+      "lon": 106.06,
+      "lat": 28.15,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-jiuxikou"
+      ],
+      "notes": "新增二渡、四渡渡口群。纪念馆记其位于习水隆兴镇滨江村，距太平渡约2公里；坐标为地区示意，应在放大时与太平渡错位排字。",
+      "eventIds": [
+        "central-chishui-2",
+        "central-chishui-4"
+      ]
+    },
+    {
+      "id": "crossing-jiaoping",
+      "name": "皎平渡",
+      "lon": 102.38,
+      "lat": 26.29,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-jinsha"
+      ],
+      "notes": "常驻渡江地名；取既有事件地区锚点。现代库区、水岸和纪念设施与1935年地貌不同，不能声称按现状桥梁测得历史渡口。",
+      "eventIds": [
+        "central-jinsha"
+      ]
+    },
+    {
+      "id": "crossing-shigu",
+      "name": "石鼓",
+      "lon": 100,
+      "lat": 26.9,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-shigu"
+      ],
+      "notes": "红二、六军团渡金沙江代表地。渡江涉及石鼓至巨甸多个渡口、约60公里河段，不能把所有行动挤在一点。",
+      "eventIds": [
+        "second-11"
+      ]
+    },
+    {
+      "id": "crossing-anshunchang",
+      "name": "安顺场",
+      "lon": 102.25,
+      "lat": 29.25,
+      "type": "crossing",
+      "priority": 2,
+      "sourceIds": [
+        "geo-dadu"
+      ],
+      "notes": "原 central-dadu 缺常见短地名。应独立常驻；强渡先遣队为红一师一团，不能归给红四团。坐标沿用既有地域示意。",
+      "eventIds": [
+        "central-dadu"
+      ]
+    },
+    {
+      "id": "bridge-luding",
+      "name": "泸定桥",
+      "lon": 102.23,
+      "lat": 29.91,
+      "type": "bridge",
+      "priority": 1,
+      "sourceIds": [
+        "geo-dadu"
+      ],
+      "notes": "独立常驻桥名，与大渡河同时可见。红四团夺桥与安顺场强渡是同一战役的不同动作。",
+      "eventIds": [
+        "central-luding",
+        "regiment-luding"
+      ]
+    },
+    {
+      "id": "mountain-jiajin",
+      "name": "夹金山",
+      "lon": 102.67,
+      "lat": 30.84,
+      "type": "mountain",
+      "priority": 2,
+      "sourceIds": [
+        "geo-jiajin"
+      ],
+      "notes": "现有地形只有横断、岷山、秦岭、六盘山，缺夹金山。新增常驻文字；既有山口地域示意点不代表所有部队同一翻山路线与同一天。",
+      "eventIds": [
+        "central-jiajin",
+        "regiment-jiajin"
+      ]
+    },
+    {
+      "id": "pass-lazikou",
+      "name": "腊子口",
+      "lon": 103.89,
+      "lat": 34.11,
+      "type": "pass",
+      "priority": 1,
+      "sourceIds": [
+        "geo-lazikou"
+      ],
+      "notes": "常驻险关名。central 与 regiment 为103.89,34.11，fourth 为103.92,34.14；建议统一地理锚点但保留1935/1936两年事件，避免画成两处不同腊子口。",
+      "eventIds": [
+        "central-lazikou",
+        "fourth-lazikou-19360809",
+        "regiment-lazikou"
+      ]
+    },
+    {
+      "id": "mountain-liupan",
+      "name": "六盘山",
+      "lon": 106.24,
+      "lat": 35.64,
+      "type": "mountain",
+      "priority": 2,
+      "sourceIds": [
+        "geo-liupan"
+      ],
+      "notes": "现有山脉标签在106.4,35.5，中央事件在106.24,35.64；宜保留一个地理标签并与事件关联。山脉地域示意，不表示全军共同登山点。",
+      "eventIds": [
+        "central-liupan",
+        "tf-16"
+      ]
+    },
+    {
+      "id": "pass-loushan",
+      "name": "娄山关",
+      "lon": 106.85,
+      "lat": 28.14,
+      "type": "pass",
+      "priority": 1,
+      "sourceIds": [
+        "geo-chishui"
+      ],
+      "notes": "原 central-loushan 未入 mapLabels，应新增关隘标签并在遵义/赤水区域放大时常驻。地区示意。",
+      "eventIds": [
+        "central-loushan"
+      ]
+    },
+    {
+      "id": "region-grassland",
+      "name": "松潘草地",
+      "lon": 102.95,
+      "lat": 33.1,
+      "type": "region",
+      "priority": 1,
+      "sourceIds": [
+        "geo-grassland"
+      ],
+      "notes": "新增常驻区域名，宜用淡色区域或多段文字显示；不能以一个点标为全军唯一“草地入口”。1935和1936、左/中/右纵队线路不同。",
+      "eventIds": [
+        "central-grassland",
+        "second-16",
+        "fourth-baozuo-193607"
+      ]
+    },
+    {
+      "id": "place-yudu",
+      "name": "于都",
+      "lon": 115.41,
+      "lat": 25.95,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-yudu"
+      ],
+      "notes": "长征出发关键地区，独立地理名不随时间消失；八个主要渡口不能被县城示意点替代。",
+      "eventIds": [
+        "central-yudu",
+        "prologue-baggage-193410"
+      ]
+    },
+    {
+      "id": "place-tongdao",
+      "name": "通道",
+      "lon": 109.78,
+      "lat": 26.16,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-conferences"
+      ],
+      "notes": "转兵前置地名，在相应区域放大时常驻；县域示意。",
+      "eventIds": [
+        "central-tongdao"
+      ]
+    },
+    {
+      "id": "place-liping",
+      "name": "黎平",
+      "lon": 109.14,
+      "lat": 26.23,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-conferences"
+      ],
+      "notes": "会议关键地名；与通道、猴场、遵义构成决策演进，不随播放日隐藏。",
+      "eventIds": [
+        "central-liping"
+      ]
+    },
+    {
+      "id": "place-zunyi",
+      "name": "遵义",
+      "lon": 106.93,
+      "lat": 27.69,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-conferences",
+        "geo-chishui"
+      ],
+      "notes": "总览常驻，仍分开进占、遵义会议、再占遵义等事件，不按一个地理名合并历史事件。",
+      "eventIds": [
+        "central-zunyi-enter",
+        "central-zunyi-meeting",
+        "central-zunyi-second"
+      ]
+    },
+    {
+      "id": "place-zaxi",
+      "name": "扎西",
+      "lon": 105.05,
+      "lat": 27.85,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-chishui"
+      ],
+      "notes": "一渡后集结整编与再向东机动关键地区，建议在赤水区域放大时常驻。",
+      "eventIds": [
+        "central-zaxi"
+      ]
+    },
+    {
+      "id": "place-dawei",
+      "name": "达维",
+      "lon": 102.64,
+      "lat": 30.96,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-rendezvous"
+      ],
+      "notes": "一、四方面军先头会师关键地。沿用统一示意坐标，勿与稍后的懋功主力会合合并为同一时刻。",
+      "eventIds": [
+        "central-dawei",
+        "fourth-dawei-19350612",
+        "regiment-dawei"
+      ]
+    },
+    {
+      "id": "place-hadapu",
+      "name": "哈达铺",
+      "lon": 104.22,
+      "lat": 34.23,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-hadapu"
+      ],
+      "notes": "多支部队先后经过的重要休整地点，常见地名应固定，事件年份与所属部队仍分别显示。",
+      "eventIds": [
+        "central-hadapu",
+        "second-17",
+        "fourth-hadapu-19360809"
+      ]
+    },
+    {
+      "id": "place-ganzi",
+      "name": "甘孜",
+      "lon": 99.99,
+      "lat": 31.62,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-rendezvous"
+      ],
+      "notes": "红二、四方面军会师地区，沿用既有统一坐标。地区会合与7月2日大会、随后组成红二方面军不应都视为首次接触。",
+      "eventIds": [
+        "second-14",
+        "second-15",
+        "fourth-ganzi-193604",
+        "fourth-ganzi-meeting-19360702"
+      ]
+    },
+    {
+      "id": "place-huining",
+      "name": "会宁",
+      "lon": 105.05,
+      "lat": 35.69,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-rendezvous"
+      ],
+      "notes": "总览常驻会师地，与将台堡分开。1936年一、四方面军会师及庆祝活动不等于1935中央红军长征仍持续。",
+      "eventIds": [
+        "central-huining",
+        "fourth-huining-19361009",
+        "fourth-huining-celebration-19361010"
+      ]
+    },
+    {
+      "id": "place-jiangtaibao",
+      "name": "将台堡",
+      "lon": 105.84,
+      "lat": 35.82,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-rendezvous",
+        "geo-liupan"
+      ],
+      "notes": "总览常驻会师地，1936年一、二方面军会师；今属宁夏，历史叙述勿套用今日省界。",
+      "eventIds": [
+        "central-jiangtaibao",
+        "second-19"
+      ]
+    },
+    {
+      "id": "place-wuqi",
+      "name": "吴起镇",
+      "lon": 108.18,
+      "lat": 36.93,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-main"
+      ],
+      "notes": "中央红军1935年长征终点关键地区。地理名常驻，抵达事件仍随播放高亮。",
+      "eventIds": [
+        "central-wuqi"
+      ]
+    },
+    {
+      "id": "place-yongping",
+      "name": "永坪",
+      "lon": 109.82,
+      "lat": 37.01,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-rendezvous"
+      ],
+      "notes": "红二十五军先期抵达陕北与红二十六、二十七军会师地区，独立常驻，不能用会宁/将台堡替代。",
+      "eventIds": [
+        "tf-19",
+        "tf-20",
+        "tf-21"
+      ]
+    },
+    {
+      "id": "place-sangzhi",
+      "name": "桑植",
+      "lon": 110.2,
+      "lat": 29.4,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-sangzhi"
+      ],
+      "notes": "红二、六军团出发地区。现有县域示意锚点概括刘家坪、瑞塔铺等出发地区，不能当作全军共同誓师精确坐标。",
+      "eventIds": [
+        "second-01"
+      ]
+    },
+    {
+      "id": "place-hejiachong",
+      "name": "何家冲",
+      "lon": 114.3,
+      "lat": 32,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-hejiachong"
+      ],
+      "notes": "红二十五军长征出发地区，沿用现有概略点，不代表何氏祠或银杏树入口精确测量。",
+      "eventIds": [
+        "tf-02"
+      ]
+    },
+    {
+      "id": "place-ruijin",
+      "name": "瑞金",
+      "lon": 116.03,
+      "lat": 25.89,
+      "type": "place",
+      "priority": 1,
+      "sourceIds": [
+        "geo-yudu"
+      ],
+      "notes": "中央机关出发的重要地区，与于都河集结渡河分开标。复用既有地域示意点，不冒充云石山旧址测绘点。",
+      "eventIds": [
+        "central-ruijin",
+        "prologue-fifth-campaign"
+      ]
+    },
+    {
+      "id": "place-houchang",
+      "name": "猴场",
+      "lon": 107.47,
+      "lat": 27.06,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-conferences"
+      ],
+      "notes": "新增前置会议地名，与通道、黎平、遵义构成决策演进序列；地区示意。",
+      "eventIds": [
+        "central-houchang"
+      ]
+    },
+    {
+      "id": "place-lianghekou",
+      "name": "两河口",
+      "lon": 102.49,
+      "lat": 31.49,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-conferences"
+      ],
+      "notes": "一、四方面军会合后北上决策的重要会议地区；沿用统一地区锚点。",
+      "eventIds": [
+        "central-lianghekou",
+        "fourth-lianghekou-19350626"
+      ]
+    },
+    {
+      "id": "place-baxi",
+      "name": "巴西",
+      "lon": 103.23,
+      "lat": 33.58,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-grassland"
+      ],
+      "notes": "1935年过草地后行动关键地区；此处巴西是若尔盖历史地区名称，不应与拉美国家混淆，亦非所有部队同日共同位置。",
+      "eventIds": [
+        "central-baxi-north"
+      ]
+    },
+    {
+      "id": "place-ejie",
+      "name": "俄界",
+      "lon": 103.34,
+      "lat": 33.86,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-main"
+      ],
+      "notes": "党中央率一、三军继续北上后重要会议地区；沿用地区示意点。",
+      "eventIds": [
+        "central-ejie"
+      ]
+    },
+    {
+      "id": "place-cangxi",
+      "name": "苍溪",
+      "lon": 105.93,
+      "lat": 31.73,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-jialing"
+      ],
+      "notes": "嘉陵江渡江战役关键地区。渡江分塔子山、鸳溪口、涧溪口等渡口，不能以县城示意点代替全部战区。",
+      "eventIds": [
+        "fourth-jialing-19350328"
+      ]
+    },
+    {
+      "id": "place-dushu",
+      "name": "独树镇",
+      "lon": 113.2,
+      "lat": 33.3,
+      "type": "battle",
+      "priority": 1,
+      "sourceIds": [
+        "geo-history-tf-dushu",
+        "geo-history-tf-guide"
+      ],
+      "eventIds": [
+        "tf-03"
+      ],
+      "notes": "独树镇突围的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-yujiahe",
+      "name": "庾家河",
+      "lon": 110.5,
+      "lat": 33.8,
+      "type": "meeting",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-tf-chronology",
+        "geo-history-tf-guide"
+      ],
+      "eventIds": [
+        "tf-06"
+      ],
+      "notes": "庾家河会议与战斗的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "pass-jianmen",
+      "name": "剑门关",
+      "lon": 105.57,
+      "lat": 32.21,
+      "type": "pass",
+      "priority": 2,
+      "sourceIds": [
+        "geo-jialing"
+      ],
+      "eventIds": [
+        "fourth-jianmen-19350402"
+      ],
+      "notes": "攻克剑门关的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "pass-baizhang",
+      "name": "百丈关",
+      "lon": 103.24,
+      "lat": 30.24,
+      "type": "pass",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-fourth-battles"
+      ],
+      "eventIds": [
+        "fourth-baizhang-19351119"
+      ],
+      "notes": "百丈关激战，南下转入防御的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-bijie",
+      "name": "毕节",
+      "lon": 105.3,
+      "lat": 27.3,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-second-bijie"
+      ],
+      "eventIds": [
+        "second-07"
+      ],
+      "notes": "进驻毕节的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-panxian",
+      "name": "盘县（今盘州）",
+      "lon": 104.6,
+      "lat": 25.8,
+      "type": "meeting",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-second-panxian"
+      ],
+      "eventIds": [
+        "second-09"
+      ],
+      "notes": "盘县会议决定渡江北上的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-yihai",
+      "name": "彝海",
+      "lon": 102.15,
+      "lat": 28.74,
+      "type": "place",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-c14"
+      ],
+      "eventIds": [
+        "central-yihai"
+      ],
+      "notes": "彝海结盟的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-gouba",
+      "name": "苟坝",
+      "lon": 106.62,
+      "lat": 27.62,
+      "type": "meeting",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-c10",
+        "geo-history-c23"
+      ],
+      "eventIds": [
+        "central-gouba"
+      ],
+      "notes": "苟坝会议与军事指挥调整的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-bangluo",
+      "name": "榜罗镇",
+      "lon": 104.94,
+      "lat": 35.04,
+      "type": "meeting",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-c20",
+        "geo-history-c26"
+      ],
+      "eventIds": [
+        "central-bangluo"
+      ],
+      "notes": "榜罗镇确定落脚陕北的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    },
+    {
+      "id": "place-baozuo",
+      "name": "包座",
+      "lon": 103.37,
+      "lat": 33.47,
+      "type": "battle",
+      "priority": 2,
+      "sourceIds": [
+        "geo-history-fourth-aba"
+      ],
+      "eventIds": [
+        "fourth-baozuo-19350829"
+      ],
+      "notes": "包座战斗，打开北上通道的重要地点；沿用经考据的现代概略锚点，非旧址精密测绘。"
+    }
+  ],
+  "notes": [
+    "检索核查日期：2026-10-15。sources 以政府、军网、党史机构和纪念馆来源为主；sourceIds 证明地名与历史关联，不表示网页提供了对应经纬度。",
+    "全部 lon/lat 是历史教学地图的示意锚点，主要复用 dist/data.json；新渡口按已核查的现代地区与相对方位给出约0.01度精度坐标。河名坐标是排字锚点，不是河流源点或渡口位置，仍须使用河线。",
+    "priority=1 建议在全国行程总览中常驻，priority=2 建议在相应地区放大到可读尺度时常驻；两级都不随日期隐藏，也不受当前部队筛选排除。常驻地理名与随时推进的事件节点应分层。",
+    "app.js 当前 renderBaseMap 只写长江、黄河、金沙江、大渡河、嘉陵江，缺赤水河、乌江、湘江。makeTerrain 缺夹金山。mapLabels 有四渡编号但没有渡口群，且渲染时按 eventTime>currentTime 隐藏未来标签，不能满足常驻地理认知。河流应由独立矢量河线和河名字层显示，不以本landmarks数组的点替代。",
+    "河名独立图层建议：赤水河、乌江、湘江、金沙江、大渡河、嘉陵江。文字锚点仅作排字位置，必须贴近实际河线。赤水河四渡常驻渡口取土城、猿猴场（今元厚）、太平渡、二郎滩、茅台、九溪口；同一渡口可关联多个eventIds。",
+    "四渡赤水：一渡1935-01-29，土城、猿猴场等向西；二渡1935-02-18至21，太平渡、二郎滩、九溪口、淋滩等向东；三渡1935-03-16至17，茅台地区向西；四渡1935-03-21至22，太平渡、二郎滩、九溪口等向东。纪念叙述对渡口列举详略不同，应使用群组含义，不能推断只存在已列出的渡口。",
+    "四渡序号属于行动轮次，不是四个独立城市。应保留“一渡/二渡/三渡/四渡”事件高亮，同时给河名、主要渡口以独立地理标签；太平渡、二郎滩、九溪口允许重复关联二渡和四渡。",
+    "新增猿猴场约105.98,28.34；二郎滩约106.17,28.15；九溪口约106.06,28.15。若未来提供精确放大地图，应另以权威遗址测绘/现代地理数据统一坐标系后再校核；本轮不能把示意点宣称为精确历史坐标。",
+    "草地为广域；1935右路军含红一、四方面军部队，1936红二、四方面军另有三纵队北上，不应以一个“草地”点或单线暗示全军同路。",
+    "本研究文件供地图标注改进使用，未修改 app.js 或 dist/data.json。"
+  ],
+  "riverLabels": [
+    {
+      "id": "river-chishui",
+      "name": "赤水河",
+      "lon": 105.92,
+      "lat": 28.52,
+      "eventIds": [
+        "central-chishui-1",
+        "central-chishui-2",
+        "central-chishui-3",
+        "central-chishui-4"
+      ],
+      "notes": "四渡赤水发生在同一条赤水河的不同渡口。河线为OpenStreetMap现代中心线，渡口点为概略位置。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-wu",
+      "name": "乌江",
+      "lon": 107.15,
+      "lat": 27.05,
+      "eventIds": [
+        "central-wujiang-north",
+        "central-wujiang-south",
+        "regiment-wujiang"
+      ],
+      "notes": "中央红军1935年1月北渡、3月南渡乌江。现代河流综合制图参考。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-xiang",
+      "name": "湘江",
+      "lon": 111.13,
+      "lat": 26.24,
+      "eventIds": [
+        "central-xiangjiang"
+      ],
+      "notes": "湘江战役的重要地理背景。河线为现代综合制图参考，不表示战时河宽。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-jinsha",
+      "name": "金沙江",
+      "lon": 101.46,
+      "lat": 26.72,
+      "eventIds": [
+        "central-jinsha",
+        "second-11"
+      ],
+      "notes": "中央红军与红二、六军团在不同时间、不同河段渡过金沙江。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-dadu",
+      "name": "大渡河",
+      "lon": 102.08,
+      "lat": 29.52,
+      "eventIds": [
+        "central-dadu",
+        "central-luding",
+        "regiment-luding"
+      ],
+      "notes": "安顺场与泸定桥是不同渡河行动地点。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-jialing",
+      "name": "嘉陵江",
+      "lon": 106.21,
+      "lat": 31.56,
+      "eventIds": [
+        "fourth-jialing-19350328"
+      ],
+      "notes": "红四方面军1935年3月强渡嘉陵江。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-yangtze",
+      "name": "长江",
+      "lon": 110.45,
+      "lat": 30.67,
+      "eventIds": [],
+      "notes": "现代主要水系背景参考。",
+      "type": "river",
+      "priority": 1
+    },
+    {
+      "id": "river-yellow",
+      "name": "黄河",
+      "lon": 106.84,
+      "lat": 38.17,
+      "eventIds": [],
+      "notes": "现代主要水系背景参考。",
+      "type": "river",
+      "priority": 1
+    }
+  ],
+  "riverSources": [
+    {
+      "name": "Natural Earth 1:10m Rivers + lake centerlines",
+      "project_url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+      "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "license": "Public domain",
+      "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "download_sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+      "feature_count_original": 1455,
+      "snapshot_note": "GitHub master snapshot downloaded on retrieved date; official product page currently labels rivers v5.0.0, not used here as a claim about repository snapshot version.",
+      "precision_note": "Natural Earth的10m意为1:10,000,000比例尺，不是10米定位精度。河流来自WDB2等资料并经综合、平滑；用于大陆或区域背景，不用于渡口点精确定位。"
+    },
+    {
+      "name": "OpenStreetMap Chishui River waterway relation 19390444",
+      "project_url": "https://www.openstreetmap.org/relation/19390444",
+      "download_endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+      "download_query": "[out:json][timeout:20];relation(19390444);out geom;",
+      "download_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3Brelation%2819390444%29%3Bout+geom%3B",
+      "download_sha256": "3432d954ae1e1da6ecdbbdfae966611361ac8aa2522e408c9bd5c2b771de2b47",
+      "osm_data_timestamp": "2026-10-15T07:33:37Z",
+      "verified_tags": {
+        "name": "赤水河",
+        "name:en": "Chishui River",
+        "name:ja": "赤水河",
+        "type": "waterway",
+        "waterway": "river",
+        "wikidata": "Q1074840",
+        "wikipedia": "zh:赤水河"
+      },
+      "license": "ODbL 1.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "attribution": "© OpenStreetMap contributors",
+      "attribution_url": "https://www.openstreetmap.org/copyright",
+      "precision_note": "社区绘制的现代河流中心线，不保证位置误差；本次原样转换23个way，未进行手绘、插值或平滑。关系当前覆盖bbox为[104.86811,27.6623441,106.3764471,28.8073305]，并非完整源头至河口保证。"
+    }
+  ],
+  "meta": {
+    "permanentCount": 17,
+    "landmarkCount": 45,
+    "precision": "现代概略地理锚点；历史关联有来源，不保证旧址测绘精度。"
+  }
+}

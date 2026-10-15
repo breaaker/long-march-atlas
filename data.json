@@ -1,0 +1,4942 @@
+{
+  "meta": {
+    "title": "长征 · 山河之间",
+    "updated": "2026-10-15",
+    "method": "以公开党史、军史、博物馆与政府资料建立主要事件节点；保留来源链接、原始事件ID和日期精度；现代地名代表点用于交互制图。",
+    "notes": [
+      "本图梳理四路主要长征部队的关键节点，不宣称穷尽每个军、师、团、机关、地方武装及全部战斗。",
+      "所有位置均为现代地名附近的示意锚点；折线不是精确行军轨迹，不可依据折线长度计算历史里程，也不代表道路、渡口或遗址测绘。",
+      "各方面军常分路、分批行动。一个节点可能只属于先遣部队、某军或某军团，也可能概括战役区域；点击后应阅读主体与地理说明。",
+      "1934年红六军团西征作为前史单列，可点击查看；1935年11月19日才是红二、红六军团共同长征的起点。",
+      "红二方面军番号始于1936年7月；区分7月2日甘孜会师庆祝大会和7月5日合编电令，不能把成立后的名称倒用于所有早期行动。",
+      "中央红军在1935年10月19日到吴起镇完成长征；其1936年接应会师节点是后续活动，不连接为连续长征路径。",
+      "红二十五军先于中央红军到达陕北；永坪9月15日抵达、16日会师、17日决定合编、18日成立庆祝大会是不同节点。后续红十五军团沿革不接续为独立红二十五军行军轨迹。",
+      "1936年10月9日会宁会师与10月22日将台堡会师共同构成三大主力会师过程，并非三支军队同日同城到齐。",
+      "date、endDate按史料可确认精度保留：月级只有年月；displayDate是面向读者的历史日期；researchDate只记录底稿曾使用的占位值，不能展示为史实。",
+      "plotDate仅用于动画和排序：月级事件在月份内的参考日为制图排程，不是史料确认的日级日期。特别是红四方面军1936年7月北上使用7月10日、进入包座使用7月25日、8月岷洮西战役使用8月20日作为动画参考。",
+      "events数组保留研究底稿的路线叙事次序，避免把同月各部行动误排。动画中的两节点之间移动仅表示先后关系，不能解读为均匀行军速度或中间日期的确切位置。",
+      "phase区分前史、长征、后续；route为false的卡片保留史实与来源，但不构成主长征路径。",
+      "红四团是中央红军红一军团第二师第四团，属于special专题，不能计作第五支长征主力；routeMode为fragments，只有来源明确点名该团的片段，不得以节点间直线或方面军位置补成完整轨迹。",
+      "prologue汇总序幕与前期封锁线事件；已经收录的湘江、通道、黎平、猴场、遵义事件合并到中央红军原卡片，补充文字在extra，底稿保存在mergedResearchEvents。顶层prologue引用这些原卡片，浏览时按ID去重，不另显示重复事件。vanguard仅表示先遣队前史，不建立额外主力路线。",
+      "各army.sources保留原始来源ID；顶层sources按URL去重，aliases列出同一文献的其他原始ID。坐标辅助网页从历史来源列表排除。",
+      "序幕底稿说明：北上抗日先遣队出发日存在官方材料异文：中国军网《红军长征决策》写1934年7月6日由瑞金出发；党建网所载杭州市委党史研究室供稿写7月7日誓师出发。当前不宜擅自将两者解释为不同环节，网页建议显示1934年7月上旬，注释并列6日、7日的来源口径。底稿的1934-07-01为占位值，发布数据只保留月级精度。",
+      "序幕底稿说明：红7军团北上抗日先遣与红6军团西征是长征序幕中的两项不同军事行动。先遣队不应并成红一、红二、红四方面军或红25军之一；红6军团1934年西征也不能标为当时已有红二方面军。",
+      "序幕底稿说明：红6军团西征稳定日期为1934年8月7日，出发地为江西遂川横石、新江口地区；地图坐标采用遂川县代表点，非这两个历史出发村落的测绘点。",
+      "序幕底稿说明：第五次反围剿背景起于1933年9月，本文件将失败后被迫战略转移作为1934年10月背景卡，避免将1933年作战误画为长征行军。大搬家式转移指组织、负载和机动失误，不等于否认保存主力进行战略转移的必要性。",
+      "序幕底稿说明：前三道封锁线均为地带，不是横穿地图的精确直线。第一采用10月21日至25日由开始突破至全军渡过桃江的口径；第二保留11月上旬，底稿以11月1日占位，发布数据只保留月级精度；第三采用11月13日至15日主要部队通过口径。各部先头战斗、主力通过、后卫离开可以不同日。",
+      "序幕底稿说明：湘江战役本文件采用11月25日至12月1日整体战役口径；一些资料采用11月27日先头部队渡江至12月1日的较窄口径，两者须说明所指阶段。8.6万余至3万余是两个时期的全军人数比较，并非本役阵亡统计。金冲及署名研究明确指出此前前三道封锁线已有大量减员，其中包括病故、掉队、失散等；本文件不采用有争议的单役精确伤亡数。",
+      "序幕底稿说明：通道会议的地位和实际改变范围在研究中有讨论。这里区分12月12日调整行动与12月18日黎平正式战略决定，不写成一次会议即完成所有转折，也不虚构可供选择的历史分支。",
+      "序幕底稿说明：猴场会议采用1934年12月31日晚至1935年1月1日凌晨口径，不与仅写1935年1月1日的纪念日期冲突。遵义会议后，领导分工和指挥机制仍继续调整，不应写成1月17日后一切职务与军事指挥关系立即固定。",
+      "序幕底稿说明：新增序幕卡route:false，不直接生成主力路线折线；已存在史实合并后沿用中央红军原卡的route属性。所有坐标均为现代地名附近示意点，会议位置不得据此作旧址精确测绘。"
+    ],
+    "sourceFiles": [
+      "research-central.json",
+      "research-second-25.json",
+      "research-fourth.json",
+      "research-regiment.json",
+      "research-prologue.json"
+    ],
+    "timeline": {
+      "min": "1934-07-01",
+      "max": "1936-10-22"
+    },
+    "timelineNote": "时间轴从1934年7月月界开始，覆盖月级序幕事件；7月1日不是先遣队出发日的史实断言。",
+    "geographicAnchorCorrections": [
+      {
+        "ids": [
+          "central-lianghekou",
+          "fourth-lianghekou-19350626"
+        ],
+        "lon": 102.49,
+        "lat": 31.49,
+        "title": "两河口会议纪念馆附近代表点",
+        "url": "https://map.gaode.com/place/B0FFKS242V"
+      },
+      {
+        "ids": [
+          "central-dawei",
+          "fourth-dawei-19350612",
+          "regiment-dawei"
+        ],
+        "lon": 102.64,
+        "lat": 30.96,
+        "title": "达维镇附近代表点",
+        "url": "https://mapcarta.com/15972418"
+      },
+      {
+        "ids": [
+          "central-hadapu",
+          "second-17",
+          "fourth-hadapu-19360809"
+        ],
+        "lon": 104.22,
+        "lat": 34.23,
+        "title": "哈达铺镇附近代表点",
+        "url": "https://mapcarta.com/27379286"
+      },
+      {
+        "ids": [
+          "central-jiangtaibao",
+          "second-19"
+        ],
+        "lon": 105.84,
+        "lat": 35.82,
+        "title": "将台堡附近代表点",
+        "url": "https://mapcarta.com/N3219753783"
+      },
+      {
+        "ids": [
+          "tf-19",
+          "tf-20",
+          "tf-21"
+        ],
+        "lon": 109.82,
+        "lat": 37.01,
+        "title": "永坪会师纪念馆附近代表点",
+        "url": "https://www.amap.com/place/B0FFKZL97S"
+      }
+    ],
+    "mainArmyCount": 4,
+    "excludedGeographicSourceIds": [
+      "cg01",
+      "cg02",
+      "cg03",
+      "cg04",
+      "cg05",
+      "rg01"
+    ]
+  },
+  "armies": [
+    {
+      "id": "central",
+      "name": "中央红军／红一方面军",
+      "shortName": "中央红军",
+      "color": "#b54335",
+      "category": "main",
+      "period": "1934.10—1935.10",
+      "start": "1934-10-10",
+      "end": "1935-10-19",
+      "scope": "1934年10月从中央革命根据地出发，至1935年10月吴起镇；另列1936年会宁、将台堡会师作为后续接应史实。",
+      "notes": [
+        "本文件为节点式历史研究底稿，不宣称穷尽全部行军、战斗和机关驻地；连线只能作为示意，不是逐日行军轨迹。",
+        "经纬度为现代地名附近的概略制图参考，统一只保留两位小数；多数使用城镇或地区位置，不是遗址、渡口、道路的测绘坐标。尤其草地、雪山是范围性事件，不能当作单点发生。",
+        "中央红军多路、分批行军，同一地点先遣部队、主力、中央机关的到达日期常不同。本文件尽量在标题和摘要中明确主体。",
+        "1934年10月10日从瑞金等地撤出、10月中旬于都集结、10月17—20日渡于都河，是不同层次的出发节点，不能以某一日期替代全部过程。于都政府网页有8.6万和8.7万两种约数，本版不绘制随日变化兵力曲线。",
+        "四渡赤水分别是西渡、东渡、西渡、东渡；每次涉及多个渡口。本版点位只以土城、太平渡、茅台为代表，摘要保留其他主要渡口。二渡日期采用党史大事记的2月18—21日；个别纪念叙述简写为18—20日。",
+        "红军不是进入贵阳市、昆明市区后再离开：佯攻贵阳、威逼昆明是战役部署和城郊行动，地图应标扎佐、寻甸等实际活动地区，不应把城市中心画成必经驻地。",
+        "6月12日是达维先头部队会师，6月18日为中央机关及主力到达懋功地区；翻越夹金山为6月12—18日不同部队分批进行，不能把全军翻山锁定在12日。",
+        "1935年8月的一、四方面军混编为左右路军，不等于方面军番号或组织关系合并；中共中央随右路军，9月率原一方面军的一、三军继续北上。红五军、红九军（原五、九军团）等并未全部与中央同时到吴起。",
+        "哈达铺侦察连9月18日进入、二师主力19日到达、中央机关与三军20日到达；9月20日常委会研究整编、22日干部大会正式宣布向陕甘根据地进发。部分地方叙述把常委会也写作22日，本文件以中央党史和文献研究院2021年文章的细分日期为准。",
+        "榜罗镇9月27日晚政治局常委会与28日清晨干部大会是不同事件；部分简述写28日召开榜罗镇会议，本文件分别列示。",
+        "1935年10月19日中央红军到吴起镇标志其长征结束；1936年10月三大主力会师是长征总体终点，不能把中央红军1935—1936的接应作战伪装成同一次连续长征。",
+        "会宁10月9日为红四方面军总部抵达会师，10日为庆祝大会；将台堡10月22日为红二方面军总部及红二军团同红一方面军会师。会师不是三军所有单位在同一日、同一城完成集结。"
+      ],
+      "sources": [
+        {
+          "id": "c01",
+          "title": "中国共产党大事记·1935年",
+          "url": "https://cpc.people.com.cn/GB/64162/64164/4415983.html",
+          "publisher": "中共中央党史研究室编／中国共产党新闻网"
+        },
+        {
+          "id": "c02",
+          "title": "强军文化专刊·山河血脉丨瑞金红星",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/16436532.html",
+          "publisher": "国防部网站／解放军报"
+        },
+        {
+          "id": "c03",
+          "title": "红军夜渡于都河",
+          "url": "https://www.81.mil.cn/yljnt_208627/lsda_208656/16438861.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "c04",
+          "title": "湘江战役地图",
+          "url": "https://www.81.mil.cn/yljnt_208627/lsda_208656/16377964.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "c05",
+          "title": "通道会议：中央红军首次实现“转兵”",
+          "url": "https://cpc.people.com.cn/n1/2026/0918/c443712-40800961.html",
+          "publisher": "中国共产党新闻网"
+        },
+        {
+          "id": "c06",
+          "title": "12月18日——党史百年·天天读",
+          "url": "https://www.dswxyjy.org.cn/GB/434461/434473/434996/index.html",
+          "publisher": "中共中央党史和文献研究院"
+        },
+        {
+          "id": "c07",
+          "title": "党的历史上生死攸关的转折点",
+          "url": "https://cpc.people.com.cn/BIG5/n1/2025/0113/c443712-40400457.html",
+          "publisher": "中国共产党新闻网"
+        },
+        {
+          "id": "c08",
+          "title": "1935：生死攸关大转折——中国共产党领导红军主力胜利完成长征",
+          "url": "https://www.mem.gov.cn/xw/ztzl/2021/dsxxjy/xxfd/202103/t20210329_382216.shtml",
+          "publisher": "应急管理部网站／中国共产党历史和文献网"
+        },
+        {
+          "id": "c09",
+          "title": "四渡赤水出奇兵",
+          "url": "https://www.cac.gov.cn/2016-08/22/c_1119430867.htm",
+          "publisher": "中央网信办网站／人民网"
+        },
+        {
+          "id": "c10",
+          "title": "党史上的今天（1935年3月10日）",
+          "url": "https://www.forestry.gov.cn/c/www/dszl/549651.jhtml",
+          "publisher": "国家林业和草原局／党史学习教育官网"
+        },
+        {
+          "id": "c23",
+          "title": "苟坝会议让毛泽东难以忘怀",
+          "url": "https://dangshi.people.com.cn/n1/2016/0719/c85037-28564682.html",
+          "publisher": "中国共产党新闻网／福建党史月刊"
+        },
+        {
+          "id": "c11",
+          "title": "红军长征“佯攻贵阳”的来龙去脉",
+          "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/3224/A3",
+          "publisher": "贵州政协报"
+        },
+        {
+          "id": "c12",
+          "title": "纪念中国工农红军长征胜利90周年丨“万万火急”渡江令 红军长征过昆明",
+          "url": "https://www.kmmuseum.com/wap/info.asp?id=2391",
+          "publisher": "昆明市博物馆"
+        },
+        {
+          "id": "c13",
+          "title": "红军长征中有哪些重要战役战斗？",
+          "url": "https://www.81.mil.cn/yw_208727/16343466.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "c14",
+          "title": "红军为何能顺利通过彝族区？这面旗帜告诉你",
+          "url": "https://photo.81.cn/zhuanti/2016-09/28/content_7279560_4.htm",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "c15",
+          "title": "图文军史馆丨强渡大渡河的见证",
+          "url": "https://www.81.mil.cn/yw_208727/16260739.html",
+          "publisher": "中国军网／解放军报"
+        },
+        {
+          "id": "c16",
+          "title": "大渡河战役：攸关中央红军生死之战",
+          "url": "https://www.81.mil.cn/js_208592/jdt_208593/16226949.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "c17",
+          "title": "翻越夹金山",
+          "url": "https://www.cac.gov.cn/2016-08/22/c_1119431608.htm",
+          "publisher": "中央网信办网站／中国共产党历史网"
+        },
+        {
+          "id": "c18",
+          "title": "党史百年天天读：6月12日",
+          "url": "https://www.forestry.gov.cn/c/www/xds/95604.jhtml",
+          "publisher": "国家林业和草原局／中央党史和文献研究院"
+        },
+        {
+          "id": "c19",
+          "title": "1935年8月21日，红一、四方面军开始穿越草地",
+          "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735370.html",
+          "publisher": "深圳市盐田区档案与史志信息网"
+        },
+        {
+          "id": "c20",
+          "title": "长征时期党中央在甘肃召开的重要会议",
+          "url": "https://www.dswxyjy.org.cn/BIG5/n1/2021/1126/c244516-32292961.html",
+          "publisher": "中共中央党史和文献研究院"
+        },
+        {
+          "id": "c21",
+          "title": "胜利山战斗：中央红军长征途中最后一仗",
+          "url": "https://photo.81.cn/tsjs/2020-04/24/content_9800053.htm",
+          "publisher": "中国军网／学习强国"
+        },
+        {
+          "id": "c22",
+          "title": "红军长征中的会师",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/16418521.html",
+          "publisher": "国防部网站"
+        },
+        {
+          "id": "c24",
+          "title": "记忆：今日长缨在手",
+          "url": "https://www.ccdi.gov.cn/yaowenn/202209/t20220909_216917.html",
+          "publisher": "中央纪委国家监委网站"
+        },
+        {
+          "id": "c25",
+          "title": "敬爱的周总理一生都有哪些军事任职？",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/4801883_3.html",
+          "publisher": "国防部网站"
+        },
+        {
+          "id": "c26",
+          "title": "红色通渭：闪耀长征精神的革命遗迹",
+          "url": "https://www.twdjw.gov.cn/htm/20187/33_7284.htm",
+          "publisher": "中共通渭县委组织部"
+        },
+        {
+          "id": "prologue-fifth",
+          "title": "中央苏区第四、五次反“围剿”期间发生在抚州域内的战役",
+          "url": "https://fzsz.jxfz.gov.cn/art/2019/8/26/art_7091_3101711.html",
+          "publisher": "抚州史志网"
+        },
+        {
+          "id": "prologue-transfer",
+          "title": "红军长征的基本内涵和红军长征史研究的若干问题",
+          "url": "https://www.dswxyjy.org.cn/n1/2016/0929/c218998-28749730.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "prologue-jin",
+          "title": "中央红军在贵州的若干重大问题",
+          "url": "https://www.aisixiang.com/data/82100.html",
+          "publisher": "金冲及署名历史研究文章，爱思想转载"
+        },
+        {
+          "id": "prologue-first-line",
+          "title": "长征突破第一道封锁线的历史见证（版面）",
+          "url": "https://www.81.cn/gfbmap/content/21/2022-04/07/04/2022040704_pdf.pdf",
+          "publisher": "中国国防报，2022年4月7日第4版"
+        },
+        {
+          "id": "prologue-four-lines",
+          "title": "中央红军突破四道封锁线",
+          "url": "https://news.cctv.cn/xwlb/20061018/106100.shtml",
+          "publisher": "央视网《新闻联播》，2006年10月18日"
+        },
+        {
+          "id": "prologue-hunan",
+          "title": "风掣红旗卷潇湘——红军长征在湖南",
+          "url": "https://www.dswxyjy.org.cn/n1/2026/0904/c244516-40792612.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "prologue-xiangjiang",
+          "title": "英勇的湘江之战",
+          "url": "https://www.dswxyjy.org.cn/n1/2016/0825/c244523-28665323.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "prologue-liping",
+          "title": "黎平会议：“伟大转折的起点”",
+          "url": "https://www.dswxyjy.org.cn/BIG5/n1/2026/1009/c244516-40811392.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "prologue-houchang",
+          "title": "猴场会议：伟大转折的前夜",
+          "url": "https://www.81.mil.cn/js_208592/16362738.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "prologue-zunyi",
+          "title": "遵义会议不是一次独立的会议——从通道会议到会理会议",
+          "url": "https://www.dswxyjy.org.cn/n1/2018/0615/c219002-30062449.html",
+          "publisher": "中共中央党史和文献研究院网站，作者刘竟涛"
+        }
+      ],
+      "events": [
+        {
+          "id": "prologue-fifth-campaign",
+          "date": "1934-10",
+          "title": "第五次反“围剿”失利，主力被迫转移",
+          "place": "中央苏区（江西、福建）",
+          "lon": 116.02,
+          "lat": 25.88,
+          "summary": "1933年9月至1934年10月，中央苏区第五次反“围剿”陷于被动并最终失败。中央红军主力为保存力量，被迫退出中央苏区，实行战略转移。",
+          "kind": "context",
+          "sources": [
+            "prologue-fifth",
+            "prologue-transfer"
+          ],
+          "precision": "month",
+          "armyId": "central",
+          "phase": "prelude",
+          "route": false,
+          "plotDate": "1934-10-15",
+          "displayDate": "1934年10月",
+          "sequence": 0,
+          "researchDate": "1934-10-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "prologue-baggage-193410",
+          "date": "1934-10",
+          "title": "长征初期：“大搬家”式转移",
+          "place": "中央苏区出发后的行军序列",
+          "lon": 115.42,
+          "lat": 25.95,
+          "summary": "中央机关、直属部队和大量物资一同行动，笨重辎重拖慢行军，增加机动和渡江困难。战略转移的必要性与具体组织指挥上的失误，应分别理解。",
+          "kind": "context",
+          "sources": [
+            "prologue-transfer",
+            "prologue-jin"
+          ],
+          "precision": "month",
+          "armyId": "central",
+          "phase": "march",
+          "route": false,
+          "plotDate": "1934-10-15",
+          "displayDate": "1934年10月",
+          "sequence": 1,
+          "researchDate": "1934-10-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "central-ruijin",
+          "date": "1934-10-10",
+          "title": "中央机关从瑞金出发",
+          "place": "江西瑞金",
+          "lon": 116.03,
+          "lat": 25.89,
+          "summary": "中共中央、中革军委率中央红军主力开始战略转移，随后向于都集结。",
+          "kind": "departure",
+          "sources": [
+            "c02"
+          ],
+          "precision": "day；城镇示意",
+          "armyId": "central",
+          "plotDate": "1934-10-10",
+          "displayDate": "1934年10月10日",
+          "route": true,
+          "phase": "march",
+          "sequence": 2
+        },
+        {
+          "id": "central-yudu",
+          "date": "1934-10-17",
+          "endDate": "1934-10-20",
+          "title": "夜渡于都河",
+          "place": "江西于都，多个渡口",
+          "lon": 115.41,
+          "lat": 25.95,
+          "summary": "中央红军及中央、军委机关分批从东门等主要渡口渡河，离开中央苏区。",
+          "kind": "crossing",
+          "sources": [
+            "c03"
+          ],
+          "precision": "range；多个渡口",
+          "geoNote": "点位为于都县城附近，不能代表全部渡河点。",
+          "armyId": "central",
+          "plotDate": "1934-10-17",
+          "displayDate": "1934年10月17日—20日",
+          "route": true,
+          "phase": "march",
+          "sequence": 3
+        },
+        {
+          "id": "prologue-line1-19341021",
+          "date": "1934-10-21",
+          "endDate": "1934-10-25",
+          "title": "突破第一道封锁线",
+          "place": "江西赣县王母渡—信丰桃江一线",
+          "lon": 114.94,
+          "lat": 25.38,
+          "summary": "中央红军从王母渡、信丰地区突围，至10月25日全部渡过桃江。与粤军事先达成的协议有利于通行，但前线仍发生战斗和伤亡。",
+          "kind": "battle",
+          "sources": [
+            "prologue-first-line",
+            "prologue-four-lines",
+            "prologue-jin"
+          ],
+          "precision": "day-range",
+          "armyId": "central",
+          "phase": "march",
+          "route": false,
+          "plotDate": "1934-10-21",
+          "displayDate": "1934年10月21日—25日",
+          "sequence": 4
+        },
+        {
+          "id": "prologue-line2-193411",
+          "date": "1934-11",
+          "title": "突破第二道封锁线",
+          "place": "湖南汝城—广东仁化城口之间",
+          "lon": 113.68,
+          "lat": 25.55,
+          "summary": "11月上旬，中央红军各路纵队通过汝城与城口之间的封锁线，继续向西。此处采用上旬口径，避免把各部先后通过压缩成单一时刻。",
+          "kind": "battle",
+          "sources": [
+            "prologue-hunan",
+            "prologue-four-lines"
+          ],
+          "precision": "month",
+          "armyId": "central",
+          "phase": "march",
+          "route": false,
+          "plotDate": "1934-11-06",
+          "displayDate": "1934年11月上旬",
+          "sequence": 5,
+          "researchDate": "1934-11-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "prologue-line3-19341113",
+          "date": "1934-11-13",
+          "endDate": "1934-11-15",
+          "title": "突破第三道封锁线",
+          "place": "湖南郴县、良田、宜章—广东乐昌地区",
+          "lon": 112.95,
+          "lat": 25.4,
+          "summary": "中央红军从郴县、宜章之间打开缺口，突破第三道封锁线，继续向湘江方向前进。",
+          "kind": "battle",
+          "sources": [
+            "prologue-hunan"
+          ],
+          "precision": "day-range",
+          "armyId": "central",
+          "phase": "march",
+          "route": false,
+          "plotDate": "1934-11-13",
+          "displayDate": "1934年11月13日—15日",
+          "sequence": 6
+        },
+        {
+          "id": "central-xiangjiang",
+          "date": "1934-11-27",
+          "endDate": "1934-12-01",
+          "title": "湘江战役",
+          "place": "广西全州、兴安、灌阳之间",
+          "lon": 111.07,
+          "lat": 25.83,
+          "summary": "红军突破第四道封锁线，渡过湘江，付出重大伤亡。阻击与渡江分布在多处战场。",
+          "kind": "battle",
+          "sources": [
+            "c04",
+            "prologue-xiangjiang",
+            "prologue-hunan",
+            "prologue-jin"
+          ],
+          "precision": "range；战役地域",
+          "geoNote": "以兴安界首附近作代表，不是战役全部范围。",
+          "extra": [
+            "湘江战役：突破第四道封锁线：中央红军抢渡湘江，付出极为惨重的代价。出发时8.6万余人至湘江战役后剩3万余人，是此前行军、作战到本役后的累计人数变化，不能解释为本役阵亡5.6万人。",
+            "日期口径：本卡1934年11月27日至12月1日为先头渡江与主要作战阶段；序幕史料另以11月25日至12月1日概括整体湘江战役。两者所指阶段不同，本图保留原卡日期，同时列示整体战役口径，不将其视为已消除的冲突。"
+          ],
+          "mergedEventIds": [
+            "prologue-xiangjiang-19341125"
+          ],
+          "mergedResearchEvents": [
+            {
+              "id": "prologue-xiangjiang-19341125",
+              "date": "1934-11-25",
+              "endDate": "1934-12-01",
+              "title": "湘江战役：突破第四道封锁线",
+              "place": "广西全州、兴安、灌阳地区",
+              "lon": 110.67,
+              "lat": 25.61,
+              "summary": "中央红军抢渡湘江，付出极为惨重的代价。出发时8.6万余人至湘江战役后剩3万余人，是此前行军、作战到本役后的累计人数变化，不能解释为本役阵亡5.6万人。",
+              "kind": "battle",
+              "sources": [
+                "prologue-xiangjiang",
+                "prologue-hunan",
+                "prologue-jin"
+              ],
+              "precision": "day-range",
+              "armyId": "central",
+              "phase": "march",
+              "route": false
+            }
+          ],
+          "armyId": "central",
+          "plotDate": "1934-11-27",
+          "displayDate": "1934年11月27日—12月1日",
+          "route": true,
+          "phase": "march",
+          "sequence": 7
+        },
+        {
+          "id": "central-tongdao",
+          "date": "1934-12-12",
+          "title": "通道转兵",
+          "place": "湖南通道",
+          "lon": 109.78,
+          "lat": 26.16,
+          "summary": "中央负责人研究进军方向，采纳向敌军薄弱的贵州前进的意见。",
+          "kind": "decision",
+          "sources": [
+            "c05",
+            "prologue-liping",
+            "prologue-jin"
+          ],
+          "precision": "day；县域示意",
+          "extra": [
+            "通道会议：讨论西进贵州：中共中央部分负责人紧急讨论进军方向，采纳毛泽东西进贵州的建议，调整行动部署；彻底改变既定战略方针，随后由黎平政治局会议形成正式决定。"
+          ],
+          "mergedEventIds": [
+            "prologue-tongdao-19341212"
+          ],
+          "mergedResearchEvents": [
+            {
+              "id": "prologue-tongdao-19341212",
+              "date": "1934-12-12",
+              "title": "通道会议：讨论西进贵州",
+              "place": "湖南通道当时县城（今县溪镇地区）",
+              "lon": 109.64,
+              "lat": 26.37,
+              "summary": "中共中央部分负责人紧急讨论进军方向，采纳毛泽东西进贵州的建议，调整行动部署；彻底改变既定战略方针，随后由黎平政治局会议形成正式决定。",
+              "kind": "conference",
+              "sources": [
+                "prologue-liping",
+                "prologue-jin"
+              ],
+              "precision": "day",
+              "armyId": "central",
+              "phase": "march",
+              "route": false
+            }
+          ],
+          "armyId": "central",
+          "plotDate": "1934-12-12",
+          "displayDate": "1934年12月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 8
+        },
+        {
+          "id": "central-liping",
+          "date": "1934-12-18",
+          "title": "黎平会议",
+          "place": "贵州黎平",
+          "lon": 109.14,
+          "lat": 26.23,
+          "summary": "政治局决定放弃到湘西北会合红二、六军团的原定计划，改向黔北。",
+          "kind": "meeting",
+          "sources": [
+            "c06",
+            "prologue-liping",
+            "prologue-zunyi"
+          ],
+          "precision": "day；城镇示意",
+          "extra": [
+            "黎平会议：正式确定转向黔北：中央政治局通过战略方针决定，放弃赴湘西北与红二、红六军团会合的原计划，改向贵州北部进军。"
+          ],
+          "mergedEventIds": [
+            "prologue-liping-19341218"
+          ],
+          "mergedResearchEvents": [
+            {
+              "id": "prologue-liping-19341218",
+              "date": "1934-12-18",
+              "title": "黎平会议：正式确定转向黔北",
+              "place": "贵州黎平",
+              "lon": 109.14,
+              "lat": 26.23,
+              "summary": "中央政治局通过战略方针决定，放弃赴湘西北与红二、红六军团会合的原计划，改向贵州北部进军。",
+              "kind": "conference",
+              "sources": [
+                "prologue-liping",
+                "prologue-zunyi"
+              ],
+              "precision": "day",
+              "armyId": "central",
+              "phase": "march",
+              "route": false
+            }
+          ],
+          "armyId": "central",
+          "plotDate": "1934-12-18",
+          "displayDate": "1934年12月18日",
+          "route": true,
+          "phase": "march",
+          "sequence": 9
+        },
+        {
+          "id": "central-houchang",
+          "date": "1934-12-31",
+          "endDate": "1935-01-01",
+          "title": "猴场会议",
+          "place": "贵州瓮安猴场",
+          "lon": 107.47,
+          "lat": 27.06,
+          "summary": "政治局研究渡乌江后的行动方针，进一步加强对重大军事决策的领导。",
+          "kind": "meeting",
+          "sources": [
+            "c07",
+            "prologue-houchang",
+            "prologue-zunyi"
+          ],
+          "precision": "overnight；乡镇示意",
+          "extra": [
+            "猴场会议：巩固黎平决定：1934年12月31日晚至1935年1月1日凌晨召开政治局会议，重申黎平战略方针，并规定军事指挥的重要问题必须向政治局报告。"
+          ],
+          "mergedEventIds": [
+            "prologue-houchang-19341231"
+          ],
+          "mergedResearchEvents": [
+            {
+              "id": "prologue-houchang-19341231",
+              "date": "1934-12-31",
+              "endDate": "1935-01-01",
+              "title": "猴场会议：巩固黎平决定",
+              "place": "贵州瓮安猴场",
+              "lon": 107.56,
+              "lat": 27.18,
+              "summary": "1934年12月31日晚至1935年1月1日凌晨召开政治局会议，重申黎平战略方针，并规定军事指挥的重要问题必须向政治局报告。",
+              "kind": "conference",
+              "sources": [
+                "prologue-houchang",
+                "prologue-zunyi"
+              ],
+              "precision": "day-range",
+              "armyId": "central",
+              "phase": "march",
+              "route": false
+            }
+          ],
+          "armyId": "central",
+          "plotDate": "1934-12-31",
+          "displayDate": "1934年12月31日—1935年1月1日",
+          "route": true,
+          "phase": "march",
+          "sequence": 10
+        },
+        {
+          "id": "central-wujiang-north",
+          "date": "1935-01-02",
+          "endDate": "1935-01-06",
+          "title": "突破乌江天险",
+          "place": "回龙场、江界河、茶山关等渡口",
+          "lon": 107.43,
+          "lat": 27.2,
+          "summary": "各部从多个渡口北渡乌江，为进占遵义打开通路。",
+          "kind": "crossing",
+          "sources": [
+            "c08"
+          ],
+          "precision": "range；多个渡口",
+          "geoNote": "江界河附近代表点，勿绘成单一渡河点。",
+          "armyId": "central",
+          "plotDate": "1935-01-02",
+          "displayDate": "1935年1月2日—6日",
+          "route": true,
+          "phase": "march",
+          "sequence": 11
+        },
+        {
+          "id": "central-zunyi-enter",
+          "date": "1935-01-07",
+          "title": "进占遵义",
+          "place": "贵州遵义",
+          "lon": 106.93,
+          "lat": 27.69,
+          "summary": "中央红军占领遵义，为休整和召开中央政治局扩大会议创造条件。",
+          "kind": "arrival",
+          "sources": [
+            "c07"
+          ],
+          "precision": "day；城镇示意",
+          "armyId": "central",
+          "plotDate": "1935-01-07",
+          "displayDate": "1935年1月7日",
+          "route": true,
+          "phase": "march",
+          "sequence": 12
+        },
+        {
+          "id": "central-zunyi-meeting",
+          "date": "1935-01-15",
+          "endDate": "1935-01-17",
+          "title": "遵义会议",
+          "place": "贵州遵义",
+          "lon": 106.93,
+          "lat": 27.69,
+          "summary": "会议总结军事领导错误，改组中央领导机构，成为党和红军历史的重要转折。",
+          "kind": "meeting",
+          "sources": [
+            "c01",
+            "prologue-zunyi"
+          ],
+          "precision": "range；会址城镇示意",
+          "extra": [
+            "遵义会议：纠正军事指挥错误：中央政治局扩大会议总结第五次反“围剿”及长征初期教训，解决紧迫的军事和组织问题。它承接通道、黎平、猴场等会议，是逐步转变中的关键节点。"
+          ],
+          "mergedEventIds": [
+            "prologue-zunyi-19350115"
+          ],
+          "mergedResearchEvents": [
+            {
+              "id": "prologue-zunyi-19350115",
+              "date": "1935-01-15",
+              "endDate": "1935-01-17",
+              "title": "遵义会议：纠正军事指挥错误",
+              "place": "贵州遵义",
+              "lon": 106.92,
+              "lat": 27.69,
+              "summary": "中央政治局扩大会议总结第五次反“围剿”及长征初期教训，解决紧迫的军事和组织问题。它承接通道、黎平、猴场等会议，是逐步转变中的关键节点。",
+              "kind": "conference",
+              "sources": [
+                "prologue-zunyi"
+              ],
+              "precision": "day-range",
+              "armyId": "central",
+              "phase": "march",
+              "route": false
+            }
+          ],
+          "armyId": "central",
+          "plotDate": "1935-01-15",
+          "displayDate": "1935年1月15日—17日",
+          "route": true,
+          "phase": "march",
+          "sequence": 13
+        },
+        {
+          "id": "central-tucheng",
+          "date": "1935-01-28",
+          "title": "土城战斗与西渡决策",
+          "place": "贵州习水土城、青杠坡",
+          "lon": 106,
+          "lat": 28.27,
+          "summary": "土城战斗后，鉴于敌军增援，红军撤出战斗，决定西渡赤水。",
+          "kind": "battle",
+          "sources": [
+            "c09"
+          ],
+          "precision": "day；战斗地域",
+          "armyId": "central",
+          "plotDate": "1935-01-28",
+          "displayDate": "1935年1月28日",
+          "route": true,
+          "phase": "march",
+          "sequence": 14,
+          "geographicSourceIds": [
+            "cg01"
+          ]
+        },
+        {
+          "id": "central-chishui-1",
+          "date": "1935-01-29",
+          "title": "一渡赤水 · 向西",
+          "place": "土城、猿猴场（今元厚）等",
+          "lon": 106,
+          "lat": 28.27,
+          "summary": "主力由土城、猿猴场等渡口西渡，进入川南古蔺、叙永方向。",
+          "kind": "crossing",
+          "sources": [
+            "c09"
+          ],
+          "precision": "day；多个渡口",
+          "geoNote": "代表土城，猿猴场在其北面；两地不能合并为精确单点。",
+          "armyId": "central",
+          "plotDate": "1935-01-29",
+          "displayDate": "1935年1月29日",
+          "route": true,
+          "phase": "march",
+          "sequence": 15
+        },
+        {
+          "id": "central-zaxi",
+          "date": "1935-02-09",
+          "title": "扎西地区集结整编",
+          "place": "云南威信扎西",
+          "lon": 105.05,
+          "lat": 27.85,
+          "summary": "中央红军在扎西地区集结，调整部署、精简整编，随后决定回师黔北。",
+          "kind": "reorganization",
+          "sources": [
+            "c09"
+          ],
+          "precision": "day代表集结完成；非全部会议起讫",
+          "armyId": "central",
+          "plotDate": "1935-02-09",
+          "displayDate": "1935年2月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 16
+        },
+        {
+          "id": "central-chishui-2",
+          "date": "1935-02-18",
+          "endDate": "1935-02-21",
+          "title": "二渡赤水 · 向东",
+          "place": "太平渡、二郎滩",
+          "lon": 106.04,
+          "lat": 28.14,
+          "summary": "从太平渡、二郎滩东渡赤水，向桐梓、遵义地区进攻。",
+          "kind": "crossing",
+          "sources": [
+            "c01",
+            "c09"
+          ],
+          "precision": "range；多个渡口",
+          "geoNote": "太平古镇附近代表点，二郎滩另在上游。",
+          "armyId": "central",
+          "plotDate": "1935-02-18",
+          "displayDate": "1935年2月18日—21日",
+          "route": true,
+          "phase": "march",
+          "sequence": 17,
+          "geographicSourceIds": [
+            "cg02"
+          ]
+        },
+        {
+          "id": "central-loushan",
+          "date": "1935-02-25",
+          "endDate": "1935-02-26",
+          "title": "娄山关战斗",
+          "place": "贵州娄山关",
+          "lon": 106.85,
+          "lat": 28.14,
+          "summary": "红军攻占娄山关并击退反扑，为再取遵义打开通路。",
+          "kind": "battle",
+          "sources": [
+            "c09"
+          ],
+          "precision": "range；关隘地区",
+          "armyId": "central",
+          "plotDate": "1935-02-25",
+          "displayDate": "1935年2月25日—26日",
+          "route": true,
+          "phase": "march",
+          "sequence": 18
+        },
+        {
+          "id": "central-zunyi-second",
+          "date": "1935-02-28",
+          "title": "再占遵义、取得战役胜利",
+          "place": "贵州遵义及城南地区",
+          "lon": 106.93,
+          "lat": 27.69,
+          "summary": "红军重占遵义，在城南击败增援部队，取得长征以来一次重要胜利。",
+          "kind": "battle",
+          "sources": [
+            "c09"
+          ],
+          "precision": "day；遵义战役中的关键日",
+          "armyId": "central",
+          "plotDate": "1935-02-28",
+          "displayDate": "1935年2月28日",
+          "route": true,
+          "phase": "march",
+          "sequence": 19
+        },
+        {
+          "id": "central-gouba",
+          "date": "1935-03-10",
+          "endDate": "1935-03-12",
+          "title": "苟坝会议与军事指挥调整",
+          "place": "贵州遵义苟坝",
+          "lon": 106.62,
+          "lat": 27.62,
+          "summary": "会议撤销进攻打鼓新场的计划；其后成立毛泽东、周恩来、王稼祥三人军事指挥小组。",
+          "kind": "meeting",
+          "sources": [
+            "c10",
+            "c23"
+          ],
+          "precision": "range；三人小组成立日期表述保留为随后",
+          "armyId": "central",
+          "plotDate": "1935-03-10",
+          "displayDate": "1935年3月10日—12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 20
+        },
+        {
+          "id": "central-chishui-3",
+          "date": "1935-03-16",
+          "endDate": "1935-03-17",
+          "title": "三渡赤水 · 向西",
+          "place": "贵州仁怀茅台及附近",
+          "lon": 106.37,
+          "lat": 27.85,
+          "summary": "红军在茅台等地再向西渡河，重新进入川南，调动对方兵力。",
+          "kind": "crossing",
+          "sources": [
+            "c01",
+            "c09"
+          ],
+          "precision": "range；多个渡口",
+          "armyId": "central",
+          "plotDate": "1935-03-16",
+          "displayDate": "1935年3月16日—17日",
+          "route": true,
+          "phase": "march",
+          "sequence": 21
+        },
+        {
+          "id": "central-chishui-4",
+          "date": "1935-03-21",
+          "endDate": "1935-03-22",
+          "title": "四渡赤水 · 向东",
+          "place": "太平渡、二郎滩、九溪口",
+          "lon": 106.04,
+          "lat": 28.14,
+          "summary": "主力突然折回，东渡赤水后迅速南下，开始摆脱重兵围堵。",
+          "kind": "crossing",
+          "sources": [
+            "c01",
+            "c09"
+          ],
+          "precision": "range；多个渡口",
+          "armyId": "central",
+          "plotDate": "1935-03-21",
+          "displayDate": "1935年3月21日—22日",
+          "route": true,
+          "phase": "march",
+          "sequence": 22
+        },
+        {
+          "id": "central-wujiang-south",
+          "date": "1935-03-31",
+          "title": "南渡乌江",
+          "place": "江口、大塘、梯子岩等地",
+          "lon": 106.78,
+          "lat": 27.19,
+          "summary": "中央红军主力经多个渡口南渡乌江；红九军团继续在乌江北岸牵制敌军。",
+          "kind": "crossing",
+          "sources": [
+            "c09"
+          ],
+          "precision": "day代表主力渡河；多个渡口",
+          "geoNote": "乌江中游区域代表点，非精确渡口。",
+          "armyId": "central",
+          "plotDate": "1935-03-31",
+          "displayDate": "1935年3月31日",
+          "route": true,
+          "phase": "march",
+          "sequence": 23
+        },
+        {
+          "id": "central-guiyang-feint",
+          "date": "1935-04-02",
+          "endDate": "1935-04-09",
+          "title": "佯攻贵阳、转兵向西",
+          "place": "扎佐及贵阳周边，后经龙里方向",
+          "lon": 106.72,
+          "lat": 26.89,
+          "summary": "前锋逼近贵阳，以佯攻和东渡假象调动敌军，主力从城郊向西南转移。",
+          "kind": "maneuver",
+          "sources": [
+            "c09",
+            "c11"
+          ],
+          "precision": "range；多部队机动",
+          "geoNote": "点位扎佐，红军没有进占贵阳市中心。",
+          "armyId": "central",
+          "plotDate": "1935-04-02",
+          "displayDate": "1935年4月2日—9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 24
+        },
+        {
+          "id": "central-xundian",
+          "date": "1935-04-28",
+          "endDate": "1935-04-29",
+          "title": "寻甸集结、威逼昆明",
+          "place": "云南寻甸鲁口哨及嵩明方向",
+          "lon": 103.25,
+          "lat": 25.56,
+          "summary": "红军到寻甸，29日发布迅速渡金沙江的指示，并以城郊军事行动迫使滇军回防。",
+          "kind": "maneuver",
+          "sources": [
+            "c12"
+          ],
+          "precision": "range；地域示意",
+          "geoNote": "采用寻甸参考点；威逼昆明不等于进入昆明城。",
+          "armyId": "central",
+          "plotDate": "1935-04-28",
+          "displayDate": "1935年4月28日—29日",
+          "route": true,
+          "phase": "march",
+          "sequence": 25
+        },
+        {
+          "id": "central-jinsha",
+          "date": "1935-05-03",
+          "endDate": "1935-05-09",
+          "title": "巧渡金沙江",
+          "place": "川滇交界皎平渡",
+          "lon": 102.38,
+          "lat": 26.29,
+          "summary": "红军控制皎平渡后，以渡船分批过江，摆脱主要追堵部队。红九军团另从其他渡口过江。",
+          "kind": "crossing",
+          "sources": [
+            "c13",
+            "c09"
+          ],
+          "precision": "range；主渡口",
+          "geoNote": "皎平渡遗址地域示意；现代库区与1935年河岸形态不同。",
+          "armyId": "central",
+          "plotDate": "1935-05-03",
+          "displayDate": "1935年5月3日—9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 26,
+          "geographicSourceIds": [
+            "cg03"
+          ]
+        },
+        {
+          "id": "central-huili",
+          "date": "1935-05-12",
+          "title": "会理会议",
+          "place": "四川会理",
+          "lon": 102.24,
+          "lat": 26.66,
+          "summary": "政治局扩大会议总结渡江前后行动，部署继续北上、渡大渡河与红四方面军会合。",
+          "kind": "meeting",
+          "sources": [
+            "c14"
+          ],
+          "precision": "day；会理地区",
+          "armyId": "central",
+          "plotDate": "1935-05-12",
+          "displayDate": "1935年5月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 27
+        },
+        {
+          "id": "central-yihai",
+          "date": "1935-05-22",
+          "title": "彝海结盟",
+          "place": "四川冕宁彝海",
+          "lon": 102.15,
+          "lat": 28.74,
+          "summary": "先遣队司令员刘伯承与彝族首领小叶丹结盟，为红军通过彝族聚居区提供支持。",
+          "kind": "alliance",
+          "sources": [
+            "c14"
+          ],
+          "precision": "day；彝海地区",
+          "armyId": "central",
+          "plotDate": "1935-05-22",
+          "displayDate": "1935年5月22日",
+          "route": true,
+          "phase": "march",
+          "sequence": 28
+        },
+        {
+          "id": "central-dadu",
+          "date": "1935-05-25",
+          "title": "安顺场强渡大渡河",
+          "place": "四川石棉安顺场",
+          "lon": 102.25,
+          "lat": 29.25,
+          "summary": "先遣部队乘船强渡并控制北岸渡口；由于船少、水急，主力继而沿河两岸北进。",
+          "kind": "crossing",
+          "sources": [
+            "c15",
+            "c16"
+          ],
+          "precision": "day；安顺场地域",
+          "armyId": "central",
+          "plotDate": "1935-05-25",
+          "displayDate": "1935年5月25日",
+          "route": true,
+          "phase": "march",
+          "sequence": 29
+        },
+        {
+          "id": "central-luding",
+          "date": "1935-05-29",
+          "title": "飞夺泸定桥",
+          "place": "四川泸定",
+          "lon": 102.23,
+          "lat": 29.91,
+          "summary": "红二师四团沿大渡河西岸急进并夺取泸定桥，打通全军北上的通路。",
+          "kind": "battle",
+          "sources": [
+            "c16"
+          ],
+          "precision": "day；桥址附近",
+          "armyId": "central",
+          "plotDate": "1935-05-29",
+          "displayDate": "1935年5月29日",
+          "route": true,
+          "phase": "march",
+          "sequence": 30
+        },
+        {
+          "id": "central-jiajin",
+          "date": "1935-06-12",
+          "endDate": "1935-06-18",
+          "title": "分批翻越夹金山",
+          "place": "四川宝兴至小金，夹金山",
+          "lon": 102.67,
+          "lat": 30.84,
+          "summary": "先头部队12日翻越；中央红军主力及其他部队随后分批翻山，进入懋功地区。",
+          "kind": "terrain",
+          "sources": [
+            "c17"
+          ],
+          "precision": "range；山脉地域",
+          "geoNote": "代表山口附近，不是所有部队一致的翻山路径。",
+          "armyId": "central",
+          "plotDate": "1935-06-12",
+          "displayDate": "1935年6月12日—18日",
+          "route": true,
+          "phase": "march",
+          "sequence": 31
+        },
+        {
+          "id": "central-dawei",
+          "date": "1935-06-12",
+          "title": "达维先头部队会师",
+          "place": "四川懋功达维（今小金）",
+          "lon": 102.64,
+          "lat": 30.96,
+          "summary": "中央红军先头部队与红四方面军先头部队在达维地区会师。",
+          "kind": "reunion",
+          "sources": [
+            "c18"
+          ],
+          "precision": "day；达维地区",
+          "armyId": "central",
+          "plotDate": "1935-06-12",
+          "displayDate": "1935年6月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 32,
+          "researchCoordinates": {
+            "lon": 102.76,
+            "lat": 30.99
+          },
+          "geoNote": "现代地名附近概略位置。 制图合并时统一为达维镇附近代表点，仍非历史行军或旧址的精确测绘。",
+          "geographicAnchorReference": {
+            "title": "达维镇附近代表点",
+            "url": "https://mapcarta.com/15972418",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "central-maogong",
+          "date": "1935-06-18",
+          "title": "中央机关和主力到懋功",
+          "place": "四川懋功（今小金）",
+          "lon": 102.36,
+          "lat": 31,
+          "summary": "中央机关与红一方面军主力到达懋功地区，同红四方面军会合。",
+          "kind": "arrival",
+          "sources": [
+            "c01"
+          ],
+          "precision": "day；地区示意",
+          "armyId": "central",
+          "plotDate": "1935-06-18",
+          "displayDate": "1935年6月18日",
+          "route": true,
+          "phase": "march",
+          "sequence": 33
+        },
+        {
+          "id": "central-lianghekou",
+          "date": "1935-06-26",
+          "title": "两河口会议",
+          "place": "四川小金两河口地区",
+          "lon": 102.49,
+          "lat": 31.49,
+          "summary": "政治局研究两军会合后的战略，确定集中主力北上、创建川陕甘根据地。",
+          "kind": "meeting",
+          "sources": [
+            "c01"
+          ],
+          "precision": "day；乡镇区域示意",
+          "geoNote": "坐标仅为两河口地区概略位置，尚未逐址测绘。 制图合并时统一为两河口会议纪念馆附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "central",
+          "plotDate": "1935-06-26",
+          "displayDate": "1935年6月26日",
+          "route": true,
+          "phase": "march",
+          "sequence": 34,
+          "researchCoordinates": {
+            "lon": 102.67,
+            "lat": 31.29
+          },
+          "geographicAnchorReference": {
+            "title": "两河口会议纪念馆附近代表点",
+            "url": "https://map.gaode.com/place/B0FFKS242V",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "central-maoergai",
+          "date": "1935-08-20",
+          "title": "毛儿盖会议",
+          "place": "四川松潘毛儿盖",
+          "lon": 103.06,
+          "lat": 32.6,
+          "summary": "会议继续讨论红军发展方向，重申向北、向陕甘发展的战略。",
+          "kind": "meeting",
+          "sources": [
+            "c01"
+          ],
+          "precision": "day；毛儿盖地区",
+          "armyId": "central",
+          "plotDate": "1935-08-20",
+          "displayDate": "1935年8月20日",
+          "route": true,
+          "phase": "march",
+          "sequence": 35
+        },
+        {
+          "id": "central-grassland",
+          "date": "1935-08-21",
+          "endDate": "1935-08-27",
+          "title": "右路军穿越草地",
+          "place": "毛儿盖至班佑、巴西一带",
+          "lon": 103.05,
+          "lat": 33.1,
+          "summary": "中央领导人随右路军由毛儿盖北进，穿越沼泽草地，27日前后到巴西地区。",
+          "kind": "terrain",
+          "sources": [
+            "c19"
+          ],
+          "precision": "range；广大地域",
+          "geoNote": "绘图应显示地域或分段方向，不把草地压缩成精确地标。",
+          "armyId": "central",
+          "plotDate": "1935-08-21",
+          "displayDate": "1935年8月21日—27日",
+          "route": true,
+          "phase": "march",
+          "sequence": 36
+        },
+        {
+          "id": "central-baxi-north",
+          "date": "1935-09-10",
+          "title": "党中央率一、三军继续北上",
+          "place": "四川若尔盖巴西地区",
+          "lon": 103.23,
+          "lat": 33.58,
+          "summary": "在北上南下意见严重分歧后，党中央率一、三军及直属队先行北上。",
+          "kind": "decision",
+          "sources": [
+            "c20"
+          ],
+          "precision": "day；出发地区",
+          "armyId": "central",
+          "plotDate": "1935-09-10",
+          "displayDate": "1935年9月10日",
+          "route": true,
+          "phase": "march",
+          "sequence": 37
+        },
+        {
+          "id": "central-ejie",
+          "date": "1935-09-12",
+          "title": "俄界会议",
+          "place": "甘肃迭部达拉乡高吉村（俄界）",
+          "lon": 103.34,
+          "lat": 33.86,
+          "summary": "会议坚持北上，研究下一步行动，并决定将一、三军和军委纵队缩编为陕甘支队。",
+          "kind": "meeting",
+          "sources": [
+            "c25"
+          ],
+          "precision": "day；村域附近",
+          "armyId": "central",
+          "plotDate": "1935-09-12",
+          "displayDate": "1935年9月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 38,
+          "geographicSourceIds": [
+            "cg04"
+          ]
+        },
+        {
+          "id": "central-lazikou",
+          "date": "1935-09-16",
+          "endDate": "1935-09-17",
+          "title": "突破腊子口",
+          "place": "甘肃迭部腊子口",
+          "lon": 103.89,
+          "lat": 34.11,
+          "summary": "红四团16日逼近关口，经过战斗于17日清晨突破防线，打开继续北上的通道。",
+          "kind": "battle",
+          "sources": [
+            "c20"
+          ],
+          "precision": "range；关隘地区",
+          "armyId": "central",
+          "plotDate": "1935-09-16",
+          "displayDate": "1935年9月16日—17日",
+          "route": true,
+          "phase": "march",
+          "sequence": 39
+        },
+        {
+          "id": "central-hadapu",
+          "date": "1935-09-18",
+          "endDate": "1935-09-22",
+          "title": "哈达铺：休整、整编与新方向",
+          "place": "甘肃宕昌哈达铺",
+          "lon": 104.22,
+          "lat": 34.23,
+          "summary": "18日侦察连、19日二师、20日中央机关先后到达；22日干部会宣布向陕甘根据地进发。",
+          "kind": "reorganization",
+          "sources": [
+            "c20"
+          ],
+          "precision": "range；分批到达与会议",
+          "armyId": "central",
+          "plotDate": "1935-09-18",
+          "displayDate": "1935年9月18日—22日",
+          "route": true,
+          "phase": "march",
+          "sequence": 40,
+          "researchCoordinates": {
+            "lon": 104.22,
+            "lat": 34.23
+          },
+          "geoNote": "现代地名附近概略位置。 制图合并时统一为哈达铺镇附近代表点，仍非历史行军或旧址的精确测绘。",
+          "geographicAnchorReference": {
+            "title": "哈达铺镇附近代表点",
+            "url": "https://mapcarta.com/27379286",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "central-bangluo",
+          "date": "1935-09-27",
+          "endDate": "1935-09-28",
+          "title": "榜罗镇确定落脚陕北",
+          "place": "甘肃通渭榜罗镇",
+          "lon": 104.94,
+          "lat": 35.04,
+          "summary": "27日晚常委会确定将中共中央和红军落脚点放在陕北；28日召开干部大会。",
+          "kind": "meeting",
+          "sources": [
+            "c20",
+            "c26"
+          ],
+          "precision": "overnight及次晨；不同会议",
+          "armyId": "central",
+          "plotDate": "1935-09-27",
+          "displayDate": "1935年9月27日—28日",
+          "route": true,
+          "phase": "march",
+          "sequence": 41,
+          "geographicSourceIds": [
+            "cg05"
+          ]
+        },
+        {
+          "id": "central-liupan",
+          "date": "1935-10-07",
+          "title": "翻越六盘山",
+          "place": "今宁夏固原、隆德间六盘山",
+          "lon": 106.24,
+          "lat": 35.64,
+          "summary": "毛泽东等中央领导随陕甘支队翻越六盘山，继续向陕甘革命根据地前进。",
+          "kind": "terrain",
+          "sources": [
+            "c24"
+          ],
+          "precision": "day为中央领导行动；山脉地域",
+          "geoNote": "六盘山山脉地域示意，不是全军同一登山点。",
+          "armyId": "central",
+          "plotDate": "1935-10-07",
+          "displayDate": "1935年10月7日",
+          "route": true,
+          "phase": "march",
+          "sequence": 42
+        },
+        {
+          "id": "central-wuqi",
+          "date": "1935-10-19",
+          "title": "抵达吴起镇",
+          "place": "陕西吴起",
+          "lon": 108.18,
+          "lat": 36.93,
+          "summary": "中央红军抵达陕甘革命根据地吴起镇，标志红一方面军长征胜利结束。",
+          "kind": "arrival",
+          "sources": [
+            "c01",
+            "c21"
+          ],
+          "precision": "day；城镇示意",
+          "armyId": "central",
+          "plotDate": "1935-10-19",
+          "displayDate": "1935年10月19日",
+          "route": true,
+          "phase": "march",
+          "sequence": 43
+        },
+        {
+          "id": "central-huining",
+          "date": "1936-10-09",
+          "title": "会宁会师（后续接应）",
+          "place": "甘肃会宁",
+          "lon": 105.05,
+          "lat": 35.69,
+          "summary": "红军总部、红四方面军指挥部到达会宁，与红一方面军接应部队会师；次日举行庆祝大会。",
+          "kind": "reunion",
+          "sources": [
+            "c22"
+          ],
+          "precision": "day；接应部队会合",
+          "geoNote": "这是1936年红一方面军西征接应活动，不能与1935年吴起后直接连接成持续长征轨迹。",
+          "armyId": "central",
+          "plotDate": "1936-10-09",
+          "displayDate": "1936年10月9日",
+          "route": false,
+          "phase": "aftermath",
+          "sequence": 44
+        },
+        {
+          "id": "central-jiangtaibao",
+          "date": "1936-10-22",
+          "title": "将台堡会师（后续接应）",
+          "place": "今宁夏西吉将台堡，时属甘肃静宁",
+          "lon": 105.84,
+          "lat": 35.82,
+          "summary": "红二方面军总部及红二军团与红一方面军会师，三大主力会师完成，长征总体结束。",
+          "kind": "reunion",
+          "sources": [
+            "c22"
+          ],
+          "precision": "day；接应部队会合",
+          "geoNote": "采用现代行政归属作定位，界面须同时说明当时属静宁。 制图合并时统一为将台堡附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "central",
+          "plotDate": "1936-10-22",
+          "displayDate": "1936年10月22日",
+          "route": false,
+          "phase": "aftermath",
+          "sequence": 45,
+          "researchCoordinates": {
+            "lon": 105.84,
+            "lat": 35.82
+          },
+          "geographicAnchorReference": {
+            "title": "将台堡附近代表点",
+            "url": "https://mapcarta.com/N3219753783",
+            "type": "geographic"
+          }
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "name": "红二、红六军团 → 红二方面军",
+      "shortName": "红二方面军",
+      "color": "#658579",
+      "category": "main",
+      "period": "1935.11—1936.10",
+      "start": "1935-11-19",
+      "end": "1936-10-22",
+      "scope": "主体长征：1935年11月19日从湖南桑植出发，1936年10月22日在将台堡与红一方面军会师。1934年红六军团西征作为前史另述，不能把红二方面军的名义倒用于全程。 甲洼节点仅代表红六军团支路；其他多地节点也仅是主要活动区域示意，不能理解为两个军团全程同行。",
+      "notes": [
+        "1934年8月7日，红六军团从江西遂川横石、新江口地区突围西征；8月12日在湖南桂东寨前圩誓师，10月24日与贺龙领导的红三军在贵州印江木黄会师。会师后红三军恢复红二军团番号。此前史与1935年11月红二、六军团共同开始的长征是不同阶段，勿画成红二方面军自江西全军出发。依据：second-prelude、second-hunan。",
+        "出发时为红二、红六军团；1936年7月甘孜会师后，红二、红六军团与红三十二军合编为红二方面军。红三十二军源自中央红军第九军团，不能说红二方面军仅由两个军团自始组成。",
+        "成立日期存在官方简史口径差异：有概述使用1936年7月2日；本数据遵照国防部转载解放军报的逐日叙事，区分7月2日会师庆祝大会与7月5日中革军委合编电令。界面宜同时显示日期说明。",
+        "甘孜会师是一个过程：6月3日红六军团先头与红三十二军在甲洼会合；6月30日红二军团与红三十军一部在绒坝岔会合；7月1日全部集结甘孜；7月2日举行大会。",
+        "1936年10月9日红一、四方面军在会宁会合，10月22日红二方面军总部及红二军团到将台堡与红一方面军会师；三大主力会师不是同一天集中在同一地点。",
+        "1936年1月进占石阡的具体日期在官方文章中亦有1月9日、1月12日等表述差异，故本数据只取月级。",
+        "所有经纬度是现代地名附近的概略展示锚点，未据历史军事地图逐段测绘。连接节点只能称路线示意，不能表示精确行军轨迹；两军团常分路行动，也不能用一条线声称覆盖全部部队。"
+      ],
+      "sources": [
+        {
+          "id": "second-prelude",
+          "title": "1934年：中国共产党领导红军主力开始长征",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4852696.html",
+          "publisher": "中华人民共和国国防部"
+        },
+        {
+          "id": "second-hunan",
+          "title": "风掣红旗卷潇湘——红军长征在湖南",
+          "url": "https://www.dswxyjy.org.cn/n1/2026/0904/c244516-40792612.html",
+          "publisher": "中共中央党史和文献研究院网站；作者湖南省委党史研究院"
+        },
+        {
+          "id": "second-bianshui",
+          "title": "我军在新年期间打响的战斗",
+          "url": "https://www.81.mil.cn/js_208592/jdt_208593/16436303.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "second-yachi",
+          "title": "红二、六军团强渡鸭池河相关史事",
+          "url": "https://www.bjsjw.gov.cn/n175/20201207/i18762.html",
+          "publisher": "毕节市纪委监委网站"
+        },
+        {
+          "id": "second-bijie",
+          "title": "红军长征在贵州时 中共贵州省工委作出的贡献",
+          "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1487434529374240",
+          "publisher": "贵州省政协网站"
+        },
+        {
+          "id": "second-panxian",
+          "title": "会议审时势，决策明方向",
+          "url": "https://zhuanti.mct.gov.cn/history_detail/773.html",
+          "publisher": "文化和旅游部专题网站"
+        },
+        {
+          "id": "second-yunnan",
+          "title": "红二、六军团过云南：全面抢渡金沙江 走过艰难长征路",
+          "url": "https://www.ynrd.gov.cn/html/2021/bainiandangshi_0629/13010.html",
+          "publisher": "云南人大网；来源云南发布"
+        },
+        {
+          "id": "second-liujia",
+          "title": "长征中红二红六军团最为激烈的六甲阻击战",
+          "url": "https://www.81.cn/js_208592/10186603.html",
+          "publisher": "中国军网；来源学习时报"
+        },
+        {
+          "id": "second-jinsha",
+          "title": "红二方面军渡金沙",
+          "url": "https://www.81.cn/yljnt_208627/lsda_208656/16475861.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "second-zhongdian",
+          "title": "香格里拉：雪山草地见证红色征程",
+          "url": "https://www.ynds.yn.gov.cn/html/dangshiyanjiu/2019/8/7/e5dcdf29-a4d0-40de-8bf0-7da7906e8c78.html",
+          "publisher": "中共云南党史网"
+        },
+        {
+          "id": "second-rendezvous",
+          "title": "红军长征中的会师",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/16418521.html",
+          "publisher": "中华人民共和国国防部；来源解放军报"
+        },
+        {
+          "id": "second-formation",
+          "title": "贺龙大事年表（1930年—1939年）",
+          "url": "https://cpc.people.com.cn/GB/67481/71472/4854223.html",
+          "publisher": "中国共产党新闻网"
+        },
+        {
+          "id": "second-grassland",
+          "title": "为什么说红军第二、四方面军北上甘南为三支主力红军会合创造了有利的条件？",
+          "url": "https://www.dswxyjy.org.cn/n/2013/0319/c244514-20835482.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "second-hadapu",
+          "title": "追随红色足迹 厚植革命情怀——哈达铺在红军长征中的历史地位及作用学术研讨会专题报道",
+          "url": "https://gansu.gscn.com.cn/system/2021/05/19/012588912.shtml",
+          "publisher": "中国甘肃网"
+        },
+        {
+          "id": "second-end",
+          "title": "我们胜利会师了！",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4848435.html",
+          "publisher": "中华人民共和国国防部"
+        },
+        {
+          "id": "prologue-sixth",
+          "title": "红六军团：为中央红军长征侦察开路的先遣队",
+          "url": "https://www.cac.gov.cn/2016-08/22/c_1119430835.htm",
+          "publisher": "中央网信办网站，来源新华网"
+        }
+      ],
+      "events": [
+        {
+          "id": "prologue-sixth-19340807",
+          "date": "1934-08-07",
+          "title": "序幕：红6军团突围西征",
+          "place": "江西遂川横石、新江口地区",
+          "lon": 114.52,
+          "lat": 26.33,
+          "summary": "任弼时、萧克、王震率红6军团9700余人离开湘赣根据地西征，为中央红军战略转移侦察开路。此时尚未组成红二方面军。",
+          "kind": "departure",
+          "sources": [
+            "prologue-sixth"
+          ],
+          "precision": "day",
+          "armyId": "second",
+          "phase": "prelude",
+          "route": false,
+          "plotDate": "1934-08-07",
+          "displayDate": "1934年8月7日",
+          "sequence": 0
+        },
+        {
+          "id": "second-01",
+          "date": "1935-11-19",
+          "title": "从桑植出发",
+          "place": "湖南桑植刘家坪、瑞塔铺",
+          "lon": 110.2,
+          "lat": 29.4,
+          "summary": "红二、红六军团分别誓师，当晚开始战略转移；此时尚无红二方面军番号。",
+          "kind": "start",
+          "sources": [
+            "second-hunan"
+          ],
+          "precision": "day",
+          "geoNote": "桑植地区概略展示点；两个出发地区以一节点概括。",
+          "armyId": "second",
+          "plotDate": "1935-11-19",
+          "displayDate": "1935年11月19日",
+          "route": true,
+          "phase": "march",
+          "sequence": 1
+        },
+        {
+          "id": "second-02",
+          "date": "1935-11-26",
+          "endDate": "1935-11-28",
+          "title": "转战湘中",
+          "place": "湖南溆浦、新化等地",
+          "lon": 110.6,
+          "lat": 27.9,
+          "summary": "部队突破澧水、沅水防线后进入湘中，分路活动、休整和补充，继而折向黔东。",
+          "kind": "march",
+          "sources": [
+            "second-hunan"
+          ],
+          "precision": "range",
+          "geoNote": "溆浦县附近概略展示点，概括湘中多个地点，非全军驻地。",
+          "armyId": "second",
+          "plotDate": "1935-11-26",
+          "displayDate": "1935年11月26日—28日",
+          "route": true,
+          "phase": "march",
+          "sequence": 2
+        },
+        {
+          "id": "second-03",
+          "date": "1936-01-05",
+          "title": "便水战斗",
+          "place": "湖南芷江、新晃交界便水地区",
+          "lon": 109.4,
+          "lat": 27.4,
+          "summary": "红二、红六军团反击尾追之敌；战斗激烈，未能达到预定歼敌目标。",
+          "kind": "battle",
+          "sources": [
+            "second-bianshui"
+          ],
+          "precision": "day",
+          "geoNote": "便水地区概略位置，不表示具体阵地。",
+          "armyId": "second",
+          "plotDate": "1936-01-05",
+          "displayDate": "1936年1月5日",
+          "route": true,
+          "phase": "march",
+          "sequence": 3
+        },
+        {
+          "id": "second-04",
+          "date": "1936-01",
+          "title": "进占石阡，筹划继续西进",
+          "place": "贵州石阡",
+          "lon": 108.2,
+          "lat": 27.5,
+          "summary": "主力进入黔东，随后转向黔西、大定、毕节，寻求创建新根据地的机会。",
+          "kind": "march",
+          "sources": [
+            "second-hunan",
+            "second-yachi"
+          ],
+          "precision": "month",
+          "geoNote": "石阡县城概略展示点；日级记载有差异，保留月级。",
+          "armyId": "second",
+          "plotDate": "1936-01-12",
+          "displayDate": "1936年1月",
+          "route": true,
+          "phase": "march",
+          "sequence": 4,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "second-05",
+          "date": "1936-02-02",
+          "title": "强渡鸭池河",
+          "place": "贵州鸭池河",
+          "lon": 106.3,
+          "lat": 26.9,
+          "summary": "先遣部队渡过乌江上游鸭池河，打开向黔西北推进的通道。",
+          "kind": "crossing",
+          "sources": [
+            "second-yachi"
+          ],
+          "precision": "day",
+          "geoNote": "鸭池河河段概略位置，不是精确渡口坐标。",
+          "armyId": "second",
+          "plotDate": "1936-02-02",
+          "displayDate": "1936年2月2日",
+          "route": true,
+          "phase": "march",
+          "sequence": 5
+        },
+        {
+          "id": "second-06",
+          "date": "1936-02-06",
+          "title": "占领大定",
+          "place": "贵州大定（今大方）",
+          "lon": 105.6,
+          "lat": 27.1,
+          "summary": "红二军团第五师进入大定，在黔大毕地区寻求创建新的根据地。",
+          "kind": "arrival",
+          "sources": [
+            "second-bijie"
+          ],
+          "precision": "day",
+          "geoNote": "今大方县城概略位置。",
+          "armyId": "second",
+          "plotDate": "1936-02-06",
+          "displayDate": "1936年2月6日",
+          "route": true,
+          "phase": "march",
+          "sequence": 6
+        },
+        {
+          "id": "second-07",
+          "date": "1936-02-09",
+          "title": "进驻毕节",
+          "place": "贵州毕节",
+          "lon": 105.3,
+          "lat": 27.3,
+          "summary": "在贵州地下党和地方武装配合下占领毕节，开展根据地建设与补充。",
+          "kind": "arrival",
+          "sources": [
+            "second-bijie"
+          ],
+          "precision": "day",
+          "geoNote": "今毕节七星关城区概略位置。",
+          "armyId": "second",
+          "plotDate": "1936-02-09",
+          "displayDate": "1936年2月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 7
+        },
+        {
+          "id": "second-08",
+          "date": "1936-03-23",
+          "title": "乌蒙回旋中的来宾铺战斗",
+          "place": "云南宣威来宾铺一带",
+          "lon": 104.1,
+          "lat": 26.3,
+          "summary": "红二、红六军团在乌蒙山区多次回旋，来宾铺等地作战后转向贵州盘县。",
+          "kind": "battle",
+          "sources": [
+            "second-yunnan",
+            "second-panxian"
+          ],
+          "precision": "day",
+          "geoNote": "宣威北部概略位置，概括来宾铺、虎头山等战场。",
+          "armyId": "second",
+          "plotDate": "1936-03-23",
+          "displayDate": "1936年3月23日",
+          "route": true,
+          "phase": "march",
+          "sequence": 8
+        },
+        {
+          "id": "second-09",
+          "date": "1936-03-30",
+          "title": "盘县会议决定渡江北上",
+          "place": "贵州盘县（今盘州双凤一带）",
+          "lon": 104.6,
+          "lat": 25.8,
+          "summary": "红二军团28日先占盘县，红六军团29日抵亦资孔；30日晚领导机关决定北渡金沙江，与红四方面军会合。",
+          "kind": "meeting",
+          "sources": [
+            "second-panxian"
+          ],
+          "precision": "day",
+          "geoNote": "取历史盘县县城附近概略点，不以今盘州红果城区替代历史县城。",
+          "armyId": "second",
+          "plotDate": "1936-03-30",
+          "displayDate": "1936年3月30日",
+          "route": true,
+          "phase": "march",
+          "sequence": 9
+        },
+        {
+          "id": "second-10",
+          "date": "1936-04-09",
+          "title": "六甲阻击战",
+          "place": "云南寻甸六甲地区",
+          "lon": 103,
+          "lat": 25.7,
+          "summary": "抢渡普渡河受阻后，红军在六甲阻击追敌，为随后向滇西转进创造条件。",
+          "kind": "battle",
+          "sources": [
+            "second-liujia"
+          ],
+          "precision": "day",
+          "geoNote": "寻甸西部六甲地区概略位置，非阵地测绘。",
+          "armyId": "second",
+          "plotDate": "1936-04-09",
+          "displayDate": "1936年4月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 10
+        },
+        {
+          "id": "second-11",
+          "date": "1936-04",
+          "title": "丽江石鼓至巨甸渡金沙江",
+          "place": "云南丽江石鼓—巨甸河段",
+          "lon": 100,
+          "lat": 26.9,
+          "summary": "两军团从多个渡口北渡金沙江，摆脱尾追，转入滇西北高原。",
+          "kind": "crossing",
+          "sources": [
+            "second-yunnan",
+            "second-jinsha"
+          ],
+          "precision": "month",
+          "geoNote": "石鼓附近概略锚点；实际为约60公里河段的五个渡口，不能画成单一渡口。",
+          "armyId": "second",
+          "plotDate": "1936-04-25",
+          "displayDate": "1936年4月下旬",
+          "route": true,
+          "phase": "march",
+          "sequence": 11,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "second-12",
+          "date": "1936-05",
+          "title": "中甸筹粮，翻越雪山",
+          "place": "云南中甸（今香格里拉）",
+          "lon": 99.7,
+          "lat": 27.8,
+          "summary": "渡江后进入中甸地区筹粮休整，继而分路翻雪山进入川西。",
+          "kind": "march",
+          "sources": [
+            "second-yunnan",
+            "second-zhongdian"
+          ],
+          "precision": "month",
+          "geoNote": "今香格里拉城区概略点；两军团离开中甸的路线不同，不应声称全军翻越同一座山。",
+          "armyId": "second",
+          "plotDate": "1936-05-10",
+          "displayDate": "1936年5月",
+          "route": true,
+          "phase": "march",
+          "sequence": 12,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "second-13",
+          "date": "1936-06-03",
+          "title": "甲洼先头会合",
+          "place": "四川理化以南甲洼（今理塘境内）",
+          "lon": 100.2,
+          "lat": 29.8,
+          "summary": "红六军团在甲洼地区与前来迎接的红四方面军第三十二军一部会合。",
+          "kind": "rendezvous",
+          "sources": [
+            "second-rendezvous"
+          ],
+          "precision": "day",
+          "geoNote": "甲洼地区概略位置；此节点属于红六军团支路，并非红二军团同步到达。",
+          "armyId": "second",
+          "plotDate": "1936-06-03",
+          "displayDate": "1936年6月3日",
+          "route": true,
+          "phase": "march",
+          "sequence": 13
+        },
+        {
+          "id": "second-14",
+          "date": "1936-07-02",
+          "title": "甘孜会师大会",
+          "place": "四川甘孜",
+          "lon": 100,
+          "lat": 31.6,
+          "summary": "两军团7月1日已全部集结甘孜，次日与红四方面军举行会师庆祝大会。",
+          "kind": "rendezvous",
+          "sources": [
+            "second-rendezvous",
+            "second-end"
+          ],
+          "precision": "day",
+          "geoNote": "甘孜县城附近概略点，概括甘孜地区的分次会合。",
+          "armyId": "second",
+          "plotDate": "1936-07-02",
+          "displayDate": "1936年7月2日",
+          "route": true,
+          "phase": "march",
+          "sequence": 14
+        },
+        {
+          "id": "second-15",
+          "date": "1936-07-05",
+          "title": "红二方面军组成",
+          "place": "四川甘孜地区",
+          "lon": 100,
+          "lat": 31.6,
+          "summary": "根据中革军委电令，红二、红六军团与红三十二军合编为红二方面军，贺龙任总指挥、任弼时任政委。",
+          "kind": "reorganization",
+          "sources": [
+            "second-rendezvous",
+            "second-formation"
+          ],
+          "precision": "day",
+          "geoNote": "组织事件借甘孜概略位置展示；7月2日与7月5日口径差异已在部队说明中列出。",
+          "armyId": "second",
+          "plotDate": "1936-07-05",
+          "displayDate": "1936年7月5日",
+          "route": true,
+          "phase": "march",
+          "sequence": 15
+        },
+        {
+          "id": "second-16",
+          "date": "1936-08",
+          "title": "通过草地，到达包座一带",
+          "place": "四川松潘草地、包座地区",
+          "lon": 103.3,
+          "lat": 33.6,
+          "summary": "红二方面军分梯队经阿坝、包座方向北上；在缺粮和恶劣环境中穿越草地，继续向甘南前进。",
+          "kind": "march",
+          "sources": [
+            "second-grassland"
+          ],
+          "precision": "month",
+          "geoNote": "包座地区概略锚点；草地为广域，非一个渡口式节点，不强设到达日。",
+          "armyId": "second",
+          "plotDate": "1936-08-10",
+          "displayDate": "1936年8月上旬",
+          "route": true,
+          "phase": "march",
+          "sequence": 16,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "second-17",
+          "date": "1936-09",
+          "title": "哈达铺休整与部署",
+          "place": "甘肃宕昌哈达铺",
+          "lon": 104.22,
+          "lat": 34.23,
+          "summary": "主力在哈达铺集结补充，研究东出陇南的成徽两康战役计划。",
+          "kind": "meeting",
+          "sources": [
+            "second-hadapu",
+            "second-formation"
+          ],
+          "precision": "month",
+          "geoNote": "哈达铺镇概略位置。 制图合并时统一为哈达铺镇附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "second",
+          "plotDate": "1936-09-01",
+          "displayDate": "1936年9月初",
+          "route": true,
+          "phase": "march",
+          "sequence": 17,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。",
+          "researchCoordinates": {
+            "lon": 104.2,
+            "lat": 34.2
+          },
+          "geographicAnchorReference": {
+            "title": "哈达铺镇附近代表点",
+            "url": "https://mapcarta.com/27379286",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "second-18",
+          "date": "1936-09-11",
+          "endDate": "1936-09-20",
+          "title": "成徽两康战役",
+          "place": "甘肃成县、徽县、两当、康县",
+          "lon": 105.7,
+          "lat": 33.7,
+          "summary": "红二方面军在陕甘边界展开行动，先后攻占四县，形成与红一、四方面军南北呼应的态势。",
+          "kind": "battle",
+          "sources": [
+            "second-formation"
+          ],
+          "precision": "range",
+          "geoNote": "以成县概略点代表多县战役区域，不能解释成全军在成县停留十日。",
+          "armyId": "second",
+          "plotDate": "1936-09-11",
+          "displayDate": "1936年9月11日—20日",
+          "route": true,
+          "phase": "march",
+          "sequence": 18
+        },
+        {
+          "id": "second-19",
+          "date": "1936-10-22",
+          "title": "将台堡会师，完成长征",
+          "place": "将台堡（今宁夏西吉）",
+          "lon": 105.84,
+          "lat": 35.82,
+          "summary": "红二方面军总指挥部及红二军团到达将台堡，与红一方面军会师，三大主力会师完成。",
+          "kind": "rendezvous",
+          "sources": [
+            "second-end",
+            "second-rendezvous"
+          ],
+          "precision": "day",
+          "geoNote": "今将台堡镇概略位置；历史行政归属与今日不同。 制图合并时统一为将台堡附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "second",
+          "plotDate": "1936-10-22",
+          "displayDate": "1936年10月22日",
+          "route": true,
+          "phase": "march",
+          "sequence": 19,
+          "researchCoordinates": {
+            "lon": 105.7,
+            "lat": 35.8
+          },
+          "geographicAnchorReference": {
+            "title": "将台堡附近代表点",
+            "url": "https://mapcarta.com/N3219753783",
+            "type": "geographic"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fourth",
+      "name": "红四方面军",
+      "shortName": "红四方面军",
+      "color": "#b28a42",
+      "category": "main",
+      "period": "1935.03—1936.10",
+      "start": "1935-03-28",
+      "end": "1936-10-09",
+      "scope": "1935年3月强渡嘉陵江至1936年10月会宁会师。以方面军主要活动地区与会战、会师为节点；不等于任何一个师、团连续而精确的行军轨迹。",
+      "notes": [
+        "起止采用军史通常口径：1935年3月28日强渡嘉陵江开始，1936年10月9日红军总部、红四方面军总指挥部进入会宁，与红一方面军会师。1936年10月22日将台堡是一、二方面军会师的关键日期，不可把它改写为红四方面军同日才抵会宁。",
+        "1935年8月红军混编为左、右路军：两个方面军的部队分置其间。右路军不能直接等同于红一方面军，左路军也不能直接等同于红四方面军。红四方面军的红4军、红30军参加了右路军过草地与包座战斗，随后又奉命南下。",
+        "1936年7月再度北上时分左、中、右三纵队；中央纵队由炉霍经壤塘、查理寺、毛儿盖向包座，左纵队由甘孜经东谷、西倾寺、阿坝向包座、班佑，右纵队由绥靖、崇化经卓克基、马塘向毛儿盖、包座。建议地图显示分路或标注主轴概括，不能把同月各部节点串成一支部队的单线轨迹。",
+        "甘孜会师是陆续会合的过程；7月2日可以确定为城郊会师庆祝大会，不宜动画暗示此前两支军队完全没有接触。",
+        "百丈关战事存在不同起讫口径：本数据采用中国军网所列11月19日至25日主要激战阶段；地方史材料也有自11月13日起叙述更大范围战斗的口径。因此不能把日期差异简单判为史实错误。",
+        "1936年会宁会师以后，渡黄河、组成西路军及河西走廊战事属于后续历史；本数据不将西路军西行路线续画为红四方面军长征路线。",
+        "经纬度仅为现代城镇或地区代表点，保留两位小数作地图示意；不表示历史渡口、战场、旧址测绘坐标，也不应用连线距离计算长征实际里程。月级事件的date仅保留年月；plotDate只用于动画排程，不作为史实日期。"
+      ],
+      "sources": [
+        {
+          "id": "fourth-overview",
+          "title": "红四方面军发展历程中的七大里程碑",
+          "url": "https://www.81.mil.cn/2022zt/2021-10/17/content_10204934.htm",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "fourth-jialing",
+          "title": "嘉陵江战役：大规模强渡江河的模范战例",
+          "url": "https://www.81.cn/js_208592/jdt_208593/16209692.html",
+          "publisher": "中国军网—中国国防报"
+        },
+        {
+          "id": "fourth-tumen",
+          "title": "土门战役：打开红军挺进川西的通道",
+          "url": "https://www.81.mil.cn/js_208592/16459891.html",
+          "publisher": "中国军网—中国国防报"
+        },
+        {
+          "id": "fourth-maogong",
+          "title": "懋功会师",
+          "url": "https://www.81.mil.cn/2022zt/2021-10/17/content_10204936.htm",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "fourth-debate",
+          "title": "南下还是北上，决定革命前途的关键之争",
+          "url": "https://www.dswxyjy.org.cn/n1/2016/0902/c396980-28686747.html",
+          "publisher": "中共中央党史和文献研究院网站，来源新华社"
+        },
+        {
+          "id": "fourth-aba",
+          "title": "红军长征在阿坝重要战役和战斗",
+          "url": "https://www.czgbxy.org.cn/abzwdx/c104419/201604/12a990b3ba3c46f49bf02502d832ff63.shtml",
+          "publisher": "四川长征干部学院阿坝雪山草地分院"
+        },
+        {
+          "id": "fourth-battles",
+          "title": "红军长征中有哪些重要战役战斗？",
+          "url": "https://www.81.mil.cn/yw_208727/16343466.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "fourth-dangling",
+          "title": "丹巴红色遗址 | 党岭雪山（第八期）",
+          "url": "https://www.danba.gov.cn/czdb/article/712678",
+          "publisher": "丹巴县人民政府"
+        },
+        {
+          "id": "fourth-ganzi-local",
+          "title": "中共甘孜简史丨红四方面军在甘孜州",
+          "url": "https://www.thepaper.cn/newsdetail_forward_12284657",
+          "publisher": "澎湃号·政务，转自《甘孜简史》；地方史交叉材料"
+        },
+        {
+          "id": "fourth-north1936",
+          "title": "第二十六章 红二、红四方面军北上甘南",
+          "url": "https://dangshi.people.com.cn/n1/2016/0909/c406330-28705046.html",
+          "publisher": "人民网党史频道"
+        },
+        {
+          "id": "fourth-renbishi",
+          "title": "任弼时在长征途中",
+          "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423729-30944011.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "fourth-ganzi-meeting",
+          "title": "追寻红军甘孜会师的足迹",
+          "url": "https://www.cssn.cn/skgz/bwyc/202609/t20260921_6068144.shtml",
+          "publisher": "中国社会科学网"
+        },
+        {
+          "id": "fourth-hadapu",
+          "title": "宕昌县哈达铺红军长征纪念馆",
+          "url": "https://cpc.people.com.cn/GB/64176/64180/2523872.html",
+          "publisher": "中国共产党新闻网·网上导航"
+        },
+        {
+          "id": "fourth-mintaoxi",
+          "title": "红军甘肃岷洮西战役",
+          "url": "https://www.twdjw.gov.cn/htm/20168/33_642.htm",
+          "publisher": "通渭党建网"
+        },
+        {
+          "id": "fourth-huining",
+          "title": "三军大会师——红军长征三大主力会师全纪录",
+          "url": "https://www.cac.gov.cn/2016-08/22/c_1119432029.htm",
+          "publisher": "中央网信办网站，来源新华网"
+        },
+        {
+          "id": "fourth-1935chronicle",
+          "title": "中国共产党大事记·1935年",
+          "url": "https://cpc.people.com.cn/GB/64162/64164/4415983.html",
+          "publisher": "中国共产党新闻网"
+        }
+      ],
+      "events": [
+        {
+          "id": "fourth-jialing-19350328",
+          "date": "1935-03-28",
+          "endDate": "1935-04-21",
+          "title": "强渡嘉陵江，西进开始",
+          "place": "四川苍溪一带",
+          "lon": 105.93,
+          "lat": 31.73,
+          "summary": "方面军在苍溪等地分路渡江，突破嘉陵江防线，开启西进长征。",
+          "kind": "departure",
+          "sources": [
+            "fourth-overview",
+            "fourth-jialing"
+          ],
+          "precision": "day-range",
+          "geoNote": "以今苍溪县城附近代表渡江战役区域；不是单一渡口定位。",
+          "armyId": "fourth",
+          "plotDate": "1935-03-28",
+          "displayDate": "1935年3月28日—4月21日",
+          "route": true,
+          "phase": "march",
+          "sequence": 0
+        },
+        {
+          "id": "fourth-jianmen-19350402",
+          "date": "1935-04-02",
+          "title": "攻克剑门关",
+          "place": "四川剑阁剑门关",
+          "lon": 105.57,
+          "lat": 32.21,
+          "summary": "红31军与红30军部队合力突破剑门关，扩大嘉陵江西岸战果。",
+          "kind": "battle",
+          "sources": [
+            "fourth-jialing"
+          ],
+          "precision": "day",
+          "geoNote": "现代剑门关区域近似点。",
+          "armyId": "fourth",
+          "plotDate": "1935-04-02",
+          "displayDate": "1935年4月2日",
+          "route": true,
+          "phase": "march",
+          "sequence": 1
+        },
+        {
+          "id": "fourth-tumen-19350514",
+          "date": "1935-05-14",
+          "title": "突破土门防线",
+          "place": "四川茂县土门",
+          "lon": 104.07,
+          "lat": 31.77,
+          "summary": "红9军、红30军及红31军一部向土门进攻，打开西进岷江流域通道。",
+          "kind": "battle",
+          "sources": [
+            "fourth-tumen"
+          ],
+          "precision": "day",
+          "geoNote": "现代土门镇代表点，不是三元桥或某一攻坚阵地的精确坐标。",
+          "armyId": "fourth",
+          "plotDate": "1935-05-14",
+          "displayDate": "1935年5月14日",
+          "route": true,
+          "phase": "march",
+          "sequence": 2
+        },
+        {
+          "id": "fourth-maoxian-19350515",
+          "date": "1935-05-15",
+          "title": "进占茂县",
+          "place": "四川茂县",
+          "lon": 103.85,
+          "lat": 31.68,
+          "summary": "突破土门后部队进占茂县，继续向川西北展开。",
+          "kind": "march",
+          "sources": [
+            "fourth-tumen"
+          ],
+          "precision": "day",
+          "geoNote": "现代县城代表点。",
+          "armyId": "fourth",
+          "plotDate": "1935-05-15",
+          "displayDate": "1935年5月15日",
+          "route": true,
+          "phase": "march",
+          "sequence": 3
+        },
+        {
+          "id": "fourth-dawei-19350612",
+          "date": "1935-06-12",
+          "title": "达维先头部队会师",
+          "place": "四川小金达维",
+          "lon": 102.64,
+          "lat": 30.96,
+          "summary": "红一方面军先头部队与红四方面军部队在达维相遇，揭开懋功地区会师序幕。",
+          "kind": "meeting",
+          "sources": [
+            "fourth-maogong"
+          ],
+          "precision": "day",
+          "geoNote": "现代达维镇近似点；与随后主力会合分开呈现。 制图合并时统一为达维镇附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "fourth",
+          "plotDate": "1935-06-12",
+          "displayDate": "1935年6月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 4,
+          "researchCoordinates": {
+            "lon": 102.7,
+            "lat": 30.99
+          },
+          "geographicAnchorReference": {
+            "title": "达维镇附近代表点",
+            "url": "https://mapcarta.com/15972418",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "fourth-lianghekou-19350626",
+          "date": "1935-06-26",
+          "endDate": "1935-06-28",
+          "title": "两河口会议，确定北上方针",
+          "place": "四川小金两河口",
+          "lon": 102.49,
+          "lat": 31.49,
+          "summary": "中央政治局扩大会议讨论会师后的方向，决定向川陕甘发展。",
+          "kind": "conference",
+          "sources": [
+            "fourth-debate"
+          ],
+          "precision": "day-range",
+          "geoNote": "会议地点代表点，不表示方面军各部同时集中于此。 制图合并时统一为两河口会议纪念馆附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "fourth",
+          "plotDate": "1935-06-26",
+          "displayDate": "1935年6月26日—28日",
+          "route": true,
+          "phase": "march",
+          "sequence": 5,
+          "researchCoordinates": {
+            "lon": 102.49,
+            "lat": 31.49
+          },
+          "geographicAnchorReference": {
+            "title": "两河口会议纪念馆附近代表点",
+            "url": "https://map.gaode.com/place/B0FFKS242V",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "fourth-maoergai-19350820",
+          "date": "1935-08-20",
+          "title": "毛儿盖会议，重申向东、向北发展",
+          "place": "四川松潘毛儿盖地区",
+          "lon": 103.06,
+          "lat": 32.6,
+          "summary": "中央召开政治局扩大会议，讨论北上战略；红军此前已混编为左、右路军。",
+          "kind": "conference",
+          "sources": [
+            "fourth-debate"
+          ],
+          "precision": "day",
+          "geoNote": "以现代毛儿盖地区示意，不作为寺院旧址坐标。",
+          "armyId": "fourth",
+          "plotDate": "1935-08-20",
+          "displayDate": "1935年8月20日",
+          "route": true,
+          "phase": "march",
+          "sequence": 6
+        },
+        {
+          "id": "fourth-baozuo-19350829",
+          "date": "1935-08-29",
+          "endDate": "1935-08-31",
+          "title": "包座战斗，打开北上通道",
+          "place": "四川若尔盖包座地区",
+          "lon": 103.37,
+          "lat": 33.47,
+          "summary": "右路军中的红30军和红4军部队作战，打开向甘南前进的通道。",
+          "kind": "battle",
+          "sources": [
+            "fourth-aba"
+          ],
+          "precision": "day-range",
+          "geoNote": "包座战区近似点，不能据此把右路军改称红一方面军。",
+          "armyId": "fourth",
+          "plotDate": "1935-08-29",
+          "displayDate": "1935年8月29日—31日",
+          "route": true,
+          "phase": "march",
+          "sequence": 7
+        },
+        {
+          "id": "fourth-aba-193509",
+          "date": "1935-09",
+          "title": "北上受阻，部队转向南下",
+          "place": "四川阿坝、马尔康一带",
+          "lon": 101.71,
+          "lat": 32.9,
+          "summary": "张国焘拒绝中央北上方针；红四方面军部队及随行的一方面军部分部队随后南下。",
+          "kind": "turning",
+          "sources": [
+            "fourth-debate",
+            "fourth-1935chronicle"
+          ],
+          "precision": "month",
+          "geoNote": "以阿坝县城代表转向地区；事件涵盖分路行动，不能视作全军某日同在阿坝。",
+          "armyId": "fourth",
+          "plotDate": "1935-09-15",
+          "displayDate": "1935年9月",
+          "route": true,
+          "phase": "march",
+          "sequence": 8,
+          "researchDate": "1935-09-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-zhuomudiao-193510",
+          "date": "1935-10",
+          "title": "卓木碉另立“中央”",
+          "place": "四川马尔康脚木足（卓木碉）",
+          "lon": 102.06,
+          "lat": 31.85,
+          "summary": "张国焘在卓木碉另立“中央”，党和红军的团结遭到严重破坏。",
+          "kind": "turning",
+          "sources": [
+            "fourth-1935chronicle"
+          ],
+          "precision": "month",
+          "geoNote": "采用大事记可确认的月级口径，现代脚木足区域近似点。",
+          "armyId": "fourth",
+          "plotDate": "1935-10-04",
+          "displayDate": "1935年10月",
+          "route": true,
+          "phase": "march",
+          "sequence": 9,
+          "researchDate": "1935-10-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-jinchuan-19351008",
+          "date": "1935-10-08",
+          "endDate": "1935-10-22",
+          "title": "绥崇丹懋战役",
+          "place": "四川金川—丹巴—小金地区",
+          "lon": 102.06,
+          "lat": 31.48,
+          "summary": "南下部队向金川流域与丹巴、懋功推进，战术进展未能扭转南下的不利局面。",
+          "kind": "battle",
+          "sources": [
+            "fourth-aba",
+            "fourth-battles"
+          ],
+          "precision": "day-range",
+          "geoNote": "区域性战役以现代金川县城代表；军网有10月20日结束口径，学院材料以22日全部占领计。",
+          "armyId": "fourth",
+          "plotDate": "1935-10-08",
+          "displayDate": "1935年10月8日—22日",
+          "route": true,
+          "phase": "march",
+          "sequence": 10
+        },
+        {
+          "id": "fourth-baizhang-19351119",
+          "date": "1935-11-19",
+          "endDate": "1935-11-25",
+          "title": "百丈关激战，南下转入防御",
+          "place": "四川雅安名山百丈",
+          "lon": 103.24,
+          "lat": 30.24,
+          "summary": "部队在百丈关一带与优势川军激战，伤亡严重，随后转战川康山区。",
+          "kind": "battle",
+          "sources": [
+            "fourth-battles"
+          ],
+          "precision": "day-range",
+          "geoNote": "百丈地区近似点；本时间段为军网采用的主要激战阶段。",
+          "armyId": "fourth",
+          "plotDate": "1935-11-19",
+          "displayDate": "1935年11月19日—25日",
+          "route": true,
+          "phase": "march",
+          "sequence": 11
+        },
+        {
+          "id": "fourth-kangbei-193602",
+          "date": "1936-02",
+          "title": "撤出天全等地，转向康北",
+          "place": "四川天全、宝兴一带",
+          "lon": 102.76,
+          "lat": 30.07,
+          "summary": "2月下旬，部队分路向懋功、丹巴、道孚、炉霍、甘孜地区转移。",
+          "kind": "turning",
+          "sources": [
+            "fourth-dangling"
+          ],
+          "precision": "month",
+          "geoNote": "以天全县城代表撤出地区；月初日期只是时间轴占位。",
+          "armyId": "fourth",
+          "plotDate": "1936-02-22",
+          "displayDate": "1936年2月下旬",
+          "route": true,
+          "phase": "march",
+          "sequence": 12,
+          "researchDate": "1936-02-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-dangling-19360228",
+          "date": "1936-02-28",
+          "title": "先遣军翻越党岭雪山",
+          "place": "四川丹巴党岭—道孚方向",
+          "lon": 101.48,
+          "lat": 30.87,
+          "summary": "刘伯承率先遣部队翻越雪山垭口，进入道孚境内。",
+          "kind": "terrain",
+          "sources": [
+            "fourth-dangling"
+          ],
+          "precision": "day",
+          "geoNote": "党岭山区近似点，不对垭口海拔与具体线路作地图测绘声称。",
+          "armyId": "fourth",
+          "plotDate": "1936-02-28",
+          "displayDate": "1936年2月28日",
+          "route": true,
+          "phase": "march",
+          "sequence": 13
+        },
+        {
+          "id": "fourth-daofu-19360301",
+          "date": "1936-03-01",
+          "title": "进占道孚",
+          "place": "四川道孚",
+          "lon": 101.12,
+          "lat": 30.98,
+          "summary": "先遣部队占领道孚县城，向康北转移取得进展。",
+          "kind": "march",
+          "sources": [
+            "fourth-dangling",
+            "fourth-ganzi-local"
+          ],
+          "precision": "day",
+          "geoNote": "现代道孚县城代表点。",
+          "armyId": "fourth",
+          "plotDate": "1936-03-01",
+          "displayDate": "1936年3月1日",
+          "route": true,
+          "phase": "march",
+          "sequence": 14
+        },
+        {
+          "id": "fourth-luhuo-19360325",
+          "date": "1936-03-25",
+          "title": "进占炉霍",
+          "place": "四川炉霍",
+          "lon": 100.68,
+          "lat": 31.39,
+          "summary": "红30军进入炉霍县城；方面军随后在道孚、炉霍、甘孜地区休整。",
+          "kind": "march",
+          "sources": [
+            "fourth-ganzi-local"
+          ],
+          "precision": "day",
+          "geoNote": "现代炉霍县城代表点；日期来源为地方史转载，应与战史继续交叉校核。",
+          "armyId": "fourth",
+          "plotDate": "1936-03-25",
+          "displayDate": "1936年3月25日",
+          "route": true,
+          "phase": "march",
+          "sequence": 15
+        },
+        {
+          "id": "fourth-ganzi-193604",
+          "date": "1936-04",
+          "title": "进驻甘孜，康北休整",
+          "place": "四川甘孜",
+          "lon": 99.99,
+          "lat": 31.62,
+          "summary": "3月底至4月初部队进驻甘孜，在康北筹粮、休整，并接应红二、六军团。",
+          "kind": "rest",
+          "sources": [
+            "fourth-ganzi-local"
+          ],
+          "precision": "month",
+          "geoNote": "现代甘孜县城代表点；实际到达跨越3月底、4月初，月初用于时间轴。",
+          "armyId": "fourth",
+          "plotDate": "1936-04-01",
+          "displayDate": "1936年3月底—4月初",
+          "route": true,
+          "phase": "march",
+          "sequence": 16,
+          "researchDate": "1936-04-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-ganzi-meeting-19360702",
+          "date": "1936-07-02",
+          "title": "甘孜会师庆祝大会",
+          "place": "四川甘孜城郊",
+          "lon": 99.99,
+          "lat": 31.62,
+          "summary": "红二、六军团与红四方面军此前陆续会合，7月2日在甘孜城郊举行会师大会。",
+          "kind": "meeting",
+          "sources": [
+            "fourth-ganzi-meeting",
+            "fourth-ganzi-local"
+          ],
+          "precision": "day",
+          "geoNote": "现代县城附近代表点；不应解释为所有先头部队首次接触的同一天。",
+          "armyId": "fourth",
+          "plotDate": "1936-07-02",
+          "displayDate": "1936年7月2日",
+          "route": true,
+          "phase": "march",
+          "sequence": 17
+        },
+        {
+          "id": "fourth-north-193607",
+          "date": "1936-07",
+          "title": "三纵队共同北上",
+          "place": "四川炉霍、甘孜及绥靖地区",
+          "lon": 100.68,
+          "lat": 31.39,
+          "summary": "7月初各部按左、中、右三纵队分别出发，向毛儿盖、包座、班佑方向前进。",
+          "kind": "march",
+          "sources": [
+            "fourth-north1936"
+          ],
+          "precision": "month",
+          "geoNote": "以中央纵队出发地炉霍代表，不能把三条实际分路合并成一支部队。",
+          "armyId": "fourth",
+          "plotDate": "1936-07-10",
+          "displayDate": "1936年7月初",
+          "route": true,
+          "phase": "march",
+          "sequence": 18,
+          "researchDate": "1936-07-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-baozuo-193607",
+          "date": "1936-07",
+          "title": "再过草地，进入包座一带",
+          "place": "四川若尔盖包座、巴西地区",
+          "lon": 103.37,
+          "lat": 33.47,
+          "summary": "7月下旬红四、红二方面军先后走出草地，在包座、巴西、求吉寺地区集结。",
+          "kind": "terrain",
+          "sources": [
+            "fourth-north1936",
+            "fourth-renbishi"
+          ],
+          "precision": "month",
+          "geoNote": "月份内先后抵达，地图点代表集结区域；不表示单一行军队列。",
+          "armyId": "fourth",
+          "plotDate": "1936-07-25",
+          "displayDate": "1936年7月下旬",
+          "route": true,
+          "phase": "march",
+          "sequence": 19,
+          "researchDate": "1936-07-01",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-lazikou-19360809",
+          "date": "1936-08-09",
+          "title": "红30军通过腊子口",
+          "place": "甘肃迭部腊子口",
+          "lon": 103.92,
+          "lat": 34.14,
+          "summary": "红四方面军第30军通过腊子口后向哈达铺推进。此为1936年的行动。",
+          "kind": "march",
+          "sources": [
+            "fourth-hadapu"
+          ],
+          "precision": "day",
+          "geoNote": "与1935年红一方面军腊子口战斗分年呈现，避免时间混淆。",
+          "armyId": "fourth",
+          "plotDate": "1936-08-09",
+          "displayDate": "1936年8月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 20
+        },
+        {
+          "id": "fourth-hadapu-19360809",
+          "date": "1936-08-09",
+          "title": "红30军进驻哈达铺",
+          "place": "甘肃宕昌哈达铺",
+          "lon": 104.22,
+          "lat": 34.23,
+          "summary": "红30军进入哈达铺，随后红四方面军在岷洮地区展开行动。",
+          "kind": "march",
+          "sources": [
+            "fourth-hadapu",
+            "fourth-mintaoxi"
+          ],
+          "precision": "day",
+          "geoNote": "现代哈达铺镇代表点；此日期专指红30军，不概括全方面军。 制图合并时统一为哈达铺镇附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "fourth",
+          "plotDate": "1936-08-09",
+          "displayDate": "1936年8月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 21,
+          "researchCoordinates": {
+            "lon": 104.22,
+            "lat": 34.2
+          },
+          "geographicAnchorReference": {
+            "title": "哈达铺镇附近代表点",
+            "url": "https://mapcarta.com/27379286",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "fourth-mintaoxi-193608",
+          "date": "1936-08",
+          "endDate": "1936-09",
+          "title": "岷洮西战役，创造会师条件",
+          "place": "甘肃岷县、临潭、漳县、通渭等地",
+          "lon": 104.04,
+          "lat": 34.44,
+          "summary": "红四方面军在甘南、陇中展开作战和休整，向红一方面军靠拢的条件逐渐形成。",
+          "kind": "battle",
+          "sources": [
+            "fourth-mintaoxi"
+          ],
+          "precision": "month-range",
+          "geoNote": "以岷县代表跨县战役区域；不可把它作为单一日行军位置。",
+          "armyId": "fourth",
+          "plotDate": "1936-08-20",
+          "displayDate": "1936年8月—9月",
+          "route": true,
+          "phase": "march",
+          "sequence": 22,
+          "researchDate": "1936-08-01",
+          "researchEndDate": "1936-09-30",
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "fourth-huining-19361009",
+          "date": "1936-10-09",
+          "title": "会宁会师，红四方面军长征结束",
+          "place": "甘肃会宁",
+          "lon": 105.05,
+          "lat": 35.69,
+          "summary": "红军总部、红四方面军总指挥部进入会宁，与红一方面军会师。",
+          "kind": "meeting",
+          "sources": [
+            "fourth-huining",
+            "fourth-overview"
+          ],
+          "precision": "day",
+          "geoNote": "会宁县城代表点；各先头与后续部队的会合并非全部发生在同一时刻。",
+          "armyId": "fourth",
+          "plotDate": "1936-10-09",
+          "displayDate": "1936年10月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 23
+        },
+        {
+          "id": "fourth-huining-celebration-19361010",
+          "date": "1936-10-10",
+          "title": "会宁庆祝大会",
+          "place": "甘肃会宁",
+          "lon": 105.05,
+          "lat": 35.69,
+          "summary": "红军召开会师庆祝大会；此时红二方面军仍在北进途中。",
+          "kind": "meeting",
+          "sources": [
+            "fourth-huining"
+          ],
+          "precision": "day",
+          "geoNote": "宜作为会师事件附卡，避免地图上重复画一段行军线。",
+          "armyId": "fourth",
+          "plotDate": "1936-10-10",
+          "displayDate": "1936年10月10日",
+          "route": false,
+          "phase": "aftermath",
+          "sequence": 24
+        }
+      ]
+    },
+    {
+      "id": "twentyfive",
+      "name": "红二十五军",
+      "shortName": "红二十五军",
+      "color": "#65798a",
+      "category": "main",
+      "period": "1934.11—1935.09",
+      "start": "1934-11-16",
+      "end": "1935-09-16",
+      "scope": "1934年11月16日自河南罗山何家冲出发；1935年9月先期到达陕北，9月16日永坪会师，随后合编为红十五军团。",
+      "notes": [
+        "这一路长征由1932年在鄂豫皖重新组建、继续坚持当地斗争的红二十五军实施，不应直接当作1935年从川陕根据地出发的红四方面军的一条同步分支。",
+        "出发时军长程子华、政委吴焕先、副军长徐海东。吴焕先在1935年8月21日四坡村战斗牺牲。9月7日豹子川会议确定徐海东任军长、程子华代理省委书记兼军政委。不能在出发节点直接使用长征结束时的指挥员职务。",
+        "行程不是从鄂豫皖直接不停行军到陕北：1934年12月至1935年7月在鄂豫陕边创建、巩固根据地；1935年7月16日再从沣峪口出发西征北上，配合主力红军行动。",
+        "永坪节点应区分1935年9月15日抵达、9月16日会师、9月17日会议决定合编、9月18日庆祝会师及红十五军团成立大会。通常以9月16日永坪会师叙述其长征结束。",
+        "红二十五军与红二十六、二十七军合编为红十五军团；1935年11月与中央红军会合后编入恢复番号的红一方面军。不能把红二十五军列为1936年三大方面军之外的第四个方面军。",
+        "本组仅列主要事件和区域行进锚点，不穷尽各营团、地方游击队及每次往返；所有经纬度为现代地名附近概略点，不是历史战场精确坐标。"
+      ],
+      "sources": [
+        {
+          "id": "tf-chronology",
+          "title": "红二十五军长征大事记",
+          "url": "https://dzb.henandaily.cn/html5/2026-09/17/content_13_1811747.htm",
+          "publisher": "河南日报；文字来源河南博物院"
+        },
+        {
+          "id": "tf-partyhistory",
+          "title": "红二十五军的长征",
+          "url": "https://www.dswxyjy.org.cn/n1/2026/0903/c244516-40791810.html",
+          "publisher": "中共中央党史和文献研究院网站"
+        },
+        {
+          "id": "tf-guide",
+          "title": "中央红军之向导——回望红二十五军的长征",
+          "url": "https://www.hljzx.gov.cn/contents/68/14160.html",
+          "publisher": "黑龙江省政协网站；来源人民政协报"
+        },
+        {
+          "id": "tf-first",
+          "title": "90个第一丨红军长征到达陕北的第一支部队：红25军",
+          "url": "https://www.81.mil.cn/2018byzt/2018-07/31/content_8100052.htm",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "tf-huashan",
+          "title": "八一特辑：司法护航革命遗址，一起追寻英雄足迹",
+          "url": "https://hnxyzy.hncourt.gov.cn/public/detail.php?id=13583",
+          "publisher": "信阳市中级人民法院"
+        },
+        {
+          "id": "tf-dushu",
+          "title": "方城县各级文物保护单位目录：红二十五军独树镇战斗遗址相关说明",
+          "url": "https://www.fangcheng.gov.cn/2025/09-04/1210984.html",
+          "publisher": "方城县人民政府"
+        },
+        {
+          "id": "tf-ning",
+          "title": "红二十五军长征在宁陕的活动",
+          "url": "https://www.ningshan.gov.cn/Content-681792.html",
+          "publisher": "宁陕县人民政府"
+        },
+        {
+          "id": "tf-yuanjia",
+          "title": "红二十五军袁家沟口歼敌军",
+          "url": "https://www.81.mil.cn/js_208592/16452655.html",
+          "publisher": "中国军网；来源中国国防报"
+        },
+        {
+          "id": "tf-tianshui",
+          "title": "红军长征进入天水的第一支队伍——红二十五军",
+          "url": "https://www.tianshui.gov.cn/dsb/info/1973/28342.htm",
+          "publisher": "中共天水市委党史和地方志研究室"
+        },
+        {
+          "id": "tf-yongping",
+          "title": "国民党军倾力围剿 西北红军越战越勇",
+          "url": "https://dangshi.people.com.cn/n1/2016/1012/c85037-28771149.html",
+          "publisher": "人民网党史频道"
+        },
+        {
+          "id": "tf-integration",
+          "title": "红军长征中的会师",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/16418521.html",
+          "publisher": "中华人民共和国国防部；来源解放军报"
+        }
+      ],
+      "events": [
+        {
+          "id": "tf-01",
+          "date": "1934-11-11",
+          "title": "花山寨会议决定战略转移",
+          "place": "河南光山花山寨",
+          "lon": 114.8,
+          "lat": 31.9,
+          "summary": "中共鄂豫皖省委会议决定红二十五军转到外线开辟新根据地，以北上抗日第二先遣队名义行动。",
+          "kind": "meeting",
+          "sources": [
+            "tf-huashan",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "光山县文殊乡一带概略点，属出发前决策节点。",
+          "armyId": "twentyfive",
+          "plotDate": "1934-11-11",
+          "displayDate": "1934年11月11日",
+          "route": false,
+          "phase": "prelude",
+          "sequence": 0
+        },
+        {
+          "id": "tf-02",
+          "date": "1934-11-16",
+          "title": "何家冲出发",
+          "place": "河南罗山何家冲",
+          "lon": 114.3,
+          "lat": 32,
+          "summary": "程子华、吴焕先、徐海东率红二十五军离开鄂豫皖根据地，开始长征。",
+          "kind": "start",
+          "sources": [
+            "tf-tianshui",
+            "tf-guide"
+          ],
+          "precision": "day",
+          "geoNote": "何家冲地区概略展示点，非纪念馆入口精确定位。",
+          "armyId": "twentyfive",
+          "plotDate": "1934-11-16",
+          "displayDate": "1934年11月16日",
+          "route": true,
+          "phase": "march",
+          "sequence": 1
+        },
+        {
+          "id": "tf-03",
+          "date": "1934-11-26",
+          "title": "独树镇突围",
+          "place": "河南方城独树镇七里岗一带",
+          "lon": 113.2,
+          "lat": 33.3,
+          "summary": "风雪中遭敌拦截，红军经激战及夜间迂回突破封锁，转入伏牛山区。",
+          "kind": "battle",
+          "sources": [
+            "tf-dushu",
+            "tf-guide"
+          ],
+          "precision": "day",
+          "geoNote": "独树镇地区概略位置，不表示某一营的阵地。",
+          "armyId": "twentyfive",
+          "plotDate": "1934-11-26",
+          "displayDate": "1934年11月26日",
+          "route": true,
+          "phase": "march",
+          "sequence": 2
+        },
+        {
+          "id": "tf-04",
+          "date": "1934-12-04",
+          "title": "卢氏寻路西进",
+          "place": "河南卢氏叫河、文峪一带",
+          "lon": 111,
+          "lat": 33.9,
+          "summary": "入陕大道遭封锁后，在当地向导帮助下绕行山间小路，继续向陕南转移。",
+          "kind": "march",
+          "sources": [
+            "tf-guide"
+          ],
+          "precision": "day",
+          "geoNote": "卢氏南部山区概略锚点，不能解释为由节点直线穿山。",
+          "armyId": "twentyfive",
+          "plotDate": "1934-12-04",
+          "displayDate": "1934年12月4日",
+          "route": true,
+          "phase": "march",
+          "sequence": 3
+        },
+        {
+          "id": "tf-05",
+          "date": "1934-12-08",
+          "title": "进入陕南",
+          "place": "陕西洛南三要司一带",
+          "lon": 110.5,
+          "lat": 34,
+          "summary": "越过豫陕边界，进入陕南，在三要司附近击败阻截部队。",
+          "kind": "arrival",
+          "sources": [
+            "tf-chronology",
+            "tf-guide"
+          ],
+          "precision": "day",
+          "geoNote": "今洛南县三要镇附近概略位置。",
+          "armyId": "twentyfive",
+          "plotDate": "1934-12-08",
+          "displayDate": "1934年12月8日",
+          "route": true,
+          "phase": "march",
+          "sequence": 4
+        },
+        {
+          "id": "tf-06",
+          "date": "1934-12-10",
+          "title": "庾家河会议与战斗",
+          "place": "陕西庾家河（今丹凤境内）",
+          "lon": 110.5,
+          "lat": 33.8,
+          "summary": "省委研究在鄂豫陕边创建根据地，会议期间遭敌突袭；激战后立足陕南。",
+          "kind": "meeting",
+          "sources": [
+            "tf-chronology",
+            "tf-guide"
+          ],
+          "precision": "day",
+          "geoNote": "今丹凤县庾岭一带概略位置；当时属洛南，不应按现代县界改写史料。",
+          "armyId": "twentyfive",
+          "plotDate": "1934-12-10",
+          "displayDate": "1934年12月10日",
+          "route": true,
+          "phase": "march",
+          "sequence": 5
+        },
+        {
+          "id": "tf-07",
+          "date": "1935-01-09",
+          "title": "攻克镇安",
+          "place": "陕西镇安",
+          "lon": 109.2,
+          "lat": 33.4,
+          "summary": "红军进入镇安县城，开展群众工作，并继续在鄂豫陕边游击作战。",
+          "kind": "battle",
+          "sources": [
+            "tf-partyhistory",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "镇安县城概略展示点。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-01-09",
+          "displayDate": "1935年1月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 6
+        },
+        {
+          "id": "tf-08",
+          "date": "1935-03-03",
+          "title": "进入宁陕",
+          "place": "陕西宁陕",
+          "lon": 108.3,
+          "lat": 33.3,
+          "summary": "部队转战陕南、秦岭一带；根据地建设与反围剿作战交错进行。",
+          "kind": "arrival",
+          "sources": [
+            "tf-chronology",
+            "tf-ning"
+          ],
+          "precision": "day",
+          "geoNote": "宁陕县城附近概略点，不能代表整个宁陕活动区域。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-03-03",
+          "displayDate": "1935年3月3日",
+          "route": true,
+          "phase": "march",
+          "sequence": 7
+        },
+        {
+          "id": "tf-09",
+          "date": "1935-04",
+          "title": "葛牌镇会议与根据地建设",
+          "place": "陕西蓝田葛牌镇",
+          "lon": 109.6,
+          "lat": 33.9,
+          "summary": "省委在葛牌镇召开扩大会议，推动鄂豫陕根据地建设；长征在此阶段并非持续北上行军。",
+          "kind": "meeting",
+          "sources": [
+            "tf-chronology",
+            "tf-ning"
+          ],
+          "precision": "month",
+          "geoNote": "葛牌镇概略位置；史料为4月中旬，不强设日期。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-04-15",
+          "displayDate": "1935年4月中旬",
+          "route": true,
+          "phase": "march",
+          "sequence": 8,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        },
+        {
+          "id": "tf-10",
+          "date": "1935-06-16",
+          "title": "荆紫关战斗",
+          "place": "河南淅川荆紫关",
+          "lon": 111,
+          "lat": 33.2,
+          "summary": "在鄂豫陕边反围剿作战中奔袭荆紫关，获取补给后继续机动作战。",
+          "kind": "battle",
+          "sources": [
+            "tf-chronology",
+            "tf-first"
+          ],
+          "precision": "day",
+          "geoNote": "荆紫关镇概略位置。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-06-16",
+          "displayDate": "1935年6月16日",
+          "route": true,
+          "phase": "march",
+          "sequence": 9
+        },
+        {
+          "id": "tf-11",
+          "date": "1935-07-02",
+          "title": "袁家沟口歼灭战",
+          "place": "陕西山阳袁家沟口",
+          "lon": 109.8,
+          "lat": 33.6,
+          "summary": "采取诱敌深入、先拖后打的方针，歼灭陕军警备第一旅，是第二次反围剿的重要胜利。",
+          "kind": "battle",
+          "sources": [
+            "tf-yuanjia",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "山阳县袁家沟口地区概略位置，非战场边界。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-07-02",
+          "displayDate": "1935年7月2日",
+          "route": true,
+          "phase": "march",
+          "sequence": 10
+        },
+        {
+          "id": "tf-12",
+          "date": "1935-07-15",
+          "endDate": "1935-07-16",
+          "title": "沣峪口决策，再度西征北上",
+          "place": "陕西长安沣峪口",
+          "lon": 108.9,
+          "lat": 34,
+          "summary": "获悉主力红军北上动向后，省委决定主动配合；红二十五军主力16日从沣峪口出发。",
+          "kind": "meeting",
+          "sources": [
+            "tf-guide",
+            "tf-chronology"
+          ],
+          "precision": "range",
+          "geoNote": "秦岭北麓沣峪口概略位置。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-07-15",
+          "displayDate": "1935年7月15日—16日",
+          "route": true,
+          "phase": "march",
+          "sequence": 11
+        },
+        {
+          "id": "tf-13",
+          "date": "1935-08-03",
+          "title": "攻占两当县城",
+          "place": "甘肃两当",
+          "lon": 106.3,
+          "lat": 33.9,
+          "summary": "部队经双石铺西进，8月2日进入甘肃，次日攻占两当县城。",
+          "kind": "battle",
+          "sources": [
+            "tf-chronology",
+            "tf-tianshui"
+          ],
+          "precision": "day",
+          "geoNote": "两当县城概略位置。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-08-03",
+          "displayDate": "1935年8月3日",
+          "route": true,
+          "phase": "march",
+          "sequence": 12
+        },
+        {
+          "id": "tf-14",
+          "date": "1935-08-09",
+          "title": "攻占天水北关",
+          "place": "甘肃天水北关",
+          "lon": 105.7,
+          "lat": 34.6,
+          "summary": "红军进入天水地区后攻占北关，继续向渭河北岸转移，以牵制追堵力量。",
+          "kind": "battle",
+          "sources": [
+            "tf-chronology",
+            "tf-tianshui"
+          ],
+          "precision": "day",
+          "geoNote": "天水秦州城区北侧概略展示点。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-08-09",
+          "displayDate": "1935年8月9日",
+          "route": true,
+          "phase": "march",
+          "sequence": 13
+        },
+        {
+          "id": "tf-15",
+          "date": "1935-08-11",
+          "title": "北渡渭河，进入秦安",
+          "place": "甘肃秦安",
+          "lon": 105.7,
+          "lat": 34.9,
+          "summary": "主力进入秦安县城，随后经安伏、通渭一线北上，逼近静宁并切断西兰公路。",
+          "kind": "crossing",
+          "sources": [
+            "tf-tianshui",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "以秦安县城为概略锚点；并非渭河的精确渡点。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-08-11",
+          "displayDate": "1935年8月11日",
+          "route": true,
+          "phase": "march",
+          "sequence": 14
+        },
+        {
+          "id": "tf-16",
+          "date": "1935-08-17",
+          "title": "攻克隆德，翻越六盘山",
+          "place": "宁夏隆德",
+          "lon": 106.1,
+          "lat": 35.6,
+          "summary": "经兴隆镇、单家集等地到隆德，之后翻越六盘山，继续向陇东转进。",
+          "kind": "battle",
+          "sources": [
+            "tf-tianshui",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "今隆德县城概略点；1935年行政归属不同于今日。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-08-17",
+          "displayDate": "1935年8月17日",
+          "route": true,
+          "phase": "march",
+          "sequence": 15
+        },
+        {
+          "id": "tf-17",
+          "date": "1935-08-21",
+          "title": "四坡村战斗，吴焕先牺牲",
+          "place": "甘肃泾川四坡村",
+          "lon": 107.4,
+          "lat": 35.2,
+          "summary": "红军在四坡村与敌军激战，军政治委员吴焕先在战斗中牺牲。",
+          "kind": "battle",
+          "sources": [
+            "tf-tianshui",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "泾川县四坡地区概略点，不是牺牲地点的精确测定。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-08-21",
+          "displayDate": "1935年8月21日",
+          "route": true,
+          "phase": "march",
+          "sequence": 16
+        },
+        {
+          "id": "tf-18",
+          "date": "1935-09-07",
+          "title": "豹子川会议",
+          "place": "甘肃豹子川（今华池一带）",
+          "lon": 108,
+          "lat": 36.2,
+          "summary": "省委扩大会议决定由徐海东任军长，程子华代理省委书记兼军政委，并动员与陕甘红军会合。",
+          "kind": "meeting",
+          "sources": [
+            "tf-tianshui",
+            "tf-chronology"
+          ],
+          "precision": "day",
+          "geoNote": "豹子川区域概略锚点；史料称当时合水县东北，不能用今日合水县城代替。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-09-07",
+          "displayDate": "1935年9月7日",
+          "route": true,
+          "phase": "march",
+          "sequence": 17
+        },
+        {
+          "id": "tf-19",
+          "date": "1935-09-15",
+          "title": "先期到达永坪",
+          "place": "陕西延川永坪镇",
+          "lon": 109.82,
+          "lat": 37.01,
+          "summary": "红二十五军到达永坪，成为先期到达陕北的长征部队，为迎接中央红军创造条件。",
+          "kind": "arrival",
+          "sources": [
+            "tf-tianshui",
+            "tf-yongping"
+          ],
+          "precision": "day",
+          "geoNote": "永坪镇概略位置，不应误写为甘肃会宁或宁夏将台堡。 制图合并时统一为永坪会师纪念馆附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-09-15",
+          "displayDate": "1935年9月15日",
+          "route": true,
+          "phase": "march",
+          "sequence": 18,
+          "researchCoordinates": {
+            "lon": 109.9,
+            "lat": 36.9
+          },
+          "geographicAnchorReference": {
+            "title": "永坪会师纪念馆附近代表点",
+            "url": "https://www.amap.com/place/B0FFKZL97S",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "tf-20",
+          "date": "1935-09-16",
+          "title": "永坪会师，完成长征",
+          "place": "陕西延川永坪镇",
+          "lon": 109.82,
+          "lat": 37.01,
+          "summary": "红二十五军与陕甘红军在永坪会师；此时中央红军尚未到陕北。",
+          "kind": "rendezvous",
+          "sources": [
+            "tf-tianshui",
+            "tf-chronology",
+            "tf-yongping"
+          ],
+          "precision": "day",
+          "geoNote": "永坪镇概略位置。 制图合并时统一为永坪会师纪念馆附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-09-16",
+          "displayDate": "1935年9月16日",
+          "route": true,
+          "phase": "march",
+          "sequence": 19,
+          "researchCoordinates": {
+            "lon": 109.9,
+            "lat": 36.9
+          },
+          "geographicAnchorReference": {
+            "title": "永坪会师纪念馆附近代表点",
+            "url": "https://www.amap.com/place/B0FFKZL97S",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "tf-21",
+          "date": "1935-09-17",
+          "endDate": "1935-09-18",
+          "title": "合编红十五军团",
+          "place": "陕西延川永坪镇",
+          "lon": 109.82,
+          "lat": 37.01,
+          "summary": "17日会议决定红二十五、二十六、二十七军合编红十五军团；18日举行会师及成立庆祝大会。",
+          "kind": "reorganization",
+          "sources": [
+            "tf-yongping",
+            "tf-chronology"
+          ],
+          "precision": "range",
+          "geoNote": "长征结束后的组织节点，宜显示为后续，避免让移动轨迹仍在继续。 制图合并时统一为永坪会师纪念馆附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-09-17",
+          "displayDate": "1935年9月17日—18日",
+          "route": false,
+          "phase": "aftermath",
+          "sequence": 20,
+          "researchCoordinates": {
+            "lon": 109.9,
+            "lat": 36.9
+          },
+          "geographicAnchorReference": {
+            "title": "永坪会师纪念馆附近代表点",
+            "url": "https://www.amap.com/place/B0FFKZL97S",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "tf-22",
+          "date": "1935-11",
+          "title": "红十五军团编入红一方面军",
+          "place": "陕西甘泉地区",
+          "lon": 109.4,
+          "lat": 36.3,
+          "summary": "红十五军团与陕甘支队会合，随后编入恢复番号的红一方面军。",
+          "kind": "reorganization",
+          "sources": [
+            "tf-integration"
+          ],
+          "precision": "month",
+          "geoNote": "长征结束后的沿革说明；甘泉县概略位置，不属于红二十五军独立长征路线。",
+          "armyId": "twentyfive",
+          "plotDate": "1935-11-05",
+          "displayDate": "1935年11月初",
+          "route": false,
+          "phase": "aftermath",
+          "sequence": 21,
+          "plotDateApproximate": true,
+          "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+        }
+      ]
+    },
+    {
+      "id": "regiment",
+      "name": "红一军团第二师第四团（红四团）",
+      "shortName": "红四团",
+      "color": "#7c4c3b",
+      "category": "special",
+      "routeMode": "fragments",
+      "period": "1934.11—1935.09 · 已核实片段",
+      "start": "1934-11-22",
+      "end": "1935-09-17",
+      "scope": "只收录史料明确点名红四团的8个战斗、行军与会师片段，1934年11月至1935年9月；不是全团完整长征路线。",
+      "notes": [
+        "身份：本专题的红四团是中央红军／红一方面军的红一军团第二师第四团，不是红四方面军，也不是红四军。1935年后期史料中也称红一军第二师第四团。",
+        "界面应固定提示：已核实片段，非完整轨迹。未列时段只代表本专题没有团级节点，不能自动继承方面军位置、用直线插值当作实际行军路线。",
+        "道县、湘江、乌江、泸定桥、飞越岭、夹金山、达维、腊子口均有史料明确点名该团。其他中央红军的出发、会议、过江、到达吴起等节点不在本专题补入。",
+        "安顺场1935年5月25日强渡大渡河的先遣队为红一军团第一师第一团；不能移植成红四团战绩。红四团的泸定桥行动与之有战役关联，但部队不同。",
+        "夹金山、达维两个节点同在1935年6月12日，用于区分翻山与先头会师。不同纪念叙述中的时刻不一致，本专题不精确到小时。",
+        "经纬度为现代地名附近的概略制图参考，只保留两位小数；不是营连行进路径、当时道路或战术阵地的测绘坐标。飞越岭点位参考现代垭口，其他节点沿用中央红军研究底稿的地域坐标。"
+      ],
+      "sources": [
+        {
+          "id": "r01",
+          "title": "湘江战役：事关中国革命生死存亡的重要历史事件",
+          "url": "https://www.81.cn/js_208592/10162099.html",
+          "publisher": "中国军网"
+        },
+        {
+          "id": "r02",
+          "title": "记者再走长征路丨乌江：红军在这里开始反攻",
+          "url": "https://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4845553.html",
+          "publisher": "国防部网站"
+        },
+        {
+          "id": "r03",
+          "title": "飞夺泸定桥",
+          "url": "https://cpc.people.com.cn/GB/n1/2025/0308/c443712-40434014.html",
+          "publisher": "中国共产党新闻网"
+        },
+        {
+          "id": "r04",
+          "title": "飞越岭战斗：打通中央红军与红四方面军会师的通道",
+          "url": "https://www.81.cn/js_208592/16428947.html",
+          "publisher": "中国军网／解放军报"
+        },
+        {
+          "id": "r05",
+          "title": "雪山铸忠魂 草地映初心——从雅安到阿坝的红色印记",
+          "url": "https://www.yaan.gov.cn/zhangzhe/show/fdec3631-acfc-41f7-8f2e-6fd4adc74b42.html",
+          "publisher": "雅安市人民政府"
+        },
+        {
+          "id": "r06",
+          "title": "长征中的会议（两河口会议背景）",
+          "url": "https://fuwu.12371.cn/2012/06/11/ARTI1339400564382590_7.shtml",
+          "publisher": "共产党员网"
+        },
+        {
+          "id": "r07",
+          "title": "长征时期党中央在甘肃召开的重要会议",
+          "url": "https://www.dswxyjy.org.cn/BIG5/n1/2021/1126/c244516-32292961.html",
+          "publisher": "中共中央党史和文献研究院"
+        },
+        {
+          "id": "r08",
+          "title": "解读长征（52）：红一、四方面军怎样庆祝胜利会师的",
+          "url": "https://dangshi.people.com.cn/n1/2016/1008/c406450-28760538.html",
+          "publisher": "中国共产党新闻网；作者为军史专家、军事博物馆研究员"
+        }
+      ],
+      "events": [
+        {
+          "id": "regiment-daoxian",
+          "date": "1934-11-22",
+          "title": "四、五团抢占道县",
+          "place": "湖南道县",
+          "lon": 111.6,
+          "lat": 25.53,
+          "summary": "红一军团第二师第四、第五团抢占道县，控制潇水浮船和渡口，为部队西进开辟条件。",
+          "kind": "battle",
+          "sources": [
+            "r01"
+          ],
+          "precision": "day；县城地域",
+          "geoNote": "明确是第四、第五团共同行动，不表述为四团独自完成。",
+          "armyId": "regiment",
+          "plotDate": "1934-11-22",
+          "displayDate": "1934年11月22日",
+          "route": true,
+          "phase": "march",
+          "sequence": 0
+        },
+        {
+          "id": "regiment-xiangjiang",
+          "date": "1934-11-27",
+          "title": "抢占湘江界首渡口",
+          "place": "广西兴安界首",
+          "lon": 111.07,
+          "lat": 25.83,
+          "summary": "红二师第四团在耿飚、杨成武率领下渡过湘江，抢占界首渡口，随后组织架桥。",
+          "kind": "crossing",
+          "sources": [
+            "r01"
+          ],
+          "precision": "day；渡口地域",
+          "geoNote": "这里只表述该团27日的行动，不将整场湘江战役所有战场都归入红四团。",
+          "armyId": "regiment",
+          "plotDate": "1934-11-27",
+          "displayDate": "1934年11月27日",
+          "route": true,
+          "phase": "march",
+          "sequence": 1
+        },
+        {
+          "id": "regiment-wujiang",
+          "date": "1935-01-02",
+          "endDate": "1935-01-03",
+          "title": "江界河强渡乌江",
+          "place": "贵州瓮安江界河",
+          "lon": 107.43,
+          "lat": 27.2,
+          "summary": "红一军团二师四团发起渡江行动；经侦察、试渡后，3日重新组织强渡并突破防御。",
+          "kind": "crossing",
+          "sources": [
+            "r02"
+          ],
+          "precision": "range；渡口地域",
+          "armyId": "regiment",
+          "plotDate": "1935-01-02",
+          "displayDate": "1935年1月2日—3日",
+          "route": true,
+          "phase": "march",
+          "sequence": 2
+        },
+        {
+          "id": "regiment-luding",
+          "date": "1935-05-29",
+          "title": "红四团飞夺泸定桥",
+          "place": "四川泸定桥",
+          "lon": 102.23,
+          "lat": 29.91,
+          "summary": "红四团昼夜兼程到达西桥头，组成突击队夺桥，并由后续官兵铺板、跟进，打通北上通路。",
+          "kind": "battle",
+          "sources": [
+            "r03"
+          ],
+          "precision": "day；桥址附近",
+          "armyId": "regiment",
+          "plotDate": "1935-05-29",
+          "displayDate": "1935年5月29日",
+          "route": true,
+          "phase": "march",
+          "sequence": 3
+        },
+        {
+          "id": "regiment-feiyueling",
+          "date": "1935-05-31",
+          "title": "飞越岭迂回攻关",
+          "place": "四川泸定东南飞越岭",
+          "lon": 102.31,
+          "lat": 29.7,
+          "summary": "红四团组织第六连等兵力从侧翼攀援迂回，突破飞越岭防线，继续打开通向天全、芦山的道路。",
+          "kind": "battle",
+          "sources": [
+            "r04"
+          ],
+          "precision": "day；山口地域",
+          "geoNote": "点位是飞越岭现代垭口附近，不是第六连攀援线路。",
+          "armyId": "regiment",
+          "plotDate": "1935-05-31",
+          "displayDate": "1935年5月31日",
+          "route": true,
+          "phase": "march",
+          "sequence": 4,
+          "geographicSourceIds": [
+            "rg01"
+          ]
+        },
+        {
+          "id": "regiment-jiajin",
+          "date": "1935-06-12",
+          "title": "作为先头部队翻越夹金山",
+          "place": "四川宝兴至小金夹金山",
+          "lon": 102.67,
+          "lat": 30.84,
+          "summary": "红一军团二师四团在师长陈光带领下翻越夹金山，继续向达维方向前进。",
+          "kind": "terrain",
+          "sources": [
+            "r05"
+          ],
+          "precision": "day；山脉地域",
+          "geoNote": "不将中央机关和主力17—18日的翻山日期移植给该团。",
+          "armyId": "regiment",
+          "plotDate": "1935-06-12",
+          "displayDate": "1935年6月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 5
+        },
+        {
+          "id": "regiment-dawei",
+          "date": "1935-06-12",
+          "title": "达维与红七十四团会师",
+          "place": "四川小金达维地区",
+          "lon": 102.64,
+          "lat": 30.96,
+          "summary": "红一军团二师四团与红四方面军第九军第二十五师第七十四团先头部队在达维地区会合。",
+          "kind": "reunion",
+          "sources": [
+            "r06",
+            "r08"
+          ],
+          "precision": "day；达维地区",
+          "geoNote": "先头部队会师不等于所有主力和机关当日均已到达。 制图合并时统一为达维镇附近代表点，仍非历史行军或旧址的精确测绘。",
+          "armyId": "regiment",
+          "plotDate": "1935-06-12",
+          "displayDate": "1935年6月12日",
+          "route": true,
+          "phase": "march",
+          "sequence": 6,
+          "researchCoordinates": {
+            "lon": 102.76,
+            "lat": 30.99
+          },
+          "geographicAnchorReference": {
+            "title": "达维镇附近代表点",
+            "url": "https://mapcarta.com/15972418",
+            "type": "geographic"
+          }
+        },
+        {
+          "id": "regiment-lazikou",
+          "date": "1935-09-16",
+          "endDate": "1935-09-17",
+          "title": "红四团突破腊子口",
+          "place": "甘肃迭部腊子口",
+          "lon": 103.89,
+          "lat": 34.11,
+          "summary": "红四团16日下午逼近腊子口，正面攻击与攀崖迂回配合，17日清晨突破守军防线。",
+          "kind": "battle",
+          "sources": [
+            "r07"
+          ],
+          "precision": "range；关隘地域",
+          "armyId": "regiment",
+          "plotDate": "1935-09-16",
+          "displayDate": "1935年9月16日—17日",
+          "route": true,
+          "phase": "march",
+          "sequence": 7
+        }
+      ]
+    }
+  ],
+  "prologue": [
+    {
+      "id": "prologue-seventh-193407",
+      "date": "1934-07",
+      "title": "序幕：红7军团北上抗日先遣",
+      "place": "江西瑞金出发，转战闽浙皖赣",
+      "lon": 116.02,
+      "lat": 25.88,
+      "summary": "7月上旬，红7军团奉命从瑞金出动，北上宣传抗日、开展游击战争，并调动国民党军，减轻中央苏区压力。",
+      "kind": "departure",
+      "sources": [
+        "prologue-vanguard-army",
+        "prologue-vanguard-placard"
+      ],
+      "precision": "month",
+      "armyId": "vanguard",
+      "phase": "prelude",
+      "route": false,
+      "plotDate": "1934-07-07",
+      "displayDate": "1934年7月上旬",
+      "sequence": 0,
+      "plotDateApproximate": true,
+      "plotDateNote": "动画排程参考日，非史料确认的发生日。"
+    },
+    {
+      "id": "prologue-sixth-19340807",
+      "date": "1934-08-07",
+      "title": "序幕：红6军团突围西征",
+      "place": "江西遂川横石、新江口地区",
+      "lon": 114.52,
+      "lat": 26.33,
+      "summary": "任弼时、萧克、王震率红6军团9700余人离开湘赣根据地西征，为中央红军战略转移侦察开路。此时尚未组成红二方面军。",
+      "kind": "departure",
+      "sources": [
+        "prologue-sixth"
+      ],
+      "precision": "day",
+      "armyId": "second",
+      "phase": "prelude",
+      "route": false,
+      "plotDate": "1934-08-07",
+      "displayDate": "1934年8月7日",
+      "sequence": 0
+    },
+    {
+      "id": "prologue-fifth-campaign",
+      "date": "1934-10",
+      "title": "第五次反“围剿”失利，主力被迫转移",
+      "place": "中央苏区（江西、福建）",
+      "lon": 116.02,
+      "lat": 25.88,
+      "summary": "1933年9月至1934年10月，中央苏区第五次反“围剿”陷于被动并最终失败。中央红军主力为保存力量，被迫退出中央苏区，实行战略转移。",
+      "kind": "context",
+      "sources": [
+        "prologue-fifth",
+        "prologue-transfer"
+      ],
+      "precision": "month",
+      "armyId": "central",
+      "phase": "prelude",
+      "route": false,
+      "plotDate": "1934-10-15",
+      "displayDate": "1934年10月",
+      "sequence": 0,
+      "researchDate": "1934-10-01",
+      "plotDateApproximate": true,
+      "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+    },
+    {
+      "id": "prologue-baggage-193410",
+      "date": "1934-10",
+      "title": "长征初期：“大搬家”式转移",
+      "place": "中央苏区出发后的行军序列",
+      "lon": 115.42,
+      "lat": 25.95,
+      "summary": "中央机关、直属部队和大量物资一同行动，笨重辎重拖慢行军，增加机动和渡江困难。战略转移的必要性与具体组织指挥上的失误，应分别理解。",
+      "kind": "context",
+      "sources": [
+        "prologue-transfer",
+        "prologue-jin"
+      ],
+      "precision": "month",
+      "armyId": "central",
+      "phase": "march",
+      "route": false,
+      "plotDate": "1934-10-15",
+      "displayDate": "1934年10月",
+      "sequence": 1,
+      "researchDate": "1934-10-01",
+      "plotDateApproximate": true,
+      "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+    },
+    {
+      "id": "prologue-line1-19341021",
+      "date": "1934-10-21",
+      "endDate": "1934-10-25",
+      "title": "突破第一道封锁线",
+      "place": "江西赣县王母渡—信丰桃江一线",
+      "lon": 114.94,
+      "lat": 25.38,
+      "summary": "中央红军从王母渡、信丰地区突围，至10月25日全部渡过桃江。与粤军事先达成的协议有利于通行，但前线仍发生战斗和伤亡。",
+      "kind": "battle",
+      "sources": [
+        "prologue-first-line",
+        "prologue-four-lines",
+        "prologue-jin"
+      ],
+      "precision": "day-range",
+      "armyId": "central",
+      "phase": "march",
+      "route": false,
+      "plotDate": "1934-10-21",
+      "displayDate": "1934年10月21日—25日",
+      "sequence": 4
+    },
+    {
+      "id": "prologue-line2-193411",
+      "date": "1934-11",
+      "title": "突破第二道封锁线",
+      "place": "湖南汝城—广东仁化城口之间",
+      "lon": 113.68,
+      "lat": 25.55,
+      "summary": "11月上旬，中央红军各路纵队通过汝城与城口之间的封锁线，继续向西。此处采用上旬口径，避免把各部先后通过压缩成单一时刻。",
+      "kind": "battle",
+      "sources": [
+        "prologue-hunan",
+        "prologue-four-lines"
+      ],
+      "precision": "month",
+      "armyId": "central",
+      "phase": "march",
+      "route": false,
+      "plotDate": "1934-11-06",
+      "displayDate": "1934年11月上旬",
+      "sequence": 5,
+      "researchDate": "1934-11-01",
+      "plotDateApproximate": true,
+      "plotDateNote": "动画排程参考日，非史料确认的发生日；历史日期请以 displayDate 和 precision 为准。"
+    },
+    {
+      "id": "prologue-line3-19341113",
+      "date": "1934-11-13",
+      "endDate": "1934-11-15",
+      "title": "突破第三道封锁线",
+      "place": "湖南郴县、良田、宜章—广东乐昌地区",
+      "lon": 112.95,
+      "lat": 25.4,
+      "summary": "中央红军从郴县、宜章之间打开缺口，突破第三道封锁线，继续向湘江方向前进。",
+      "kind": "battle",
+      "sources": [
+        "prologue-hunan"
+      ],
+      "precision": "day-range",
+      "armyId": "central",
+      "phase": "march",
+      "route": false,
+      "plotDate": "1934-11-13",
+      "displayDate": "1934年11月13日—15日",
+      "sequence": 6
+    },
+    {
+      "id": "central-xiangjiang",
+      "date": "1934-11-27",
+      "endDate": "1934-12-01",
+      "title": "湘江战役",
+      "place": "广西全州、兴安、灌阳之间",
+      "lon": 111.07,
+      "lat": 25.83,
+      "summary": "红军突破第四道封锁线，渡过湘江，付出重大伤亡。阻击与渡江分布在多处战场。",
+      "kind": "battle",
+      "sources": [
+        "c04",
+        "prologue-xiangjiang",
+        "prologue-hunan",
+        "prologue-jin"
+      ],
+      "precision": "range；战役地域",
+      "geoNote": "以兴安界首附近作代表，不是战役全部范围。",
+      "extra": [
+        "湘江战役：突破第四道封锁线：中央红军抢渡湘江，付出极为惨重的代价。出发时8.6万余人至湘江战役后剩3万余人，是此前行军、作战到本役后的累计人数变化，不能解释为本役阵亡5.6万人。",
+        "日期口径：本卡1934年11月27日至12月1日为先头渡江与主要作战阶段；序幕史料另以11月25日至12月1日概括整体湘江战役。两者所指阶段不同，本图保留原卡日期，同时列示整体战役口径，不将其视为已消除的冲突。"
+      ],
+      "mergedEventIds": [
+        "prologue-xiangjiang-19341125"
+      ],
+      "mergedResearchEvents": [
+        {
+          "id": "prologue-xiangjiang-19341125",
+          "date": "1934-11-25",
+          "endDate": "1934-12-01",
+          "title": "湘江战役：突破第四道封锁线",
+          "place": "广西全州、兴安、灌阳地区",
+          "lon": 110.67,
+          "lat": 25.61,
+          "summary": "中央红军抢渡湘江，付出极为惨重的代价。出发时8.6万余人至湘江战役后剩3万余人，是此前行军、作战到本役后的累计人数变化，不能解释为本役阵亡5.6万人。",
+          "kind": "battle",
+          "sources": [
+            "prologue-xiangjiang",
+            "prologue-hunan",
+            "prologue-jin"
+          ],
+          "precision": "day-range",
+          "armyId": "central",
+          "phase": "march",
+          "route": false
+        }
+      ],
+      "armyId": "central",
+      "plotDate": "1934-11-27",
+      "displayDate": "1934年11月27日—12月1日",
+      "route": true,
+      "phase": "march",
+      "sequence": 7
+    },
+    {
+      "id": "central-tongdao",
+      "date": "1934-12-12",
+      "title": "通道转兵",
+      "place": "湖南通道",
+      "lon": 109.78,
+      "lat": 26.16,
+      "summary": "中央负责人研究进军方向，采纳向敌军薄弱的贵州前进的意见。",
+      "kind": "decision",
+      "sources": [
+        "c05",
+        "prologue-liping",
+        "prologue-jin"
+      ],
+      "precision": "day；县域示意",
+      "extra": [
+        "通道会议：讨论西进贵州：中共中央部分负责人紧急讨论进军方向，采纳毛泽东西进贵州的建议，调整行动部署；彻底改变既定战略方针，随后由黎平政治局会议形成正式决定。"
+      ],
+      "mergedEventIds": [
+        "prologue-tongdao-19341212"
+      ],
+      "mergedResearchEvents": [
+        {
+          "id": "prologue-tongdao-19341212",
+          "date": "1934-12-12",
+          "title": "通道会议：讨论西进贵州",
+          "place": "湖南通道当时县城（今县溪镇地区）",
+          "lon": 109.64,
+          "lat": 26.37,
+          "summary": "中共中央部分负责人紧急讨论进军方向，采纳毛泽东西进贵州的建议，调整行动部署；彻底改变既定战略方针，随后由黎平政治局会议形成正式决定。",
+          "kind": "conference",
+          "sources": [
+            "prologue-liping",
+            "prologue-jin"
+          ],
+          "precision": "day",
+          "armyId": "central",
+          "phase": "march",
+          "route": false
+        }
+      ],
+      "armyId": "central",
+      "plotDate": "1934-12-12",
+      "displayDate": "1934年12月12日",
+      "route": true,
+      "phase": "march",
+      "sequence": 8
+    },
+    {
+      "id": "central-liping",
+      "date": "1934-12-18",
+      "title": "黎平会议",
+      "place": "贵州黎平",
+      "lon": 109.14,
+      "lat": 26.23,
+      "summary": "政治局决定放弃到湘西北会合红二、六军团的原定计划，改向黔北。",
+      "kind": "meeting",
+      "sources": [
+        "c06",
+        "prologue-liping",
+        "prologue-zunyi"
+      ],
+      "precision": "day；城镇示意",
+      "extra": [
+        "黎平会议：正式确定转向黔北：中央政治局通过战略方针决定，放弃赴湘西北与红二、红六军团会合的原计划，改向贵州北部进军。"
+      ],
+      "mergedEventIds": [
+        "prologue-liping-19341218"
+      ],
+      "mergedResearchEvents": [
+        {
+          "id": "prologue-liping-19341218",
+          "date": "1934-12-18",
+          "title": "黎平会议：正式确定转向黔北",
+          "place": "贵州黎平",
+          "lon": 109.14,
+          "lat": 26.23,
+          "summary": "中央政治局通过战略方针决定，放弃赴湘西北与红二、红六军团会合的原计划，改向贵州北部进军。",
+          "kind": "conference",
+          "sources": [
+            "prologue-liping",
+            "prologue-zunyi"
+          ],
+          "precision": "day",
+          "armyId": "central",
+          "phase": "march",
+          "route": false
+        }
+      ],
+      "armyId": "central",
+      "plotDate": "1934-12-18",
+      "displayDate": "1934年12月18日",
+      "route": true,
+      "phase": "march",
+      "sequence": 9
+    },
+    {
+      "id": "central-houchang",
+      "date": "1934-12-31",
+      "endDate": "1935-01-01",
+      "title": "猴场会议",
+      "place": "贵州瓮安猴场",
+      "lon": 107.47,
+      "lat": 27.06,
+      "summary": "政治局研究渡乌江后的行动方针，进一步加强对重大军事决策的领导。",
+      "kind": "meeting",
+      "sources": [
+        "c07",
+        "prologue-houchang",
+        "prologue-zunyi"
+      ],
+      "precision": "overnight；乡镇示意",
+      "extra": [
+        "猴场会议：巩固黎平决定：1934年12月31日晚至1935年1月1日凌晨召开政治局会议，重申黎平战略方针，并规定军事指挥的重要问题必须向政治局报告。"
+      ],
+      "mergedEventIds": [
+        "prologue-houchang-19341231"
+      ],
+      "mergedResearchEvents": [
+        {
+          "id": "prologue-houchang-19341231",
+          "date": "1934-12-31",
+          "endDate": "1935-01-01",
+          "title": "猴场会议：巩固黎平决定",
+          "place": "贵州瓮安猴场",
+          "lon": 107.56,
+          "lat": 27.18,
+          "summary": "1934年12月31日晚至1935年1月1日凌晨召开政治局会议，重申黎平战略方针，并规定军事指挥的重要问题必须向政治局报告。",
+          "kind": "conference",
+          "sources": [
+            "prologue-houchang",
+            "prologue-zunyi"
+          ],
+          "precision": "day-range",
+          "armyId": "central",
+          "phase": "march",
+          "route": false
+        }
+      ],
+      "armyId": "central",
+      "plotDate": "1934-12-31",
+      "displayDate": "1934年12月31日—1935年1月1日",
+      "route": true,
+      "phase": "march",
+      "sequence": 10
+    },
+    {
+      "id": "central-zunyi-meeting",
+      "date": "1935-01-15",
+      "endDate": "1935-01-17",
+      "title": "遵义会议",
+      "place": "贵州遵义",
+      "lon": 106.93,
+      "lat": 27.69,
+      "summary": "会议总结军事领导错误，改组中央领导机构，成为党和红军历史的重要转折。",
+      "kind": "meeting",
+      "sources": [
+        "c01",
+        "prologue-zunyi"
+      ],
+      "precision": "range；会址城镇示意",
+      "extra": [
+        "遵义会议：纠正军事指挥错误：中央政治局扩大会议总结第五次反“围剿”及长征初期教训，解决紧迫的军事和组织问题。它承接通道、黎平、猴场等会议，是逐步转变中的关键节点。"
+      ],
+      "mergedEventIds": [
+        "prologue-zunyi-19350115"
+      ],
+      "mergedResearchEvents": [
+        {
+          "id": "prologue-zunyi-19350115",
+          "date": "1935-01-15",
+          "endDate": "1935-01-17",
+          "title": "遵义会议：纠正军事指挥错误",
+          "place": "贵州遵义",
+          "lon": 106.92,
+          "lat": 27.69,
+          "summary": "中央政治局扩大会议总结第五次反“围剿”及长征初期教训，解决紧迫的军事和组织问题。它承接通道、黎平、猴场等会议，是逐步转变中的关键节点。",
+          "kind": "conference",
+          "sources": [
+            "prologue-zunyi"
+          ],
+          "precision": "day-range",
+          "armyId": "central",
+          "phase": "march",
+          "route": false
+        }
+      ],
+      "armyId": "central",
+      "plotDate": "1935-01-15",
+      "displayDate": "1935年1月15日—17日",
+      "route": true,
+      "phase": "march",
+      "sequence": 13
+    }
+  ],
+  "sources": [
+    {
+      "id": "c01",
+      "title": "中国共产党大事记·1935年",
+      "url": "https://cpc.people.com.cn/GB/64162/64164/4415983.html",
+      "publisher": "中共中央党史研究室编／中国共产党新闻网",
+      "aliases": [
+        "fourth-1935chronicle"
+      ],
+      "armyIds": [
+        "central",
+        "fourth"
+      ]
+    },
+    {
+      "id": "c02",
+      "title": "强军文化专刊·山河血脉丨瑞金红星",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/16436532.html",
+      "publisher": "国防部网站／解放军报",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c03",
+      "title": "红军夜渡于都河",
+      "url": "https://www.81.mil.cn/yljnt_208627/lsda_208656/16438861.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c04",
+      "title": "湘江战役地图",
+      "url": "https://www.81.mil.cn/yljnt_208627/lsda_208656/16377964.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c05",
+      "title": "通道会议：中央红军首次实现“转兵”",
+      "url": "https://cpc.people.com.cn/n1/2026/0918/c443712-40800961.html",
+      "publisher": "中国共产党新闻网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c06",
+      "title": "12月18日——党史百年·天天读",
+      "url": "https://www.dswxyjy.org.cn/GB/434461/434473/434996/index.html",
+      "publisher": "中共中央党史和文献研究院",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c07",
+      "title": "党的历史上生死攸关的转折点",
+      "url": "https://cpc.people.com.cn/BIG5/n1/2025/0113/c443712-40400457.html",
+      "publisher": "中国共产党新闻网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c08",
+      "title": "1935：生死攸关大转折——中国共产党领导红军主力胜利完成长征",
+      "url": "https://www.mem.gov.cn/xw/ztzl/2021/dsxxjy/xxfd/202103/t20210329_382216.shtml",
+      "publisher": "应急管理部网站／中国共产党历史和文献网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c09",
+      "title": "四渡赤水出奇兵",
+      "url": "https://www.cac.gov.cn/2016-08/22/c_1119430867.htm",
+      "publisher": "中央网信办网站／人民网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "党史上的今天（1935年3月10日）",
+      "url": "https://www.forestry.gov.cn/c/www/dszl/549651.jhtml",
+      "publisher": "国家林业和草原局／党史学习教育官网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c23",
+      "title": "苟坝会议让毛泽东难以忘怀",
+      "url": "https://dangshi.people.com.cn/n1/2016/0719/c85037-28564682.html",
+      "publisher": "中国共产党新闻网／福建党史月刊",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c11",
+      "title": "红军长征“佯攻贵阳”的来龙去脉",
+      "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/3224/A3",
+      "publisher": "贵州政协报",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c12",
+      "title": "纪念中国工农红军长征胜利90周年丨“万万火急”渡江令 红军长征过昆明",
+      "url": "https://www.kmmuseum.com/wap/info.asp?id=2391",
+      "publisher": "昆明市博物馆",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c13",
+      "title": "红军长征中有哪些重要战役战斗？",
+      "url": "https://www.81.mil.cn/yw_208727/16343466.html",
+      "publisher": "中国军网",
+      "aliases": [
+        "fourth-battles"
+      ],
+      "armyIds": [
+        "central",
+        "fourth"
+      ]
+    },
+    {
+      "id": "c14",
+      "title": "红军为何能顺利通过彝族区？这面旗帜告诉你",
+      "url": "https://photo.81.cn/zhuanti/2016-09/28/content_7279560_4.htm",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c15",
+      "title": "图文军史馆丨强渡大渡河的见证",
+      "url": "https://www.81.mil.cn/yw_208727/16260739.html",
+      "publisher": "中国军网／解放军报",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c16",
+      "title": "大渡河战役：攸关中央红军生死之战",
+      "url": "https://www.81.mil.cn/js_208592/jdt_208593/16226949.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c17",
+      "title": "翻越夹金山",
+      "url": "https://www.cac.gov.cn/2016-08/22/c_1119431608.htm",
+      "publisher": "中央网信办网站／中国共产党历史网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c18",
+      "title": "党史百年天天读：6月12日",
+      "url": "https://www.forestry.gov.cn/c/www/xds/95604.jhtml",
+      "publisher": "国家林业和草原局／中央党史和文献研究院",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c19",
+      "title": "1935年8月21日，红一、四方面军开始穿越草地",
+      "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735370.html",
+      "publisher": "深圳市盐田区档案与史志信息网",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c20",
+      "title": "长征时期党中央在甘肃召开的重要会议",
+      "url": "https://www.dswxyjy.org.cn/BIG5/n1/2021/1126/c244516-32292961.html",
+      "publisher": "中共中央党史和文献研究院",
+      "aliases": [
+        "r07"
+      ],
+      "armyIds": [
+        "central",
+        "regiment"
+      ]
+    },
+    {
+      "id": "c21",
+      "title": "胜利山战斗：中央红军长征途中最后一仗",
+      "url": "https://photo.81.cn/tsjs/2020-04/24/content_9800053.htm",
+      "publisher": "中国军网／学习强国",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c22",
+      "title": "红军长征中的会师",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/16418521.html",
+      "publisher": "国防部网站",
+      "aliases": [
+        "second-rendezvous",
+        "tf-integration"
+      ],
+      "armyIds": [
+        "central",
+        "second",
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "c24",
+      "title": "记忆：今日长缨在手",
+      "url": "https://www.ccdi.gov.cn/yaowenn/202209/t20220909_216917.html",
+      "publisher": "中央纪委国家监委网站",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c25",
+      "title": "敬爱的周总理一生都有哪些军事任职？",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/4801883_3.html",
+      "publisher": "国防部网站",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "c26",
+      "title": "红色通渭：闪耀长征精神的革命遗迹",
+      "url": "https://www.twdjw.gov.cn/htm/20187/33_7284.htm",
+      "publisher": "中共通渭县委组织部",
+      "aliases": [],
+      "armyIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "prologue-fifth",
+      "title": "中央苏区第四、五次反“围剿”期间发生在抚州域内的战役",
+      "url": "https://fzsz.jxfz.gov.cn/art/2019/8/26/art_7091_3101711.html",
+      "publisher": "抚州史志网",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-transfer",
+      "title": "红军长征的基本内涵和红军长征史研究的若干问题",
+      "url": "https://www.dswxyjy.org.cn/n1/2016/0929/c218998-28749730.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-jin",
+      "title": "中央红军在贵州的若干重大问题",
+      "url": "https://www.aisixiang.com/data/82100.html",
+      "publisher": "金冲及署名历史研究文章，爱思想转载",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-first-line",
+      "title": "长征突破第一道封锁线的历史见证（版面）",
+      "url": "https://www.81.cn/gfbmap/content/21/2022-04/07/04/2022040704_pdf.pdf",
+      "publisher": "中国国防报，2022年4月7日第4版",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-four-lines",
+      "title": "中央红军突破四道封锁线",
+      "url": "https://news.cctv.cn/xwlb/20061018/106100.shtml",
+      "publisher": "央视网《新闻联播》，2006年10月18日",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-hunan",
+      "title": "风掣红旗卷潇湘——红军长征在湖南",
+      "url": "https://www.dswxyjy.org.cn/n1/2026/0904/c244516-40792612.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [
+        "second-hunan"
+      ],
+      "armyIds": [
+        "central",
+        "second",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-xiangjiang",
+      "title": "英勇的湘江之战",
+      "url": "https://www.dswxyjy.org.cn/n1/2016/0825/c244523-28665323.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-liping",
+      "title": "黎平会议：“伟大转折的起点”",
+      "url": "https://www.dswxyjy.org.cn/BIG5/n1/2026/1009/c244516-40811392.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-houchang",
+      "title": "猴场会议：伟大转折的前夜",
+      "url": "https://www.81.mil.cn/js_208592/16362738.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-zunyi",
+      "title": "遵义会议不是一次独立的会议——从通道会议到会理会议",
+      "url": "https://www.dswxyjy.org.cn/n1/2018/0615/c219002-30062449.html",
+      "publisher": "中共中央党史和文献研究院网站，作者刘竟涛",
+      "aliases": [],
+      "armyIds": [
+        "central",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "second-prelude",
+      "title": "1934年：中国共产党领导红军主力开始长征",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4852696.html",
+      "publisher": "中华人民共和国国防部",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-bianshui",
+      "title": "我军在新年期间打响的战斗",
+      "url": "https://www.81.mil.cn/js_208592/jdt_208593/16436303.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-yachi",
+      "title": "红二、六军团强渡鸭池河相关史事",
+      "url": "https://www.bjsjw.gov.cn/n175/20201207/i18762.html",
+      "publisher": "毕节市纪委监委网站",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-bijie",
+      "title": "红军长征在贵州时 中共贵州省工委作出的贡献",
+      "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1487434529374240",
+      "publisher": "贵州省政协网站",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-panxian",
+      "title": "会议审时势，决策明方向",
+      "url": "https://zhuanti.mct.gov.cn/history_detail/773.html",
+      "publisher": "文化和旅游部专题网站",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-yunnan",
+      "title": "红二、六军团过云南：全面抢渡金沙江 走过艰难长征路",
+      "url": "https://www.ynrd.gov.cn/html/2021/bainiandangshi_0629/13010.html",
+      "publisher": "云南人大网；来源云南发布",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-liujia",
+      "title": "长征中红二红六军团最为激烈的六甲阻击战",
+      "url": "https://www.81.cn/js_208592/10186603.html",
+      "publisher": "中国军网；来源学习时报",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-jinsha",
+      "title": "红二方面军渡金沙",
+      "url": "https://www.81.cn/yljnt_208627/lsda_208656/16475861.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-zhongdian",
+      "title": "香格里拉：雪山草地见证红色征程",
+      "url": "https://www.ynds.yn.gov.cn/html/dangshiyanjiu/2019/8/7/e5dcdf29-a4d0-40de-8bf0-7da7906e8c78.html",
+      "publisher": "中共云南党史网",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-formation",
+      "title": "贺龙大事年表（1930年—1939年）",
+      "url": "https://cpc.people.com.cn/GB/67481/71472/4854223.html",
+      "publisher": "中国共产党新闻网",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-grassland",
+      "title": "为什么说红军第二、四方面军北上甘南为三支主力红军会合创造了有利的条件？",
+      "url": "https://www.dswxyjy.org.cn/n/2013/0319/c244514-20835482.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-hadapu",
+      "title": "追随红色足迹 厚植革命情怀——哈达铺在红军长征中的历史地位及作用学术研讨会专题报道",
+      "url": "https://gansu.gscn.com.cn/system/2021/05/19/012588912.shtml",
+      "publisher": "中国甘肃网",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "second-end",
+      "title": "我们胜利会师了！",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4848435.html",
+      "publisher": "中华人民共和国国防部",
+      "aliases": [],
+      "armyIds": [
+        "second"
+      ]
+    },
+    {
+      "id": "prologue-sixth",
+      "title": "红六军团：为中央红军长征侦察开路的先遣队",
+      "url": "https://www.cac.gov.cn/2016-08/22/c_1119430835.htm",
+      "publisher": "中央网信办网站，来源新华网",
+      "aliases": [],
+      "armyIds": [
+        "second",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "fourth-overview",
+      "title": "红四方面军发展历程中的七大里程碑",
+      "url": "https://www.81.mil.cn/2022zt/2021-10/17/content_10204934.htm",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-jialing",
+      "title": "嘉陵江战役：大规模强渡江河的模范战例",
+      "url": "https://www.81.cn/js_208592/jdt_208593/16209692.html",
+      "publisher": "中国军网—中国国防报",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-tumen",
+      "title": "土门战役：打开红军挺进川西的通道",
+      "url": "https://www.81.mil.cn/js_208592/16459891.html",
+      "publisher": "中国军网—中国国防报",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-maogong",
+      "title": "懋功会师",
+      "url": "https://www.81.mil.cn/2022zt/2021-10/17/content_10204936.htm",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-debate",
+      "title": "南下还是北上，决定革命前途的关键之争",
+      "url": "https://www.dswxyjy.org.cn/n1/2016/0902/c396980-28686747.html",
+      "publisher": "中共中央党史和文献研究院网站，来源新华社",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-aba",
+      "title": "红军长征在阿坝重要战役和战斗",
+      "url": "https://www.czgbxy.org.cn/abzwdx/c104419/201604/12a990b3ba3c46f49bf02502d832ff63.shtml",
+      "publisher": "四川长征干部学院阿坝雪山草地分院",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-dangling",
+      "title": "丹巴红色遗址 | 党岭雪山（第八期）",
+      "url": "https://www.danba.gov.cn/czdb/article/712678",
+      "publisher": "丹巴县人民政府",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-ganzi-local",
+      "title": "中共甘孜简史丨红四方面军在甘孜州",
+      "url": "https://www.thepaper.cn/newsdetail_forward_12284657",
+      "publisher": "澎湃号·政务，转自《甘孜简史》；地方史交叉材料",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-north1936",
+      "title": "第二十六章 红二、红四方面军北上甘南",
+      "url": "https://dangshi.people.com.cn/n1/2016/0909/c406330-28705046.html",
+      "publisher": "人民网党史频道",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-renbishi",
+      "title": "任弼时在长征途中",
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423729-30944011.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-ganzi-meeting",
+      "title": "追寻红军甘孜会师的足迹",
+      "url": "https://www.cssn.cn/skgz/bwyc/202609/t20260921_6068144.shtml",
+      "publisher": "中国社会科学网",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-hadapu",
+      "title": "宕昌县哈达铺红军长征纪念馆",
+      "url": "https://cpc.people.com.cn/GB/64176/64180/2523872.html",
+      "publisher": "中国共产党新闻网·网上导航",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-mintaoxi",
+      "title": "红军甘肃岷洮西战役",
+      "url": "https://www.twdjw.gov.cn/htm/20168/33_642.htm",
+      "publisher": "通渭党建网",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "fourth-huining",
+      "title": "三军大会师——红军长征三大主力会师全纪录",
+      "url": "https://www.cac.gov.cn/2016-08/22/c_1119432029.htm",
+      "publisher": "中央网信办网站，来源新华网",
+      "aliases": [],
+      "armyIds": [
+        "fourth"
+      ]
+    },
+    {
+      "id": "tf-chronology",
+      "title": "红二十五军长征大事记",
+      "url": "https://dzb.henandaily.cn/html5/2026-09/17/content_13_1811747.htm",
+      "publisher": "河南日报；文字来源河南博物院",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-partyhistory",
+      "title": "红二十五军的长征",
+      "url": "https://www.dswxyjy.org.cn/n1/2026/0903/c244516-40791810.html",
+      "publisher": "中共中央党史和文献研究院网站",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-guide",
+      "title": "中央红军之向导——回望红二十五军的长征",
+      "url": "https://www.hljzx.gov.cn/contents/68/14160.html",
+      "publisher": "黑龙江省政协网站；来源人民政协报",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-first",
+      "title": "90个第一丨红军长征到达陕北的第一支部队：红25军",
+      "url": "https://www.81.mil.cn/2018byzt/2018-07/31/content_8100052.htm",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-huashan",
+      "title": "八一特辑：司法护航革命遗址，一起追寻英雄足迹",
+      "url": "https://hnxyzy.hncourt.gov.cn/public/detail.php?id=13583",
+      "publisher": "信阳市中级人民法院",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-dushu",
+      "title": "方城县各级文物保护单位目录：红二十五军独树镇战斗遗址相关说明",
+      "url": "https://www.fangcheng.gov.cn/2025/09-04/1210984.html",
+      "publisher": "方城县人民政府",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-ning",
+      "title": "红二十五军长征在宁陕的活动",
+      "url": "https://www.ningshan.gov.cn/Content-681792.html",
+      "publisher": "宁陕县人民政府",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-yuanjia",
+      "title": "红二十五军袁家沟口歼敌军",
+      "url": "https://www.81.mil.cn/js_208592/16452655.html",
+      "publisher": "中国军网；来源中国国防报",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-tianshui",
+      "title": "红军长征进入天水的第一支队伍——红二十五军",
+      "url": "https://www.tianshui.gov.cn/dsb/info/1973/28342.htm",
+      "publisher": "中共天水市委党史和地方志研究室",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "tf-yongping",
+      "title": "国民党军倾力围剿 西北红军越战越勇",
+      "url": "https://dangshi.people.com.cn/n1/2016/1012/c85037-28771149.html",
+      "publisher": "人民网党史频道",
+      "aliases": [],
+      "armyIds": [
+        "twentyfive"
+      ]
+    },
+    {
+      "id": "r01",
+      "title": "湘江战役：事关中国革命生死存亡的重要历史事件",
+      "url": "https://www.81.cn/js_208592/10162099.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "r02",
+      "title": "记者再走长征路丨乌江：红军在这里开始反攻",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4845553.html",
+      "publisher": "国防部网站",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "r03",
+      "title": "飞夺泸定桥",
+      "url": "https://cpc.people.com.cn/GB/n1/2025/0308/c443712-40434014.html",
+      "publisher": "中国共产党新闻网",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "r04",
+      "title": "飞越岭战斗：打通中央红军与红四方面军会师的通道",
+      "url": "https://www.81.cn/js_208592/16428947.html",
+      "publisher": "中国军网／解放军报",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "r05",
+      "title": "雪山铸忠魂 草地映初心——从雅安到阿坝的红色印记",
+      "url": "https://www.yaan.gov.cn/zhangzhe/show/fdec3631-acfc-41f7-8f2e-6fd4adc74b42.html",
+      "publisher": "雅安市人民政府",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "r06",
+      "title": "长征中的会议（两河口会议背景）",
+      "url": "https://fuwu.12371.cn/2012/06/11/ARTI1339400564382590_7.shtml",
+      "publisher": "共产党员网",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "r08",
+      "title": "解读长征（52）：红一、四方面军怎样庆祝胜利会师的",
+      "url": "https://dangshi.people.com.cn/n1/2016/1008/c406450-28760538.html",
+      "publisher": "中国共产党新闻网；作者为军史专家、军事博物馆研究员",
+      "aliases": [],
+      "armyIds": [
+        "regiment"
+      ]
+    },
+    {
+      "id": "prologue-vanguard-army",
+      "title": "红军长征决策",
+      "url": "https://www.81.mil.cn/yljnt_208627/lsda_208656/16376529.html",
+      "publisher": "中国军网",
+      "aliases": [],
+      "armyIds": [
+        "vanguard"
+      ]
+    },
+    {
+      "id": "prologue-vanguard-placard",
+      "title": "《我们是中国工农红军抗日先遣队》布告",
+      "url": "https://www.dangjian.cn/jdcd/2026/06/23/detail_202606237834259.html",
+      "publisher": "党建网，杭州市委党史研究室（杭州市人民政府地方志办公室）供稿中心",
+      "aliases": [],
+      "armyIds": [
+        "vanguard"
+      ]
+    }
+  ]
+}

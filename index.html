@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eee6d4">
+<title>山河长征 · 1934—1936 历史地图</title><meta name="description" content="在可追溯史料的交互地图上，探索中央红军、红二方面军、红四方面军和红二十五军的长征历程。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+<a class="brand" href="#map" aria-label="山河长征首页"><span class="seal">征</span><span><strong>山河长征</strong><small>THE LONG MARCH ATLAS</small></span></a>
+<nav aria-label="主导航"><button class="nav-btn active" data-view="map">路线地图</button><button class="nav-btn" data-view="chronology">并行年表</button><button class="nav-btn" data-view="sources">考据与史料 <span class="nav-dot"></span></button></nav>
+<div class="header-note"><span class="tiny-cross">✳</span> 一段历史，万里山河 <span class="header-years">1934—1936</span></div>
+<button id="nav-reveal" class="nav-reveal" aria-label="展开或收起顶部导航" aria-expanded="false"><span></span></button></header>
+<main id="main">
+<section id="map-view" class="view active" aria-label="长征交互地图">
+<aside class="sidebar">
+<div class="sidebar-intro"><p class="eyebrow">中国工农红军 · 长征历史地图</p><h1>循着足迹，<br>重读长征。</h1><p class="intro-copy">把时间交给地图，<br>看见每一次出发、转折与重逢。</p></div>
+
+<div id="army-list" class="army-list"></div>
+<div id="army-context" class="army-context"></div>
+<div class="story-heading"><span class="eyebrow">此刻 · 历史档案</span><button id="search-toggle" class="icon-btn" aria-label="搜索历史事件"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></div>
+<article id="event-card" class="event-card" aria-live="polite"></article>
+<button id="open-stories" class="read-more">浏览全部历史节点 <span>↗</span></button>
+<div class="sidebar-footer"><span class="folio-mark">山 河 档 案</span><span>卷一 / 长征</span></div>
+</aside>
+<div class="map-column">
+<div class="map-stage" id="map-stage">
+<svg id="map-svg" viewBox="90 55 1100 1050" role="group" aria-label="长征路线概览，可通过历史节点按钮查看详情"><defs><filter id="paper-grain"><feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".065"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter><pattern id="map-grid" width="110" height="128" patternUnits="userSpaceOnUse"><path d="M110 0H0V128" fill="none" stroke="#9c947d" stroke-width=".6" opacity=".18"/></pattern><radialGradient id="paper-light"><stop stop-color="#f5efdf"/><stop offset="1" stop-color="#e7ddc5"/></radialGradient></defs><g id="map-world"></g></svg>
+<div class="map-title"><p class="eyebrow">A JOURNEY THROUGH HISTORY</p><h2 id="map-heading">四路长征，山河为证</h2><p id="map-subheading">1934—1936 · 主要部队路线对照</p></div>
+<div class="map-top-actions"><button id="follow-view" class="camera-action" aria-pressed="false" aria-label="切换部队跟随视角">跟随视角</button><button id="overview-view" class="camera-action" aria-label="查看所选部队路线全貌">路线全貌</button><button id="layers-toggle" class="map-action" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Z M3 12l9 5 9-5 M3 16l9 5 9-5"/></svg>地理图层</button><div id="layer-panel" class="layer-panel" hidden><label><input type="checkbox" id="layer-admin" checked>现代省界参考</label><label><input type="checkbox" id="layer-rivers" checked>主要河流</label><label><input type="checkbox" id="layer-terrain" checked>山地示意</label><label><input type="checkbox" id="layer-landmarks" checked>常驻地名</label></div></div>
+<div class="map-annotation"><span class="annotation-line"></span><p>不是一条路，<br>是一代人的跋涉。</p><small>四支主要部队 · 各有起止</small></div>
+<div class="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 60 76"><path d="M30 3 40 48 30 41 20 48Z" fill="#70644f"/><path d="m30 3 0 38-10 7Z" fill="#c6bda6"/><path d="M5 35h50M30 16v53" stroke="#8c816a" stroke-width=".7"/><circle cx="30" cy="35" r="19" fill="none" stroke="#8c816a" stroke-width=".7"/></svg></div>
+<div class="map-toolbar"><button id="zoom-in" class="icon-btn" aria-label="放大地图">＋</button><button id="zoom-out" class="icon-btn" aria-label="缩小地图">−</button><span></span><button id="reset-map" class="icon-btn" aria-label="复位地图" title="退出跟随，查看路线全貌"><svg viewBox="0 0 24 24"><path d="M4 9V4h5 M20 15v5h-5 M4 4l6 6 M20 20l-6-6"/></svg></button><button id="follow-toggle" class="icon-btn" title="跟随所选部队" aria-label="跟随所选部队" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 2v5m0 10v5M2 12h5m10 0h5"/></svg></button></div>
+<div class="map-caption"><span class="live-dot"></span><span>重要地名常驻 · 放大展开更多</span><button id="map-method">制图说明 ↗</button></div>
+<div class="map-attribution"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · Natural Earth</div><div id="map-tooltip" class="map-tooltip" hidden></div>
+<div id="load-state" class="load-state">正在展开历史地图…</div>
+</div>
+<div class="time-console">
+<div class="time-console-top"><div class="time-label"><span class="eyebrow">时间坐标</span><strong id="current-date">1936.10.22</strong><span id="period-label">主力会师</span></div><div class="play-controls"><button id="prev-event" class="icon-btn" aria-label="上一个历史节点"><svg viewBox="0 0 24 24"><path d="M6 5v14m12-14-9 7 9 7Z"/></svg></button><button id="play-btn" class="play-btn" aria-label="播放长征进程"><svg id="play-icon" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z" fill="currentColor" stroke="none"/></svg><span>重走长征</span></button><button id="next-event" class="icon-btn" aria-label="下一个历史节点"><svg viewBox="0 0 24 24"><path d="M18 5v14M6 5l9 7-9 7Z"/></svg></button><button id="speed-btn" class="speed-btn" aria-label="切换播放速度">1×</button></div></div>
+<div class="timeline-track"><div class="timeline-era" id="timeline-eras"></div><input id="time-slider" type="range" min="0" max="1000" value="1000" aria-label="拖动时间查看各部队位置"><div class="timeline-ticks"><span>1934.10</span><span>1935.01</span><span>1935.04</span><span>1935.07</span><span>1935.10</span><span>1936.01</span><span>1936.04</span><span>1936.07</span><span>1936.10</span></div></div>
+<div class="console-foot"><span id="progress-label">四支主要部队，先后抵达陕甘地区</span><span>虚线：未到达的后续节点 <i></i> 动画位置为时间插值</span></div>
+</div>
+</div>
+</section>
+<section id="chronology-view" class="view document-view" aria-label="长征并行年表"><div class="document-header"><p class="eyebrow">CHRONOLOGY / 1934—1936</p><h1>同一段岁月，<br>不同的征途。</h1><p>沿时间对照四支部队的进程。点击任一事件，在地图上回到那个时刻。</p></div><div id="chrono-filters" class="filter-bar"></div><div id="chronology-list"></div></section>
+<section id="sources-view" class="view document-view" aria-label="历史考据与史料"><div class="document-header"><p class="eyebrow">HISTORICAL NOTES & SOURCES</p><h1>让每一个节点，<br>都有来处。</h1><p>先核对史实，再连接山河。阅读范围、时间口径和地理示意均在这里说明。</p></div><div id="research-summary"></div><div class="sources-heading"><h2>史料索引</h2><span id="source-count"></span></div><div id="source-list"></div><div class="geo-credit"><h3>地理底图</h3><p>现代省级轮廓：阿里云 DataV GeoAtlas 公开地理数据。主要河流：Natural Earth 1:50m及1:10m Rivers + Lake Centerlines（公共领域；指比例尺，并非米级精度）；赤水河采用OpenStreetMap现代河流中心线（© OpenStreetMap contributors，ODbL 1.0）。现代地理信息仅用于定位，不表示1930年代行政区划。山地符号是地理背景示意，并非数字高程或通行难度数据。</p><a href="https://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener noreferrer">DataV GeoAtlas ↗</a><a href="https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-rivers-lake-centerlines/" target="_blank" rel="noopener noreferrer">Natural Earth ↗</a><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap / ODbL ↗</a></div></section>
+</main>
+<dialog id="events-dialog"><div class="dialog-header"><div><p class="eyebrow">在时间中寻找</p><h2>历史节点</h2></div><button class="icon-btn close-dialog" aria-label="关闭搜索">×</button></div><label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="event-search" placeholder="搜索地名、事件或部队，如：赤水" type="search"></label><div id="event-results"></div></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="release-config.js"></script>
+<script type="module" src="app.js"></script>
+</body></html>
