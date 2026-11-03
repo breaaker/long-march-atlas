@@ -209,6 +209,12 @@
       "title": "红军长征在阿坝重要战役和战斗",
       "url": "https://www.czgbxy.org.cn/abzwdx/c104419/201604/12a990b3ba3c46f49bf02502d832ff63.shtml",
       "publisher": "四川长征干部学院阿坝雪山草地分院"
+    },
+    {
+      "id": "geo-loushan-location",
+      "title": "娄山关景区地理位置（现代地图区域参考）",
+      "url": "https://www.amap.com/place/B0354009II",
+      "publisher": "高德地图"
     }
   ],
   "landmarks": [
@@ -426,13 +432,14 @@
       "id": "pass-loushan",
       "name": "娄山关",
       "lon": 106.85,
-      "lat": 28.14,
+      "lat": 28.02,
       "type": "pass",
       "priority": 1,
       "sourceIds": [
-        "geo-chishui"
+        "geo-chishui",
+        "geo-loushan-location"
       ],
-      "notes": "原 central-loushan 未入 mapLabels，应新增关隘标签并在遵义/赤水区域放大时常驻。地区示意。",
+      "notes": "娄山关山口区域的现代概略锚点；与桐梓县城的娄山关街道区分，不代表具体战斗位置的测绘点。",
       "eventIds": [
         "central-loushan"
       ]

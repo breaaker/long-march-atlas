@@ -11,7 +11,7 @@ GitHub Pages使用main分支根目录发布。可在本目录运行`python3 -m h
 ## 第三方资料与署名
 
 - 各事件的历史资料URL保存在data.json，网页逐条关联。
-- 11张当代照片各自保留作者、拍摄日期、来源和CC许可链接，见photos.json及网页“影像来源与授权”。显示可能按比例裁切和轻微低饱和处理；均非1930年代战地原照。
+- 65张地点照片各自保留作者、可查的拍摄日期、来源和开放许可/公共领域依据，见photos.json及网页“影像来源与授权”。显示可能按比例裁切和轻微低饱和处理；历史影像单独标注年代；区域照片不等同于精确旧址。事件图片可点击查看全图。
 - 赤水河现代中心线：© OpenStreetMap contributors，ODbL 1.0，https://www.openstreetmap.org/copyright 。数据关系19390444；原始坐标及来源许可保留于assets/long-march-rivers.geojson。
 - 其他主要河流来自Natural Earth（公共领域）：https://www.naturalearthdata.com/about/terms-of-use/ 。1:10m/1:50m指制图比例尺，并非米级定位精度。
 - 现代省级轮廓：阿里云DataV GeoAtlas公开地理数据，https://datav.aliyun.com/portal/school/atlas/area_selector 。不将第三方数据统一声明为本站自有版权。

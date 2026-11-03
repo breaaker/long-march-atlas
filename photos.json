@@ -19,7 +19,8 @@
       "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
       "downloadBytes": 311499,
       "width": 1280,
-      "height": 863
+      "height": 863,
+      "matchType": "site"
     },
     {
       "id": "photo-luding-bridge",
@@ -39,7 +40,8 @@
       "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
       "downloadBytes": 584893,
       "width": 1280,
-      "height": 853
+      "height": 853,
+      "matchType": "site"
     },
     {
       "id": "photo-jiajin-south",
@@ -58,7 +60,8 @@
       "modifications": "下载Commons图片；未作内容修改。",
       "downloadBytes": 129668,
       "width": 827,
-      "height": 466
+      "height": 466,
+      "matchType": "regional"
     },
     {
       "id": "photo-yudu-ferry",
@@ -71,13 +74,21 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "eventIds": [
-        "central-yudu"
+        "central-yudu",
+        "prologue-baggage-193410"
       ],
       "photoDate": "2014-05-30",
       "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
       "downloadBytes": 205606,
       "width": 1280,
-      "height": 853
+      "height": 853,
+      "matchType": "site",
+      "eventContexts": {
+        "prologue-baggage-193410": {
+          "matchType": "regional",
+          "caption": "图为于都中央红军长征出发地纪念设施的当代实景，作为长征初期出发背景；不展示1934年“大搬家”行军队列。"
+        }
+      }
     },
     {
       "id": "photo-xiangjiang-memorial",
@@ -97,7 +108,14 @@
       "modifications": "下载Wikimedia提供的1280像素缩略图，未作内容修改。",
       "width": 1280,
       "height": 853,
-      "downloadBytes": 286580
+      "downloadBytes": 286580,
+      "matchType": "site",
+      "eventContexts": {
+        "regiment-xiangjiang": {
+          "matchType": "regional",
+          "caption": "图为广西全州的湘江战役纪念馆，为战役纪念地参照；不是兴安界首渡口的现场照片。"
+        }
+      }
     },
     {
       "id": "photo-other-huining-huishimen",
@@ -121,7 +139,8 @@
       "bytes": 393035,
       "sha256": "1d6cf826690edc82e1a94d23a7184a175d00084a319cf363fcd99db3919c660a",
       "verified": "2026-10-15",
-      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/%E4%BC%9A%E5%B8%88%E9%97%A8.jpg"
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/%E4%BC%9A%E5%B8%88%E9%97%A8.jpg",
+      "matchType": "site"
     },
     {
       "id": "photo-other-ganzi-town",
@@ -136,7 +155,8 @@
       "eventIds": [
         "second-14",
         "fourth-ganzi-193604",
-        "fourth-ganzi-meeting-19360702"
+        "fourth-ganzi-meeting-19360702",
+        "second-15"
       ],
       "photographed": "2014-06-14",
       "width": 1280,
@@ -145,7 +165,14 @@
       "bytes": 370716,
       "sha256": "4d1a89c83e9303dc14e86ca07cdc68851c93821cb7cb546e938f48a9a11d3190",
       "verified": "2026-10-15",
-      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Garze_Town.jpg"
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Garze_Town.jpg",
+      "matchType": "town",
+      "eventContexts": {
+        "second-15": {
+          "matchType": "town",
+          "caption": "甘孜城的当代实景。红二方面军于甘孜地区组成；本图提供城镇环境，不是1936年编组大会现场影像。"
+        }
+      }
     },
     {
       "id": "photo-other-zoige-rerdaba-grassland",
@@ -160,7 +187,9 @@
       "eventIds": [
         "central-grassland",
         "second-16",
-        "fourth-baozuo-193607"
+        "fourth-baozuo-193607",
+        "central-baxi-north",
+        "fourth-baozuo-19350829"
       ],
       "photographed": "2011-08-13",
       "width": 1280,
@@ -169,7 +198,18 @@
       "bytes": 300218,
       "sha256": "ad616061e491f06559ba48404e8e1c682ddf2aabe55e632a0f30b5340e51351b",
       "verified": "2026-10-15",
-      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E7%83%AD%E5%B0%94%E5%A4%A7%E5%9D%9D%E8%8D%89%E5%8E%9FRerdaba_grassland_-_panoramio.jpg"
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E7%83%AD%E5%B0%94%E5%A4%A7%E5%9D%9D%E8%8D%89%E5%8E%9FRerdaba_grassland_-_panoramio.jpg",
+      "matchType": "regional",
+      "eventContexts": {
+        "central-baxi-north": {
+          "matchType": "regional",
+          "caption": "若尔盖热尔大坝草原的当代环境照片。仅作若尔盖地区草地环境参照，不是巴西村、包座战场或红军具体行军道路的复原。"
+        },
+        "fourth-baozuo-19350829": {
+          "matchType": "regional",
+          "caption": "若尔盖热尔大坝草原的当代环境照片。仅作若尔盖地区草地环境参照，不是巴西村、包座战场或红军具体行军道路的复原。"
+        }
+      }
     },
     {
       "id": "photo-other-jiangtaibao-monument",
@@ -192,7 +232,8 @@
       "bytes": 267362,
       "sha256": "b643679bb137bafe3ed0009c00f4022e2917facd9e8d42d9e730c64cebace672",
       "verified": "2026-10-15",
-      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Monument_to_the_Joining_of_Red_Army_Forces_at_Jiangtaibu_%2820260201175443%29.jpg"
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Monument_to_the_Joining_of_Red_Army_Forces_at_Jiangtaibu_%2820260201175443%29.jpg",
+      "matchType": "site"
     },
     {
       "id": "photo-other-zoige-flower-lake",
@@ -216,7 +257,8 @@
       "bytes": 154722,
       "sha256": "78338ff77d0b67f3570dae0e184d8d8193a3ad6c26912bf166598a55da385458",
       "verified": "2026-10-15",
-      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/20230430_Hua_Hu%2C_Zoig%C3%AA.jpg"
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/20230430_Hua_Hu%2C_Zoig%C3%AA.jpg",
+      "matchType": "regional"
     },
     {
       "id": "photo-chishui-maotai-bank",
@@ -250,7 +292,1472 @@
       "downloadBytes": 297277,
       "bytes": 297277,
       "sha256": "6875ca96f96e187c87e71cf6a1ce815971e111136d55a71ee5b6180c15cdf4be",
-      "visualQA": "已查看下载图片：现代红色拱桥、河岸城镇及赤水河水面；适合作当代茅台段环境参照，不标作1935年现场或其他渡口。"
+      "visualQA": "已查看下载图片：现代红色拱桥、河岸城镇及赤水河水面；适合作当代茅台段环境参照，不标作1935年现场或其他渡口。",
+      "matchType": "town",
+      "eventContexts": {
+        "central-chishui-1": {
+          "matchType": "regional",
+          "caption": "图为2016年拍摄的赤水河茅台段，用于了解赤水河沿岸环境；不是本次渡河所涉土城、猿猴场、太平渡、二郎滩或九溪口渡口的照片。"
+        },
+        "central-chishui-2": {
+          "matchType": "regional",
+          "caption": "图为2016年拍摄的赤水河茅台段，用于了解赤水河沿岸环境；不是本次渡河所涉土城、猿猴场、太平渡、二郎滩或九溪口渡口的照片。"
+        },
+        "central-chishui-4": {
+          "matchType": "regional",
+          "caption": "图为2016年拍摄的赤水河茅台段，用于了解赤水河沿岸环境；不是本次渡河所涉土城、猿猴场、太平渡、二郎滩或九溪口渡口的照片。"
+        }
+      }
+    },
+    {
+      "id": "photo-south-ruijin-yunshishan",
+      "file": "assets/photos/south-ruijin-yunshishan.jpg",
+      "title": "瑞金云石山：中央机关出发地当代实景",
+      "caption": "图为瑞金云石山长征出发地的当代实景，用于对应中央机关从瑞金出发；不是1934年出发现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E5%BE%81%E7%AC%AC%E4%B8%80%E5%B1%B1-%E7%91%9E%E9%87%91%E4%BA%91%E7%9F%B3%E5%B1%B1_the_First_Hill_of_Long_March_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/%E9%95%BF%E5%BE%81%E7%AC%AC%E4%B8%80%E5%B1%B1-%E7%91%9E%E9%87%91%E4%BA%91%E7%9F%B3%E5%B1%B1_the_First_Hill_of_Long_March_-_panoramio.jpg/1280px-%E9%95%BF%E5%BE%81%E7%AC%AC%E4%B8%80%E5%B1%B1-%E7%91%9E%E9%87%91%E4%BA%91%E7%9F%B3%E5%B1%B1_the_First_Hill_of_Long_March_-_panoramio.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/%E9%95%BF%E5%BE%81%E7%AC%AC%E4%B8%80%E5%B1%B1-%E7%91%9E%E9%87%91%E4%BA%91%E7%9F%B3%E5%B1%B1_the_First_Hill_of_Long_March_-_panoramio.jpg",
+      "author": "wanghongliu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "central-ruijin"
+      ],
+      "width": 1280,
+      "height": 1096,
+      "sourcePlace": "江西瑞金云石山",
+      "matchType": "site",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "长征第一山---瑞金云石山 the First Hill of Long March",
+      "sourceDate": "23 August 2010 (original upload date)",
+      "bytes": 626727,
+      "sha256": "e19a1d28204ad0d8c1c164177630bc202e1494a06fa7eea4e217f1048e1871f6",
+      "photoDate": "2007-06-26",
+      "photographed": "2007-06-26",
+      "cameraLocation": {
+        "lat": 25.853633,
+        "lon": 115.884787
+      }
+    },
+    {
+      "id": "photo-south-ruijin-yeping",
+      "file": "assets/photos/south-ruijin-yeping.jpg",
+      "title": "瑞金叶坪：中央苏区历史环境",
+      "caption": "2018年拍摄的瑞金叶坪革命旧址，用于中央苏区背景参照；不是第五次反围剿战场或红七军团出发现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruijin_Yeping_2018.10.06_11-24-21.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Ruijin_Yeping_2018.10.06_11-24-21.jpg/1280px-Ruijin_Yeping_2018.10.06_11-24-21.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ruijin_Yeping_2018.10.06_11-24-21.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "prologue-fifth-campaign",
+        "prologue-seventh-193407"
+      ],
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "江西瑞金叶坪革命旧址",
+      "matchType": "regional",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "瑞金·叶坪革命旧址",
+      "sourceDate": "2018-10-06 11:24:21",
+      "bytes": 462681,
+      "sha256": "d2d340d01803ed102efe33704e8c57e790c2db1181e6519af743282e603427b4",
+      "photoDate": "2018-10-06",
+      "photographed": "2018-10-06",
+      "cameraLocation": {
+        "lat": 25.908599,
+        "lon": 116.06704
+      }
+    },
+    {
+      "id": "photo-south-tongdao-qu-river",
+      "file": "assets/photos/south-tongdao-qu-river.jpg",
+      "title": "通道县溪：渠江当代河景",
+      "caption": "图为通道侗族自治县县溪镇渠江当代河景，用于理解通道地区环境；不是通道会议室或1934年转兵现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qu_River_(Yuan_River_tributary)_%EF%BC%8CTongdao%EF%BC%8CHunan_province.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Qu_River_%28Yuan_River_tributary%29_%EF%BC%8CTongdao%EF%BC%8CHunan_province.jpg/1280px-Qu_River_%28Yuan_River_tributary%29_%EF%BC%8CTongdao%EF%BC%8CHunan_province.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Qu_River_%28Yuan_River_tributary%29_%EF%BC%8CTongdao%EF%BC%8CHunan_province.jpg",
+      "author": "Sufangxi",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "eventIds": [
+        "central-tongdao"
+      ],
+      "width": 1280,
+      "height": 720,
+      "sourcePlace": "湖南通道县溪镇渠江",
+      "matchType": "regional",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "​沅水支流渠江，摄于湖南省通道侗族自治县县溪镇",
+      "sourceDate": "2022-12-11 17:05:10",
+      "bytes": 282684,
+      "sha256": "caf5e1de6adc2a1f5a1147fe65bab33367f4fc86b5f05d623ba0a7dffe6e61c4",
+      "photoDate": "2022-12-11",
+      "photographed": "2022-12-11",
+      "cameraLocation": {
+        "lat": 26.318766,
+        "lon": 109.62291
+      }
+    },
+    {
+      "id": "photo-south-liping-conference",
+      "file": "assets/photos/south-liping-conference.jpg",
+      "title": "黎平会议纪念馆：当代实景",
+      "caption": "图为贵州黎平会议纪念馆的当代实景，用于纪念与介绍1934年黎平会议；不是会议当年原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liping_Conference_Memorial_Hall.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Liping_Conference_Memorial_Hall.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Liping_Conference_Memorial_Hall.jpg",
+      "author": "Rutger van der Maar",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "eventIds": [
+        "central-liping"
+      ],
+      "width": 1200,
+      "height": 861,
+      "sourcePlace": "贵州黎平会议纪念馆",
+      "matchType": "site",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "Place: Liping, Qiandongnan Miao and Dong Autonomous Prefecture, Guizhou Province\nLiping (黎平) is a small city in Guizhou with around 100,000 people in city proper and is surrounded by the average concrete buildings, but the historical city centre gives it soul. The historical centre basically consists of one street (Qiao street), with stone stairs on each end giving an incredible view over the centre, but there are many interesting side alleys and courtyards to visit. Houses in Qiao street and alleys were built during the Ming and Qing dynasties, but many houses played a role in the foundation of Communist China. During the famous Long March Mao Zedong visited the city in 1934, where he held a conference.\nSources:\ntravelcathay.com/2014/04/24/guizhou-liping-qiao-street/ (available via web archives)\n\ntiantan.nl/bestemmingen/guizhou/liping/",
+      "sourceDate": "2017-06-25 11:07:17",
+      "bytes": 1145744,
+      "sha256": "b05d15bb113833cb67c82a9d873be0197f3dec9f410145ccb61179500883855e",
+      "photoDate": "2017-06-25",
+      "photographed": "2017-06-25"
+    },
+    {
+      "id": "photo-south-wujiang-jiangjiehe",
+      "file": "assets/photos/south-wujiang-jiangjiehe.jpg",
+      "title": "乌江江界河段：2008年河谷实景",
+      "caption": "图为2008年江界河大桥与乌江河谷，照片摄于构皮滩水库蓄水改变河谷景观之前；现代桥梁不是红军渡河设施，河景不代表1935年的精确河宽、水位或各个渡口。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jiangjiehe_Bridge_in_2008_before_the_Goupitan_reservoir_filled_the_valley_below.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Jiangjiehe_Bridge_in_2008_before_the_Goupitan_reservoir_filled_the_valley_below.jpg/1280px-Jiangjiehe_Bridge_in_2008_before_the_Goupitan_reservoir_filled_the_valley_below.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Jiangjiehe_Bridge_in_2008_before_the_Goupitan_reservoir_filled_the_valley_below.jpg",
+      "author": "HighestBridges",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "central-wujiang-north",
+        "regiment-wujiang",
+        "central-wujiang-south"
+      ],
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "贵州乌江江界河段",
+      "matchType": "regional",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "Photo of the Jiangjiehe Bridge in China.",
+      "sourceDate": "2008-08",
+      "bytes": 370436,
+      "sha256": "fbd59d73497f14949ef984aa944be49ba8277add025fd1b118178809ca0e6884",
+      "photoDate": "2008-08",
+      "photographed": "2008-08",
+      "eventContexts": {
+        "central-wujiang-south": {
+          "matchType": "regional",
+          "caption": "图为2008年的乌江江界河段，仅用于认识乌江河谷环境；并非此次南渡所涉江口、大塘或梯子岩渡口。现代大桥与水位不代表1935年的渡河条件。"
+        }
+      }
+    },
+    {
+      "id": "photo-south-tucheng-memorial",
+      "file": "assets/photos/south-tucheng-memorial.jpg",
+      "title": "土城四渡赤水纪念馆：当代实景",
+      "caption": "图为2026年拍摄的贵州土城四渡赤水纪念馆，用于土城战斗与四渡赤水的纪念地参照；不是1935年战斗现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Memorial_Hall_of_Red_Army_Crossing_Chishui_River_Four_Times_(20260206151449).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Memorial_Hall_of_Red_Army_Crossing_Chishui_River_Four_Times_%2820260206151449%29.jpg/1280px-Memorial_Hall_of_Red_Army_Crossing_Chishui_River_Four_Times_%2820260206151449%29.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Memorial_Hall_of_Red_Army_Crossing_Chishui_River_Four_Times_%2820260206151449%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-tucheng"
+      ],
+      "width": 1280,
+      "height": 853,
+      "sourcePlace": "贵州习水土城四渡赤水纪念馆",
+      "matchType": "site",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "At Tucheng Town.",
+      "sourceDate": "2026-02-06 15:14:49",
+      "bytes": 313169,
+      "sha256": "badd3bbd30d0988bc4a433bbdd3035cfa7714116efa915a9c11a440dd3e08787",
+      "photoDate": "2026-02-06",
+      "photographed": "2026-02-06",
+      "cameraLocation": {
+        "lat": 28.279889,
+        "lon": 105.995331
+      }
+    },
+    {
+      "id": "photo-south-zhaxi-town",
+      "file": "assets/photos/south-zhaxi-town.jpg",
+      "title": "扎西镇：2007年地区实景",
+      "caption": "图为2007年拍摄的云南威信扎西镇与周边山地，用于扎西地区集结整编的地理参照；不是扎西会议会场或1935年红军集结现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%8D%97%E7%9C%81%E5%A8%81%E4%BF%A1%E5%8E%BF%E6%8B%8D%E6%91%84%E8%80%85%E8%89%BE%E6%96%AF%E6%B2%83%E7%89%B9.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/%E4%BA%91%E5%8D%97%E7%9C%81%E5%A8%81%E4%BF%A1%E5%8E%BF%E6%8B%8D%E6%91%84%E8%80%85%E8%89%BE%E6%96%AF%E6%B2%83%E7%89%B9.jpg/1280px-%E4%BA%91%E5%8D%97%E7%9C%81%E5%A8%81%E4%BF%A1%E5%8E%BF%E6%8B%8D%E6%91%84%E8%80%85%E8%89%BE%E6%96%AF%E6%B2%83%E7%89%B9.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/%E4%BA%91%E5%8D%97%E7%9C%81%E5%A8%81%E4%BF%A1%E5%8E%BF%E6%8B%8D%E6%91%84%E8%80%85%E8%89%BE%E6%96%AF%E6%B2%83%E7%89%B9.jpg",
+      "author": "icywater",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "central-zaxi"
+      ],
+      "width": 1280,
+      "height": 968,
+      "sourcePlace": "云南威信扎西镇",
+      "matchType": "town",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "initial\"Z\".",
+      "sourceDate": "2007-02-16",
+      "bytes": 404164,
+      "sha256": "4b552599b2899f800b6503dcd7b65b45cf7a19837a157b3ba39bd598c75d2f2b",
+      "photoDate": "2007-02-16",
+      "photographed": "2007-02-16"
+    },
+    {
+      "id": "photo-south-rucheng-town",
+      "file": "assets/photos/south-rucheng-town.jpg",
+      "title": "汝城县城：当代地区实景",
+      "caption": "2024年从烈士陵园眺望汝城县城。照片仅展示第二道封锁线相关汝城地区的当代环境，不代表整条封锁线或1934年突破现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B1%9D%E5%9F%8E%E5%8E%BF_20240219.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/%E6%B1%9D%E5%9F%8E%E5%8E%BF_20240219.jpg/1280px-%E6%B1%9D%E5%9F%8E%E5%8E%BF_20240219.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/%E6%B1%9D%E5%9F%8E%E5%8E%BF_20240219.jpg",
+      "author": "Uuongkinghe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "prologue-line2-193411"
+      ],
+      "width": 1280,
+      "height": 853,
+      "sourcePlace": "湖南汝城县城",
+      "matchType": "town",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "​自烈士陵园眺望汝城县",
+      "sourceDate": "2024-02-19 11:09:58",
+      "bytes": 432822,
+      "sha256": "27551f5eb42a4f367f555845f39a22e61e6a3859ca23152253f297937ec51eab",
+      "photoDate": "2024-02-19",
+      "photographed": "2024-02-19",
+      "cameraLocation": {
+        "lat": 25.553394,
+        "lon": 113.674828
+      }
+    },
+    {
+      "id": "photo-south-chenzhou-chen-river",
+      "file": "assets/photos/south-chenzhou-chen-river.jpg",
+      "title": "郴州裕后街：郴江当代河景",
+      "caption": "图为郴州裕后街的郴江与河岸城镇当代实景，作为郴县地区环境参照；不是1934年第三道封锁线或突破战场原貌。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%83%B4%E5%B7%9E%E5%B8%82%E8%A3%95%E5%90%8E%E8%A1%97%E9%83%B4%E6%B1%9F%E6%B2%B3%E6%AE%B5.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/%E9%83%B4%E5%B7%9E%E5%B8%82%E8%A3%95%E5%90%8E%E8%A1%97%E9%83%B4%E6%B1%9F%E6%B2%B3%E6%AE%B5.jpg/1280px-%E9%83%B4%E5%B7%9E%E5%B8%82%E8%A3%95%E5%90%8E%E8%A1%97%E9%83%B4%E6%B1%9F%E6%B2%B3%E6%AE%B5.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/%E9%83%B4%E5%B7%9E%E5%B8%82%E8%A3%95%E5%90%8E%E8%A1%97%E9%83%B4%E6%B1%9F%E6%B2%B3%E6%AE%B5.jpg",
+      "author": "朱瑞烯",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "prologue-line3-19341113"
+      ],
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "湖南郴州裕后街郴江",
+      "matchType": "town",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "Chen River and the residential on the river bank in Chenzhou City, Hunan Province",
+      "sourceDate": "2017-06-30 18:01:30",
+      "bytes": 228269,
+      "sha256": "727d9058ff591a3e64b1d7d73133cbe34aa6d18e842c646ef59d2a663c1dff06",
+      "photoDate": "2017-06-30",
+      "photographed": "2017-06-30"
+    },
+    {
+      "id": "photo-south-guiyang-nanming",
+      "file": "assets/photos/south-guiyang-nanming.jpg",
+      "title": "贵阳南明河：当代城市河岸实景",
+      "caption": "图为2018年贵阳市区南明河及两岸城市环境，作为佯攻贵阳阶段的地区背景参照；不对应扎佐、龙里各处作战地点或1935年佯攻现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanming_River_in_Guiyang,_Guizhou,_China.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Nanming_River_in_Guiyang%2C_Guizhou%2C_China.jpg/1280px-Nanming_River_in_Guiyang%2C_Guizhou%2C_China.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Nanming_River_in_Guiyang%2C_Guizhou%2C_China.jpg",
+      "author": "云中君",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "eventIds": [
+        "central-guiyang-feint"
+      ],
+      "width": 1280,
+      "height": 959,
+      "sourcePlace": "贵州贵阳市区南明河",
+      "matchType": "regional",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "The Nanming River in Guiyang, Guizhou, China.",
+      "sourceDate": "2018-04-17 19:04:05",
+      "bytes": 185190,
+      "sha256": "334d396dfe22176702a7f44f915ffb18bbbdca20a8e3cbcd1e188f300ce7a27d",
+      "photoDate": "2018-04-17",
+      "photographed": "2018-04-17",
+      "cameraLocation": {
+        "lat": 26.5701,
+        "lon": 106.705444
+      }
+    },
+    {
+      "id": "photo-south-dao-county",
+      "file": "assets/photos/south-dao-county.jpg",
+      "title": "道县：当代河岸与城镇环境",
+      "caption": "图为湖南道县的河岸与城镇当代环境，用于红四团经过道县的地区参照；不是1934年红军行动现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:86d5bac213fa9d080ff4775c.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/86d5bac213fa9d080ff4775c.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/86d5bac213fa9d080ff4775c.jpg",
+      "author": "Playlists",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "regiment-daoxian"
+      ],
+      "width": 799,
+      "height": 529,
+      "sourcePlace": "湖南道县",
+      "matchType": "town",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "changes": "采用Commons官方等比缩略图；原始下载图片未自行裁切、改色或AI编辑。网页可能按比例裁切并轻微降低饱和度。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata提供明确作者、许可名称和许可URL。",
+      "sourceDescription": "​道县",
+      "sourceDate": "",
+      "bytes": 60184,
+      "sha256": "bd37d9dc498d1b01c910e826fc6ef36e104e5b2be3476d51801b4c075219faed"
+    },
+    {
+      "id": "photo-south-loushan-pass",
+      "file": "assets/photos/south-loushan-pass.jpg",
+      "title": "娄山关：2014年现场实景",
+      "caption": "图为2014年拍摄的娄山关当代实景，用于娄山关战斗的地理与纪念地参照；不是1935年战斗原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A8%84%E5%B1%B1%E5%85%B3_20140809.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%E5%A8%84%E5%B1%B1%E5%85%B3_20140809.jpg/1280px-%E5%A8%84%E5%B1%B1%E5%85%B3_20140809.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%E5%A8%84%E5%B1%B1%E5%85%B3_20140809.jpg",
+      "author": "xue siyang (df45086)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "photoDate": "2014-08-09",
+      "photographed": "2014-08-09",
+      "width": 1280,
+      "height": 854,
+      "sourcePlace": "贵州娄山关景区",
+      "matchType": "site",
+      "imageKind": "contemporary",
+      "eventIds": [
+        "central-loushan"
+      ],
+      "landmarkIds": [
+        "pass-loushan"
+      ],
+      "cameraLocation": {
+        "lat": 28.020356,
+        "lon": 106.857104
+      },
+      "changes": "采用Commons官方1280像素等比缩略图；未自行裁切、改色或AI编辑。",
+      "licenseEvidence": "Commons官方imageinfo/extmetadata明确CC BY-SA 3.0、作者xue siyang (df45086)，照片带娄山关附近GPS坐标。",
+      "verified": "2026-11-03",
+      "bytes": 573087,
+      "sha256": "c0f6ced5720db486934d10b859113b06b923ea3ae4f34d03d35ec2f518bf244b"
+    },
+    {
+      "id": "photo-west-1832504",
+      "file": "assets/photos/west-1832504.jpg",
+      "title": "阿坝县城外的佛塔与高原聚落",
+      "caption": "阿坝县城外佛塔、民居与高原的当代实景。用于认识阿坝地区环境，并非1935年行军现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aba_County_Aba_Prefecture_Sichuan_China.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Aba_County_Aba_Prefecture_Sichuan_China.jpg",
+      "author": "Jialiang Gao www.peace-on-earth.org",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "eventIds": [
+        "fourth-aba-193509"
+      ],
+      "photoDate": "2003-02",
+      "width": 900,
+      "height": 577,
+      "sourcePlace": "四川阿坝县县城外围",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 136188,
+      "sha256": "949848f1a129e9bb4c46757fe72db1bb83ad9554a7992d5c1ce371f03ca10ca9",
+      "commonsFile": "File:Aba County Aba Prefecture Sichuan China.jpg"
+    },
+    {
+      "id": "photo-west-59925832",
+      "file": "assets/photos/west-59925832.jpg",
+      "title": "宝兴县的雪山公路环境",
+      "caption": "2014年拍摄的宝兴县山区雪山与公路。作为天全、宝兴阶段的地区环境参考；画面的现代公路不是红军行军旧道。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baoxing,_Ya%27an,_Sichuan,_China_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Baoxing%2C_Ya%27an%2C_Sichuan%2C_China_-_panoramio.jpg/1280px-Baoxing%2C_Ya%27an%2C_Sichuan%2C_China_-_panoramio.jpg",
+      "author": "Leeshan Chung",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "eventIds": [
+        "fourth-kangbei-193602"
+      ],
+      "photoDate": "Taken on 6 April 2014",
+      "width": 1280,
+      "height": 949,
+      "sourcePlace": "四川宝兴县北部山区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 277488,
+      "sha256": "72dbb4e0073eafe19b8fba0b629672a297e84fe4bb9a479bf27c4352f15c0f24",
+      "commonsFile": "File:Baoxing, Ya'an, Sichuan, China - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-149153998",
+      "file": "assets/photos/west-149153998.jpg",
+      "title": "毕节城区实景",
+      "caption": "2024年的毕节城区街道与桥梁。展示红二、六军团曾到达的毕节今日城市环境，不是1936年的原貌。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bijie,_Guizhou,_China.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Bijie%2C_Guizhou%2C_China.jpg/1280px-Bijie%2C_Guizhou%2C_China.jpg",
+      "author": "荧_Lumine",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "eventIds": [
+        "second-07"
+      ],
+      "photoDate": "2024-06-06 14:39:17",
+      "width": 1280,
+      "height": 1707,
+      "sourcePlace": "贵州毕节城区",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 608571,
+      "sha256": "e088cb73fc72d2748ab8e73cdc2622602b1eb1cfbbeb350d7ec314867abd5be2",
+      "commonsFile": "File:Bijie, Guizhou, China.jpg"
+    },
+    {
+      "id": "photo-west-126321963",
+      "file": "assets/photos/west-126321963.jpg",
+      "title": "茂县河谷与城区",
+      "caption": "茂县城区、河流与山地的当代实景。土门战斗节点借此认识同县河谷环境，画面并不是土门战斗旧址。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:County_Maoxian.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/County_Maoxian.jpg/1280px-County_Maoxian.jpg",
+      "author": "261026CQ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "fourth-maoxian-19350515",
+        "fourth-tumen-19350514"
+      ],
+      "photoDate": "2021-07-26",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "四川茂县城区",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 422901,
+      "sha256": "3b8fb90c9319adaa2a436fcb9460d685307cf8a4c2cf164accf0b7d19c21041e",
+      "commonsFile": "File:County Maoxian.jpg",
+      "eventContexts": {
+        "fourth-tumen-19350514": {
+          "matchType": "regional",
+          "caption": "茂县城区、河流与山地的当代实景。土门位于茂县境内，照片仅作同县河谷环境参照，不是土门战斗旧址。"
+        }
+      }
+    },
+    {
+      "id": "photo-west-53195705",
+      "file": "assets/photos/west-53195705.jpg",
+      "title": "道孚地区的山地河谷",
+      "caption": "道孚县境内山地河谷的当代航拍实景，用于观察康北地区地形；不是红军到达道孚的历史现场照片。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dawu,_Garz%C3%AA,_Sichuan,_China,_Center,_N_30.979593_E101.119229_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Dawu%2C_Garz%C3%AA%2C_Sichuan%2C_China%2C_Center%2C_N_30.979593_E101.119229_-_panoramio.jpg/1280px-Dawu%2C_Garz%C3%AA%2C_Sichuan%2C_China%2C_Center%2C_N_30.979593_E101.119229_-_panoramio.jpg",
+      "author": "Johannes Geiger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "fourth-daofu-19360301"
+      ],
+      "photoDate": "Taken on 31 January 2011",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "四川甘孜州道孚县境内",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 406572,
+      "sha256": "edee48dfe0ab3c6aad6609c578c0da01501ac1bf8b862f311210360054ef86dd",
+      "commonsFile": "File:Dawu, Garzê, Sichuan, China, Center, N 30.979593 E101.119229 - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-6344257",
+      "file": "assets/photos/west-6344257.jpg",
+      "title": "党岭葫芦海的秋季山地",
+      "caption": "2008年的党岭葫芦海地区山地与落叶松。作为党岭山地环境参考，秋景不代表1936年翻越党岭时的积雪状况，也不标示具体行军路线。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Larix_potaninii_trees_Huluhai.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Larix_potaninii_trees_Huluhai.jpg/1280px-Larix_potaninii_trees_Huluhai.jpg",
+      "author": "rduta on Flickr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "eventIds": [
+        "fourth-dangling-19360228"
+      ],
+      "photoDate": "Taken on 15 October 2008",
+      "width": 1280,
+      "height": 1033,
+      "sourcePlace": "四川丹巴县党岭葫芦海地区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 662115,
+      "sha256": "9cef20165cd21b40c8912e1f8f4cd88a11e4b079e34723910ac1478d6e12fa75",
+      "commonsFile": "File:Larix potaninii trees Huluhai.jpg"
+    },
+    {
+      "id": "photo-west-2503364",
+      "file": "assets/photos/west-2503364.jpg",
+      "title": "马尔康城区河谷",
+      "caption": "马尔康城区的当代实景。卓木碉会议地点为马尔康境内脚木足，照片仅提供同市地区环境，不能当作脚木足会议旧址。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maerkang_City.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Maerkang_City.jpg",
+      "author": "Philippe Semanaz from Paris, France",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "eventIds": [
+        "fourth-zhuomudiao-193510"
+      ],
+      "photoDate": "2006-10-02 12:55",
+      "width": 640,
+      "height": 513,
+      "sourcePlace": "四川马尔康城区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 128874,
+      "sha256": "a0e557155ed483b37fdf1500e895808d314f14d0dbb8bac0363f734e2a07ce5f",
+      "commonsFile": "File:Maerkang City.jpg"
+    },
+    {
+      "id": "photo-west-183117713",
+      "file": "assets/photos/west-183117713.jpg",
+      "title": "安顺场红军强渡大渡河纪念馆",
+      "caption": "2026年拍摄的安顺场红军强渡大渡河纪念馆与纪念广场。画面是后建纪念设施，并非1935年强渡战斗现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Army_Crossing_Dadu_River_Memorial_Hall_(20260204133413).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Red_Army_Crossing_Dadu_River_Memorial_Hall_%2820260204133413%29.jpg/1280px-Red_Army_Crossing_Dadu_River_Memorial_Hall_%2820260204133413%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-dadu"
+      ],
+      "photoDate": "2026-02-04 13:34:13",
+      "width": 1280,
+      "height": 853,
+      "sourcePlace": "四川石棉县安顺场",
+      "matchType": "site",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 335029,
+      "sha256": "33d3cbf6c5551573cee0585166d1fe6e2c1c85a007597826449e41c17b05fea6",
+      "commonsFile": "File:Red Army Crossing Dadu River Memorial Hall (20260204133413).jpg"
+    },
+    {
+      "id": "photo-west-27278042",
+      "file": "assets/photos/west-27278042.jpg",
+      "title": "石鼓古镇实景",
+      "caption": "丽江石鼓镇的当代实景。红二、六军团从石鼓至巨甸一线渡过金沙江；本图展示石鼓镇环境，不等于所有渡口的位置。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shigu,_Lijiang.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Shigu%2C_Lijiang.jpg/1280px-Shigu%2C_Lijiang.jpg",
+      "author": "AddisWang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "second-11"
+      ],
+      "photoDate": "2012-04-02",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "云南丽江石鼓镇",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 275252,
+      "sha256": "c2ace66d99b182156d1e7685ecc4867a97b4dcb21066bbe44f6f38bab30917d0",
+      "commonsFile": "File:Shigu, Lijiang.jpg"
+    },
+    {
+      "id": "photo-west-99993381",
+      "file": "assets/photos/west-99993381.jpg",
+      "title": "皎平渡附近的金沙江远眺",
+      "caption": "皎平渡附近的金沙江峡谷与后建《七律·长征》诗刻。可认识渡江地区地貌；诗刻、栏杆是现代设施，不是1935年的渡河工具。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stone_carvings_of_Mao_Zedong%27s_poems_near_Jiaoping_Du.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Stone_carvings_of_Mao_Zedong%27s_poems_near_Jiaoping_Du.jpg/1280px-Stone_carvings_of_Mao_Zedong%27s_poems_near_Jiaoping_Du.jpg",
+      "author": "Zhangzj cet",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-jinsha"
+      ],
+      "photoDate": "2020-12-13 15:07:53",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "云南禄劝皎平渡附近",
+      "matchType": "site",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 364695,
+      "sha256": "45a6abe41b85037094fdffcd9eb1adb8a6f89406c95061bb93016c179d10fd29",
+      "commonsFile": "File:Stone carvings of Mao Zedong's poems near Jiaoping Du.jpg"
+    },
+    {
+      "id": "photo-west-10998651",
+      "file": "assets/photos/west-10998651.jpg",
+      "title": "彝海湖岸与“彝海”题石",
+      "caption": "2010年拍摄的彝海湖岸及题石。画面为彝海今日实景，原始公开图片为300像素，不是1935年结盟仪式现场影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voa-chinese_changzheng_yi_minority_yihai_painting_19may10_300.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Voa-chinese_changzheng_yi_minority_yihai_painting_19may10_300.jpg",
+      "author": "VOA美国之音张楠",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-VOA",
+      "eventIds": [
+        "central-yihai"
+      ],
+      "photoDate": "2010-05-19",
+      "width": 300,
+      "height": 300,
+      "sourcePlace": "四川冕宁县彝海",
+      "matchType": "site",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 14419,
+      "sha256": "84bc3b97c2ad0b787b0d17cd1413a8a9e02d28e1791578f5c2730fd153959d98",
+      "commonsFile": "File:Voa-chinese changzheng yi minority yihai painting 19may10 300.jpg"
+    },
+    {
+      "id": "photo-west-53648900",
+      "file": "assets/photos/west-53648900.jpg",
+      "title": "小金县的山地环境",
+      "caption": "小金县境内的山地与现代木质门架。仅作懋功、两河口所在县域地形参考；画面不是懋功县城，也不是两河口会议旧址。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xiaojin,_Aba,_Sichuan,_China_-_panoramio_(10).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Xiaojin%2C_Aba%2C_Sichuan%2C_China_-_panoramio_%2810%29.jpg/1280px-Xiaojin%2C_Aba%2C_Sichuan%2C_China_-_panoramio_%2810%29.jpg",
+      "author": "jetsun",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "central-maogong",
+        "central-lianghekou",
+        "fourth-lianghekou-19350626"
+      ],
+      "photoDate": "Taken on 25 June 2011",
+      "width": 1280,
+      "height": 857,
+      "sourcePlace": "四川小金县境内山区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 459967,
+      "sha256": "10eae05676f0f80b49d41b25e6c2de5907aaa41b7d697d66586d8e127199fa94",
+      "commonsFile": "File:Xiaojin, Aba, Sichuan, China - panoramio (10).jpg"
+    },
+    {
+      "id": "photo-west-54609489",
+      "file": "assets/photos/west-54609489.jpg",
+      "title": "鸭池河峡谷与现代大桥",
+      "caption": "2016年拍摄的鸭池河大桥与峡谷。现代悬索桥用于帮助辨认今日河谷景观，不是1936年红军渡河所用桥梁或精确渡口。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:YachiByHighestBridges.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/YachiByHighestBridges.jpg/1280px-YachiByHighestBridges.jpg",
+      "author": "HighestBridges",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "second-05"
+      ],
+      "photoDate": "2016-10-16 01:08:33",
+      "width": 1280,
+      "height": 853,
+      "sourcePlace": "贵州鸭池河大桥河段",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 234248,
+      "sha256": "c762c734ec1ea401807c44716cea66ef18d996f8f26e689079811b7ce741314d",
+      "commonsFile": "File:YachiByHighestBridges.jpg"
+    },
+    {
+      "id": "photo-west-54702307",
+      "file": "assets/photos/west-54702307.jpg",
+      "title": "剑门关关口",
+      "caption": "剑门关关口的当代实景。照片包含修复后的关楼，用于认识关隘地势，不是1935年攻克剑门关的战斗原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8A%8D%E9%96%80%E9%97%9C%E9%97%9C%E5%8F%A3_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%E5%8A%8D%E9%96%80%E9%97%9C%E9%97%9C%E5%8F%A3_-_panoramio.jpg/1280px-%E5%8A%8D%E9%96%80%E9%97%9C%E9%97%9C%E5%8F%A3_-_panoramio.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "fourth-jianmen-19350402"
+      ],
+      "photoDate": "Taken on 13 May 2012",
+      "width": 1280,
+      "height": 956,
+      "sourcePlace": "四川剑阁县剑门关",
+      "matchType": "site",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 328248,
+      "sha256": "fdbfc736efa9049e1dfff8aaf6bd9f1a6c61bbce8b4ae2b25da7678d3a9c8c84",
+      "commonsFile": "File:劍門關關口 - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-98742800",
+      "file": "assets/photos/west-98742800.jpg",
+      "title": "桑植县城实景",
+      "caption": "2018年拍摄的桑植县城建筑。用于展示出发地区的当代县城环境；刘家坪、瑞塔铺出发地不在本画面内。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%A1%91%E6%A4%8D%E5%8E%BF%E6%94%BF%E5%BA%9C_20180315_105338.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/%E6%A1%91%E6%A4%8D%E5%8E%BF%E6%94%BF%E5%BA%9C_20180315_105338.jpg/1280px-%E6%A1%91%E6%A4%8D%E5%8E%BF%E6%94%BF%E5%BA%9C_20180315_105338.jpg",
+      "author": "Qa003qa003",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "second-01"
+      ],
+      "photoDate": "2018-03-15 10:53:40",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "湖南桑植县城区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 405857,
+      "sha256": "b90bec78ab7fd2d93c99005a328f2d607fa7c50dfa976dfdf501d1b00e63f9ce",
+      "commonsFile": "File:桑植县政府 20180315 105338.jpg"
+    },
+    {
+      "id": "photo-west-53678365",
+      "file": "assets/photos/west-53678365.jpg",
+      "title": "苍溪红军渡纪念地",
+      "caption": "苍溪红军渡纪念地的当代实景。后建纪念设施记录强渡嘉陵江历史，画面并非1935年战斗现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%8B%8D%E6%BA%AA%E5%8E%BF%E7%BA%A2%E5%86%9B%E6%B8%A1_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%E8%8B%8D%E6%BA%AA%E5%8E%BF%E7%BA%A2%E5%86%9B%E6%B8%A1_-_panoramio.jpg/1280px-%E8%8B%8D%E6%BA%AA%E5%8E%BF%E7%BA%A2%E5%86%9B%E6%B8%A1_-_panoramio.jpg",
+      "author": "landagent",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "fourth-jialing-19350328"
+      ],
+      "photoDate": "Taken on 1 July 2011",
+      "width": 1280,
+      "height": 853,
+      "sourcePlace": "四川苍溪县红军渡",
+      "matchType": "site",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 106925,
+      "sha256": "01180b79c649bdf67c360e3f29126249558c7fcaffeb0a09766575a80320384e",
+      "commonsFile": "File:苍溪县红军渡 - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-56705140",
+      "file": "assets/photos/west-56705140.jpg",
+      "title": "达维会师纪念碑",
+      "caption": "达维会师纪念碑的当代实景，用于认识红一、四方面军先头部队会合地区。纪念碑为后建，不是1935年会师现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%BE%BE%E7%BB%B4%E4%BC%9A%E5%B8%88%E7%BA%AA%E5%BF%B5%E7%A2%91_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/%E8%BE%BE%E7%BB%B4%E4%BC%9A%E5%B8%88%E7%BA%AA%E5%BF%B5%E7%A2%91_-_panoramio.jpg/1280px-%E8%BE%BE%E7%BB%B4%E4%BC%9A%E5%B8%88%E7%BA%AA%E5%BF%B5%E7%A2%91_-_panoramio.jpg",
+      "author": "Leeshan Chung",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "eventIds": [
+        "central-dawei",
+        "fourth-dawei-19350612",
+        "regiment-dawei"
+      ],
+      "photoDate": "Taken on 7 July 2013",
+      "width": 1280,
+      "height": 720,
+      "sourcePlace": "四川小金县达维镇",
+      "matchType": "site",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 161994,
+      "sha256": "1a0cc4e01eb4bbc00ca945087a8439cb6908ec46b38c9b7f02ed807e86e1c56f",
+      "commonsFile": "File:达维会师纪念碑 - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-117674209",
+      "file": "assets/photos/west-117674209.jpg",
+      "title": "寻甸六哨乡街景",
+      "caption": "2022年的寻甸县六哨乡街景，仅作同县城镇环境参照。六哨不是鲁口哨或六甲，不能据此认定1935年集结地或1936年阻击战位置。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liushao,_Xundian,_Yunnan,_China.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Liushao%2C_Xundian%2C_Yunnan%2C_China.jpg/1280px-Liushao%2C_Xundian%2C_Yunnan%2C_China.jpg",
+      "author": "Zhangmoon618",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-xundian",
+        "second-10"
+      ],
+      "photoDate": "2022-04-30 16:32:35",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "云南寻甸县六哨乡清泉街",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 287780,
+      "sha256": "b251bdb2f66b08e17413b4e6ebe656479156f2f13becec74dff09e664d858769",
+      "commonsFile": "File:Liushao, Xundian, Yunnan, China.jpg"
+    },
+    {
+      "id": "photo-west-54027051",
+      "file": "assets/photos/west-54027051.jpg",
+      "title": "炉霍县卡萨寺周边环境",
+      "caption": "炉霍县卡萨寺与周边高原聚落的当代实景。仅提供炉霍县域环境参照，画面不是炉霍县城，也不表示红军经过寺院的具体路线。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8D%A1%E8%90%A8%E5%AF%BA-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E5%8D%A1%E8%90%A8%E5%AF%BA-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg",
+      "author": "爵士鼓手",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "eventIds": [
+        "fourth-luhuo-19360325",
+        "fourth-north-193607"
+      ],
+      "photoDate": "4 June 2010 (original upload date)",
+      "width": 1024,
+      "height": 681,
+      "sourcePlace": "四川炉霍县卡萨寺",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 418231,
+      "sha256": "6b91afc693f4d8e601ddefb343dc14f22982bf8e867dbc80ea4920c38b6bd3f8",
+      "commonsFile": "File:卡萨寺-爵士鼓手 - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-65801567",
+      "file": "assets/photos/west-65801567.jpg",
+      "title": "石阡凯峡河峡谷",
+      "caption": "2015年的石阡县凯峡河峡谷与现代大桥，仅作石阡县域河谷环境参考。大桥不是红军行军时期的设施，画面也不是进占石阡县城的具体旧址。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaixia_River_Bridge_photo.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Kaixia_River_Bridge_photo.jpg/1280px-Kaixia_River_Bridge_photo.jpg",
+      "author": "HighestBridges",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "second-04"
+      ],
+      "photoDate": "2015",
+      "width": 1280,
+      "height": 853,
+      "sourcePlace": "贵州石阡县凯峡河大桥河段",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 340891,
+      "sha256": "847bf61d817753ab8cef828b39992bb86ba012bcc8853d5500d0141f1c0c04e7",
+      "commonsFile": "File:Kaixia River Bridge photo.jpg"
+    },
+    {
+      "id": "photo-west-19877630",
+      "file": "assets/photos/west-19877630.jpg",
+      "title": "大方周边的百里杜鹃景区",
+      "caption": "2012年拍摄的百里杜鹃景区，Commons将拍摄地归于大方县。仅作大定（今大方）周边地区的自然环境参照，花期和现代旅游设施不代表1936年行军现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Azaleas_Area.JPG",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Azaleas_Area.JPG/1280px-Azaleas_Area.JPG",
+      "author": "Fanghong",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "second-06"
+      ],
+      "photoDate": "Taken on 12 April 2012",
+      "width": 1280,
+      "height": 848,
+      "sourcePlace": "贵州毕节大方周边百里杜鹃景区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 331625,
+      "sha256": "853130914786fea9b51c3b45edd8ab2259b1e510a1a202d9ca07fbebc2decb95",
+      "commonsFile": "File:Azaleas Area.JPG"
+    },
+    {
+      "id": "photo-west-79151081",
+      "file": "assets/photos/west-79151081.jpg",
+      "title": "盘州东湖公园远眺",
+      "caption": "2019年的盘州东湖公园与城区远景。照片位于今日红果城区，盘县会议在双凤旧城；仅作同市区域环境参照，不是会议旧址。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_commanding_view_of_the_East_Lake_Park,_Panzhou,_Guizhou,_China6.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/A_commanding_view_of_the_East_Lake_Park%2C_Panzhou%2C_Guizhou%2C_China6.jpg/1280px-A_commanding_view_of_the_East_Lake_Park%2C_Panzhou%2C_Guizhou%2C_China6.jpg",
+      "author": "Huangdan2060",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "eventIds": [
+        "second-09"
+      ],
+      "photoDate": "2019-05-15 19:27:32",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "贵州盘州红果东湖公园",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 207189,
+      "sha256": "09f87ec37120e14d5099c7473cc481782f3e3be9b852b99284797dc8c6973620",
+      "commonsFile": "File:A commanding view of the East Lake Park, Panzhou, Guizhou, China6.jpg"
+    },
+    {
+      "id": "photo-west-196523846",
+      "file": "assets/photos/west-196523846.jpg",
+      "title": "中甸独克宗古城远景",
+      "caption": "2026年从龟山公园远眺独克宗古城。展示中甸（今香格里拉）城镇及山地环境，画面包含后世重建的街区，不是1936年筹粮现场影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_13.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_13.jpg/1280px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_13.jpg",
+      "author": "祝鱼贵",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "second-12"
+      ],
+      "photoDate": "2026-02-25 12:39:07",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "云南香格里拉建塘镇独克宗古城",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 376994,
+      "sha256": "902782bc2ce01d8775254c5975a2782f172c3f9e10f0f6d4f4ae8ebba77fbc63",
+      "commonsFile": "File:20260225 Skyline of Dukezong Ancient Town Shangri-La 13.jpg"
+    },
+    {
+      "id": "photo-west-19232983",
+      "file": "assets/photos/west-19232983.jpg",
+      "title": "溆浦河岸城镇实景",
+      "caption": "2012年拍摄的溆浦县城河岸与民居。用于认识红二、六军团转战湘中时涉及的城镇地区，不是当时行军现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:XuPu.JPG",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/XuPu.JPG/1280px-XuPu.JPG",
+      "author": "PanShiBo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "second-02"
+      ],
+      "photoDate": "2012-04-27",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "湖南溆浦县城",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 312347,
+      "sha256": "d54a8d3d7a8da5708ec87ed9e437dcb80be1cee7677cd89739ec637ca1bacf00",
+      "commonsFile": "File:XuPu.JPG"
+    },
+    {
+      "id": "photo-west-19185904",
+      "file": "assets/photos/west-19185904.jpg",
+      "title": "新晃河岸实景",
+      "caption": "2012年的新晃河岸与城镇。便水战斗发生在芷江、新晃交界地区，本图仅作新晃县域环境参照，不是便水战场照片。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:XinHuang.JPG",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/XinHuang.JPG/1280px-XinHuang.JPG",
+      "author": "PanShiBo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "second-03"
+      ],
+      "photoDate": "Taken on 23 April 2012",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "湖南新晃县城河岸",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 239600,
+      "sha256": "434bd0f333a1603fff345c7bb746c964e9072825d81900e8b5c28d08150f5be8",
+      "commonsFile": "File:XinHuang.JPG"
+    },
+    {
+      "id": "photo-west-56012876",
+      "file": "assets/photos/west-56012876.jpg",
+      "title": "甲洼乡高原聚落",
+      "caption": "2012年的甲洼乡高原聚落实景，用于认识先头部队会合地区的地形与聚落环境，不是1936年会合现场原照。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%94%B2%E6%B4%BC%E4%B9%A1_-_Jiawa_Township_-_2012.10_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/%E7%94%B2%E6%B4%BC%E4%B9%A1_-_Jiawa_Township_-_2012.10_-_panoramio.jpg/1280px-%E7%94%B2%E6%B4%BC%E4%B9%A1_-_Jiawa_Township_-_2012.10_-_panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "eventIds": [
+        "second-13"
+      ],
+      "photoDate": "Taken on 20 October 2012",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "四川理塘县甲洼乡",
+      "matchType": "town",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 353353,
+      "sha256": "1d1060b711ded35c78857d49e8ac641e4515d7cf7b476af2772301dee1a39053",
+      "commonsFile": "File:甲洼乡 - Jiawa Township - 2012.10 - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-56177660",
+      "file": "assets/photos/west-56177660.jpg",
+      "title": "丹巴城区河谷",
+      "caption": "2010年拍摄的丹巴城区与河谷。丹巴是绥崇丹懋战役涉及地区之一；画面只反映今日城镇环境，不能代表整个战役范围或具体战场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danba_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Danba_-_panoramio.jpg/1280px-Danba_-_panoramio.jpg",
+      "author": "jason_she",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "fourth-jinchuan-19351008"
+      ],
+      "photoDate": "Taken on 4 April 2010",
+      "width": 1280,
+      "height": 960,
+      "sourcePlace": "四川丹巴县城区",
+      "matchType": "regional",
+      "modifications": "下载Wikimedia Commons提供的等比缩略图或较小原图，未自行裁剪、改色或进行AI编辑。",
+      "downloadBytes": 430771,
+      "sha256": "ba6e02d673d452f19305d33ccf908bd5c8f8c2c5715c851bc84ddee4976b5a79",
+      "commonsFile": "File:Danba - panoramio.jpg"
+    },
+    {
+      "id": "photo-west-102001757",
+      "file": "assets/photos/west-102001757.png",
+      "title": "毛儿盖寺与周边聚落",
+      "caption": "2017年拍摄的毛儿盖寺及周边聚落实景，用于认识会议所在的毛儿盖地区；不据此认定1935年具体会场建筑或当年的建筑原貌。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mugeygonpa01.png",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Mugeygonpa01.png",
+      "author": "TaDhondup",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-maoergai",
+        "fourth-maoergai-19350820"
+      ],
+      "photoDate": "2017",
+      "width": 853,
+      "height": 465,
+      "sourcePlace": "四川松潘毛儿盖寺及周边聚落",
+      "matchType": "regional",
+      "imageKind": "contemporary",
+      "verified": "2026-11-03",
+      "cameraLocation": {
+        "lat": 32.63771,
+        "lon": 103.09973
+      },
+      "modifications": "原文件未裁切、改色或进行AI编辑；网页显示可能有比例裁切和轻微低饱和处理。",
+      "bytes": 698544,
+      "sha256": "0a9aa1ab0c42b2b3502b4814bc91f947f133905d0ec2c7796e4db296714d3ca4",
+      "commonsFile": "File:Mugeygonpa01.png",
+      "locationEvidence": "Commons拍摄坐标及Songpan County、Mugey Gonpa分类，与毛儿盖地区相符；松潘县政府介绍会议会址位于索花寺院内，照片只作寺院聚落环境参照。",
+      "verificationSources": [
+        "https://commons.wikimedia.org/wiki/File:Mugeygonpa01.png",
+        "https://www.songpan.gov.cn/spxrmzf/c100050/202608/13bda0f77096421c9786d54e46a7138b.shtml"
+      ]
+    },
+    {
+      "id": "photo-north-hadapu",
+      "file": "assets/photos/north-hadapu.jpg",
+      "title": "哈达铺红军干部会议旧址",
+      "caption": "哈达铺红军干部会议旧址的当代实景。各支部队曾先后在哈达铺休整；照片不是1935或1936年的现场影像。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hadapu_Red_Army_Cadre_Conference_site_(20260202165921).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Hadapu_Red_Army_Cadre_Conference_site_%2820260202165921%29.jpg/1280px-Hadapu_Red_Army_Cadre_Conference_site_%2820260202165921%29.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Hadapu_Red_Army_Cadre_Conference_site_%2820260202165921%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-hadapu",
+        "second-17",
+        "fourth-hadapu-19360809"
+      ],
+      "photoDate": "2026-02-02 16:59:21",
+      "sourcePlace": "甘肃宕昌哈达铺",
+      "matchType": "site",
+      "width": 1280,
+      "height": 853,
+      "sourceTitle": "File:Hadapu Red Army Cadre Conference site (20260202165921).jpg",
+      "sourceDescription": "Red Army flags everywhere.",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 425338,
+      "sha256": "9ed23047fed9b1052a26a3e7c32852e586c495c29fcc08ab28c8fe8288a202c6"
+    },
+    {
+      "id": "photo-north-liupan",
+      "file": "assets/photos/north-liupan.jpg",
+      "title": "六盘山远眺",
+      "caption": "从六盘山红军长征纪念馆观景平台拍摄的当代山景，用于认识六盘山地理环境；不是1935年行军天气、积雪或具体登山点的记录。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liupan_Mountains_from_the_observation_deck_(20260201152712).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Liupan_Mountains_from_the_observation_deck_%2820260201152712%29.jpg/1280px-Liupan_Mountains_from_the_observation_deck_%2820260201152712%29.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Liupan_Mountains_from_the_observation_deck_%2820260201152712%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "central-liupan",
+        "tf-16"
+      ],
+      "photoDate": "2026-02-01 15:27:12",
+      "sourcePlace": "宁夏六盘山红军长征纪念馆观景平台",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 853,
+      "sourceTitle": "File:Liupan Mountains from the observation deck (20260201152712).jpg",
+      "sourceDescription": "Some remaining snow.",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 398120,
+      "sha256": "4b7f9ea4b2a53cb971339fa3484eda54c51684084fd5b3c08c6520d4366c92dc"
+    },
+    {
+      "id": "photo-north-wuqi",
+      "file": "assets/photos/north-wuqi.jpg",
+      "title": "吴起县城：当代实景",
+      "caption": "2010年的吴起县城照片，原图仅300×225像素。用于认识中央红军长征终点所在城镇，不是1935年的胜利到达现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voa_chinese_Wuqi-today_29jun10_300.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Voa_chinese_Wuqi-today_29jun10_300.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Voa_chinese_Wuqi-today_29jun10_300.jpg",
+      "author": "VOA美国之音张楠",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "eventIds": [
+        "central-wuqi"
+      ],
+      "photoDate": "",
+      "sourcePlace": "陕西吴起县",
+      "matchType": "town",
+      "width": 300,
+      "height": 225,
+      "sourceTitle": "File:Voa chinese Wuqi-today 29jun10 300.jpg",
+      "sourceDescription": "Wuqi, Yan'an, Shaanxi Province, China",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 14961,
+      "sha256": "5ef96ee087fe9f09da2e4bd5b3eb53675842a93c9a55a92405d9599f58e68da2"
+    },
+    {
+      "id": "photo-north-lushi",
+      "file": "assets/photos/north-lushi.jpg",
+      "title": "卢氏县城远景 · 县域参照",
+      "caption": "从卢氏县北山眺望县城的当代实景，提供红二十五军西进所经卢氏县域的环境参照；照片不是叫河、文峪的具体行军地点。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BB%8E%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8C%97%E5%B1%B1%E7%9C%BA%E6%9C%9B%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8E%BF%E5%9F%8E.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%E4%BB%8E%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8C%97%E5%B1%B1%E7%9C%BA%E6%9C%9B%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8E%BF%E5%9F%8E.jpg/1280px-%E4%BB%8E%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8C%97%E5%B1%B1%E7%9C%BA%E6%9C%9B%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8E%BF%E5%9F%8E.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%E4%BB%8E%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8C%97%E5%B1%B1%E7%9C%BA%E6%9C%9B%E5%8D%A2%E6%B0%8F%E5%8E%BF%E5%8E%BF%E5%9F%8E.jpg",
+      "author": "Assifbus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "tf-04"
+      ],
+      "photoDate": "2021-04-06",
+      "sourcePlace": "河南卢氏县城关镇",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 720,
+      "sourceTitle": "File:从卢氏县北山眺望卢氏县县城.jpg",
+      "sourceDescription": "Looking at Chengguan Township, the county seat of Lushi County from the North Mountain",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 195112,
+      "sha256": "4453266ea21572631483d6b19cca897ed69f1fd7dd6376e58a39908f03c4c7da"
+    },
+    {
+      "id": "photo-north-danfeng",
+      "file": "assets/photos/north-danfeng.jpg",
+      "title": "丹凤秦岭山地 · 县域参照",
+      "caption": "丹凤县凤冠山北麓西望秦岭的当代全景，用于认识庾家河所在县域的山地环境；不是庾家河会议旧址或战斗位置的照片。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20120411%E9%99%95%E8%A5%BF%E5%95%86%E6%B4%9B%E5%B8%82%E4%B8%B9%E5%87%A4%E5%8E%BF%E5%87%A4%E5%86%A0%E5%B1%B1%E5%8C%97%E9%BA%93%E8%A5%BF%E6%9C%9B%E7%BB%B5%E5%BB%B6%E7%A7%A6%E5%B2%AD_-_panoramio.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/20120411%E9%99%95%E8%A5%BF%E5%95%86%E6%B4%9B%E5%B8%82%E4%B8%B9%E5%87%A4%E5%8E%BF%E5%87%A4%E5%86%A0%E5%B1%B1%E5%8C%97%E9%BA%93%E8%A5%BF%E6%9C%9B%E7%BB%B5%E5%BB%B6%E7%A7%A6%E5%B2%AD_-_panoramio.jpg/1280px-20120411%E9%99%95%E8%A5%BF%E5%95%86%E6%B4%9B%E5%B8%82%E4%B8%B9%E5%87%A4%E5%8E%BF%E5%87%A4%E5%86%A0%E5%B1%B1%E5%8C%97%E9%BA%93%E8%A5%BF%E6%9C%9B%E7%BB%B5%E5%BB%B6%E7%A7%A6%E5%B2%AD_-_panoramio.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/20120411%E9%99%95%E8%A5%BF%E5%95%86%E6%B4%9B%E5%B8%82%E4%B8%B9%E5%87%A4%E5%8E%BF%E5%87%A4%E5%86%A0%E5%B1%B1%E5%8C%97%E9%BA%93%E8%A5%BF%E6%9C%9B%E7%BB%B5%E5%BB%B6%E7%A7%A6%E5%B2%AD_-_panoramio.jpg",
+      "author": "fish4fish",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "tf-06"
+      ],
+      "photoDate": "Taken on 13 April 2012",
+      "sourcePlace": "陕西丹凤县凤冠山",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 320,
+      "sourceTitle": "File:20120411陕西商洛市丹凤县凤冠山北麓西望绵延秦岭 - panoramio.jpg",
+      "sourceDescription": "​20120411陕西商洛市丹凤县凤冠山北麓西望绵延秦岭",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 201914,
+      "sha256": "9c129b29b96ef7ccf878ddad2ff13d8611a8896c7c01c157e36f22a62c3ae181"
+    },
+    {
+      "id": "photo-north-jingziguan",
+      "file": "assets/photos/north-jingziguan.jpg",
+      "title": "荆紫关古建筑",
+      "caption": "荆紫关镇古建筑的2011年实景，展示当地城镇环境；不是1935年荆紫关战斗现场。原始开放图像分辨率为479×318像素。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jzgz_(7).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Jzgz_%287%29.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Jzgz_%287%29.jpg",
+      "author": "襄樊一夜",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "eventIds": [
+        "tf-10"
+      ],
+      "photoDate": "2011",
+      "sourcePlace": "河南淅川荆紫关镇",
+      "matchType": "town",
+      "width": 479,
+      "height": 318,
+      "sourceTitle": "File:Jzgz (7).jpg",
+      "sourceDescription": "jingziguan town",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 102717,
+      "sha256": "3dcae1fd0fa2e4d45ddf03091ca3d7af2135785e2870b01885b9a406c06a5a6a"
+    },
+    {
+      "id": "photo-north-tianshui",
+      "file": "assets/photos/north-tianshui.jpg",
+      "title": "天水街景：当代城镇参照",
+      "caption": "天水街道的当代实景，用于认识红二十五军转战天水所在城市；不是1935年天水北关战斗位置或当年街景的复原。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tianshui_street.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Tianshui_street.jpg/1280px-Tianshui_street.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tianshui_street.jpg",
+      "author": "shizhao from beijing, china",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "eventIds": [
+        "tf-14"
+      ],
+      "photoDate": "2012-07-18 03:33",
+      "sourcePlace": "甘肃天水",
+      "matchType": "town",
+      "width": 1280,
+      "height": 857,
+      "sourceTitle": "File:Tianshui street.jpg",
+      "sourceDescription": "DSC_7764",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 443522,
+      "sha256": "2b4d028a4701ac92a33f2f0fdb5069961aeb378aac4719cd73c58ecc1285abbb"
+    },
+    {
+      "id": "photo-north-lazikou",
+      "file": "assets/photos/north-lazikou.jpg",
+      "title": "宁陕月河坪与腊子口：山地环境图版",
+      "caption": "科研论文中的地貌图版：下幅（图36）拍摄于甘肃迭部腊子口，上幅（图35）为陕西宁陕月河坪。这里仅以下幅作腊子口山地环境参照，不代表腊子口关口、1935年战斗现场或当年的天气。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Habitats_of_Deuveia_banghaasi_(10.3897-zookeys.822.32341)_Figures_35,_36.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Habitats_of_Deuveia_banghaasi_%2810.3897-zookeys.822.32341%29_Figures_35%2C_36.jpg/1280px-Habitats_of_Deuveia_banghaasi_%2810.3897-zookeys.822.32341%29_Figures_35%2C_36.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Habitats_of_Deuveia_banghaasi_%2810.3897-zookeys.822.32341%29_Figures_35%2C_36.jpg",
+      "author": "[Photograph by Di Lu] Huang S-Y, Wang M, Da W, Fan X-L (2019) New discoveries of the family Epicopeiidae from China, with description of a new species (Lepidoptera, Epicopeiidae). ZooKeys 822: 33-51. https://doi.org/10.3897/zookeys.822.32341",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "eventIds": [
+        "central-lazikou",
+        "fourth-lazikou-19360809",
+        "regiment-lazikou",
+        "tf-08"
+      ],
+      "photoDate": "",
+      "sourcePlace": "上幅：陕西宁陕月河坪；下幅：甘肃迭部腊子口",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 1677,
+      "sourceTitle": "File:Habitats of Deuveia banghaasi (10.3897-zookeys.822.32341) Figures 35, 36.jpg",
+      "sourceDescription": "Figures 35, 36; Habitats of Deuveia banghaasi: 35 Yueheping, Ningshan County, photograph by Di Lu 36 Lazikou, Diebu County.",
+      "sourceCategories": "Media from Huang et al. 2019 - 10.3897/zookeys.822.32341|Ningshan County|GWToolset Batch Upload",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 1134444,
+      "sha256": "f580fb987c5fc66c72bb3ecf148f770770ce470dde66b5030aaae6bb79440f4c",
+      "objectPosition": "center bottom",
+      "publicationDate": "2019-02-04",
+      "dateNote": "2019-02-04为论文发表日期；照片拍摄日期未单列。",
+      "verificationSources": [
+        "https://commons.wikimedia.org/wiki/File:Habitats_of_Deuveia_banghaasi_(10.3897-zookeys.822.32341)_Figures_35,_36.jpg",
+        "https://doi.org/10.3897/zookeys.822.32341"
+      ],
+      "eventContexts": {
+        "tf-08": {
+          "matchType": "regional",
+          "caption": "科研论文环境图版的上幅（图35）为陕西宁陕月河坪，下幅为甘肃腊子口。此处只以上幅认识宁陕县域山地环境；未将其当成红二十五军的具体行军道路。",
+          "objectPosition": "center top"
+        }
+      }
+    },
+    {
+      "id": "photo-north-guangshan",
+      "file": "assets/photos/north-guangshan.jpg",
+      "title": "光山县城：县域参照",
+      "caption": "光山县城的当代航拍实景，用于认识花山寨会议所在县域；图片不是花山寨村或会议旧址的照片。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guangshan_County_aerial_view.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Guangshan_County_aerial_view.jpg/1280px-Guangshan_County_aerial_view.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Guangshan_County_aerial_view.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "tf-01"
+      ],
+      "photoDate": "2018-06-16 12:51:30",
+      "sourcePlace": "河南光山县城",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 853,
+      "sourceTitle": "File:Guangshan County aerial view.jpg",
+      "sourceDescription": "Aerial view of Guangshan County, Henan",
+      "sourceCategories": "China photographs taken on 2018-06-16|Guangshan County|Self-published work|Files with coordinates missing SDC location of creation|June 2018 in Henan|Aerial photographs of Henan",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 353772,
+      "sha256": "a16731a367ac5afc6269d9ec415160d4ff016228ae7db90c8294d3807d7df3bd"
+    },
+    {
+      "id": "photo-north-luoshan",
+      "file": "assets/photos/north-luoshan.jpg",
+      "title": "罗山县域晨景",
+      "caption": "罗山县域当代晨景，仅提供何家冲所在县域的环境参照；不是何家冲出发地旧址或1934年出征现场。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Early_morning_in_Luoshan.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Early_morning_in_Luoshan.jpg/1280px-Early_morning_in_Luoshan.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Early_morning_in_Luoshan.jpg",
+      "author": "Robert Thomson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "eventIds": [
+        "tf-02"
+      ],
+      "photoDate": "2008-09-05 07:09:18",
+      "sourcePlace": "河南罗山县",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 1707,
+      "sourceTitle": "File:Early morning in Luoshan.jpg",
+      "sourceDescription": "​罗山县城晨景",
+      "sourceCategories": "Taken with Canon PowerShot G9|Luoshan County|Flickr images uploaded by Flickr upload bot",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 398476,
+      "sha256": "cafb380c9f19287b645f7418714642b8a8050bb87eafa5535ecb3f9e7b7e24ef"
+    },
+    {
+      "id": "photo-north-minxian",
+      "file": "assets/photos/north-minxian.jpg",
+      "title": "岷县洮河：地域环境参照",
+      "caption": "岷县洮河的当代实景。岷县是岷洮西战役活动区域之一；照片不是1936年的战场影像，也不代表临潭、漳县、通渭的全部地域。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B2%B7%E5%8E%BF%E6%B4%AE%E6%B2%B3.JPG",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/%E5%B2%B7%E5%8E%BF%E6%B4%AE%E6%B2%B3.JPG",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/%E5%B2%B7%E5%8E%BF%E6%B4%AE%E6%B2%B3.JPG",
+      "author": "陇右甘南",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "fourth-mintaoxi-193608"
+      ],
+      "photoDate": "",
+      "sourcePlace": "甘肃岷县洮河",
+      "matchType": "regional",
+      "width": 1024,
+      "height": 768,
+      "sourceTitle": "File:岷县洮河.JPG",
+      "sourceDescription": "​岷县洮河",
+      "sourceCategories": "GFDL|Taken with Samsung SL201|License migration redundant|Min County|Self-published work",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 511019,
+      "sha256": "08313f315f7030f6c370c8589b923e9db766385ed5bb99dcde14736fb21bc0c1"
+    },
+    {
+      "id": "photo-north-longde",
+      "file": "assets/photos/north-longde.jpg",
+      "title": "隆德：当代县域实景",
+      "caption": "隆德县域当代实景，用于认识红二十五军攻克隆德、翻越六盘山的地域背景；不是1935年战斗现场或具体翻山道路。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longde,_Guyuan,_Ningxia,_China_-_panoramio.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Longde%2C_Guyuan%2C_Ningxia%2C_China_-_panoramio.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Longde%2C_Guyuan%2C_Ningxia%2C_China_-_panoramio.jpg",
+      "author": "aho1102003@yahoo,com…",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "eventIds": [
+        "tf-16"
+      ],
+      "photoDate": "",
+      "sourcePlace": "宁夏固原隆德县",
+      "matchType": "town",
+      "width": 670,
+      "height": 502,
+      "sourceTitle": "File:Longde, Guyuan, Ningxia, China - panoramio.jpg",
+      "sourceDescription": "Longde, Guyuan, Ningxia, China",
+      "sourceCategories": "Longde County|Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图或原图，未作内容修改。",
+      "bytes": 77915,
+      "sha256": "cc67ae59d29936301d8d7b9085ae6f7b7ca21612aab1267d3e9e5c8aa424e299",
+      "originalUploadDate": "2010-09-30",
+      "dateNote": "原始上传日期为2010-09-30；拍摄日期未单列。"
+    },
+    {
+      "id": "photo-north-fengyukou",
+      "file": "assets/photos/north-fengyukou.jpg",
+      "title": "沣峪口秦岭山景",
+      "caption": "作者标注拍摄于沣峪口的2010年秦岭山景，帮助认识红二十五军再次西征北上决策地周边的山地环境；照片未定位到当时的具体驻地或行军道路。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qin_Ling_mountains_-_%E7%A7%A6%E5%B2%AD%E5%B1%B1_(4820716352).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Qin_Ling_mountains_-_%E7%A7%A6%E5%B2%AD%E5%B1%B1_%284820716352%29.jpg/1280px-Qin_Ling_mountains_-_%E7%A7%A6%E5%B2%AD%E5%B1%B1_%284820716352%29.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Qin_Ling_mountains_-_%E7%A7%A6%E5%B2%AD%E5%B1%B1_%284820716352%29.jpg",
+      "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "eventIds": [
+        "tf-12"
+      ],
+      "photoDate": "2010-07-12 16:25",
+      "sourcePlace": "陕西长安沣峪口",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 960,
+      "sourceTitle": "File:Qin Ling mountains - 秦岭山 (4820716352).jpg",
+      "sourceDescription": "Qin Ling mountains at Fengyukou",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图，未作内容修改。",
+      "bytes": 314169,
+      "sha256": "c5b61482092e067c028a96fe0c42deed40d7d8cf12f8bdc75d92ab255f1b5a76"
+    },
+    {
+      "id": "photo-north-ganquan",
+      "file": "assets/photos/north-ganquan.jpg",
+      "title": "甘泉道镇长征纪念地",
+      "caption": "甘泉县道镇雪地讲话遗址的2026年实景，展示长征到达陕北后的当地纪念环境。此图作为甘泉县域历史环境参照，不将雪地讲话遗址认作红十五军团编入红一方面军的确切地点。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Site_of_1935_Snowland_Speech_at_Daozhen,_Ganquan_(20260429063443).jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Site_of_1935_Snowland_Speech_at_Daozhen%2C_Ganquan_%2820260429063443%29.jpg/1280px-Site_of_1935_Snowland_Speech_at_Daozhen%2C_Ganquan_%2820260429063443%29.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Site_of_1935_Snowland_Speech_at_Daozhen%2C_Ganquan_%2820260429063443%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "eventIds": [
+        "tf-22"
+      ],
+      "photoDate": "2026-04-29 06:34:43",
+      "sourcePlace": "陕西甘泉县道镇雪地讲话遗址",
+      "matchType": "regional",
+      "width": 1280,
+      "height": 854,
+      "sourceTitle": "File:Site of 1935 Snowland Speech at Daozhen, Ganquan (20260429063443).jpg",
+      "sourceDescription": "On 5 November 1935, Mao Zedong defined the Long March as \"a manifesto, a promotional force, a seeding machine\" in snow here.",
+      "verified": "2026-11-03",
+      "modifications": "使用Commons提供的等比缩略图，未作内容修改。",
+      "bytes": 550124,
+      "sha256": "2a9e89655b48b150c8c260a069a6aa1845df752dea92a05095c9bef7cf1d8cc5"
     }
-  ]
+  ],
+  "coverage": {
+    "totalEvents": 122,
+    "coveredEvents": 99,
+    "missingEvents": 23,
+    "uniquePhotoFiles": 65
+  }
 }

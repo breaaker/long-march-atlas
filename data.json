@@ -44,6 +44,15 @@
     "geographicAnchorCorrections": [
       {
         "ids": [
+          "central-loushan"
+        ],
+        "lon": 106.85,
+        "lat": 28.02,
+        "title": "娄山关山口景区附近代表点（高德GCJ02坐标仅作区域近似参考）",
+        "url": "https://www.amap.com/place/B0354009II"
+      },
+      {
+        "ids": [
           "central-lianghekou",
           "fourth-lianghekou-19350626"
         ],
@@ -895,7 +904,7 @@
           "title": "娄山关战斗",
           "place": "贵州娄山关",
           "lon": 106.85,
-          "lat": 28.14,
+          "lat": 28.02,
           "summary": "红军攻占娄山关并击退反扑，为再取遵义打开通路。",
           "kind": "battle",
           "sources": [
@@ -907,7 +916,17 @@
           "displayDate": "1935年2月25日—26日",
           "route": true,
           "phase": "march",
-          "sequence": 18
+          "sequence": 18,
+          "researchCoordinates": {
+            "lon": 106.85,
+            "lat": 28.14
+          },
+          "geoNote": "现代地名附近概略位置。 制图合并时统一为娄山关山口景区附近代表点（高德GCJ02坐标仅作区域近似参考），仍非历史行军或旧址的精确测绘。",
+          "geographicAnchorReference": {
+            "title": "娄山关山口景区附近代表点（高德GCJ02坐标仅作区域近似参考）",
+            "url": "https://www.amap.com/place/B0354009II",
+            "type": "geographic"
+          }
         },
         {
           "id": "central-zunyi-second",

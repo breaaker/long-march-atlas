@@ -1,8 +1,15 @@
 {
-  "id": "20261015T083103Z",
-  "builtAt": "2026-10-15T08:31:03.933237+00:00",
+  "id": "20261103T020631Z",
+  "builtAt": "2026-11-03T02:06:31.212620+00:00",
   "eventCount": 122,
   "narrationCount": 122,
+  "photoCount": 65,
+  "photoCoverage": {
+    "totalEvents": 122,
+    "coveredEvents": 99,
+    "missingEvents": 23,
+    "uniquePhotoFiles": 65
+  },
   "defaultVoice": "yunxi",
   "backendRequired": false
 }
